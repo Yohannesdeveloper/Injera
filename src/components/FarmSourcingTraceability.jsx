@@ -1,0 +1,85 @@
+import React from 'react';
+import { Shield, Leaf, QrCode, Award, CheckCircle2 } from 'lucide-react';
+
+const TRACEABILITY_PILLARS = [
+  {
+    icon: Leaf,
+    title: 'Direct Farmer Partnerships',
+    subtitle: 'Debre Zeit, Ada & East Shewa Cooperative',
+    desc: 'We contract directly with over 1,200 smallholder farming families across the high plateaus of East Shewa, providing fair trade premiums, agronomist support, and certified organic seeds.'
+  },
+  {
+    icon: Award,
+    title: 'ECX Grade A Verification',
+    subtitle: 'Zero Wheat or Adulteration Guarantee',
+    desc: 'Every batch of raw Teff grain is inspected and certified by the Ethiopian Commodity Exchange (ECX). Tested for moisture content (<11%), zero gluten cross-contamination, and 99.9% grain purity.'
+  },
+  {
+    icon: QrCode,
+    title: 'Farm-to-Table QR Barcode Traceability',
+    subtitle: 'Batch CoA & Harvest Location Tracking',
+    desc: 'Every vacuum export carton features a unique QR code allowing buyers and health inspectors to trace the exact harvest farm location, fermentation log date, and lab Certificate of Analysis (CoA).'
+  }
+];
+
+export default function FarmSourcingTraceability() {
+  return (
+    <section id="sourcing" className="py-24 px-6 relative z-10 max-w-6xl mx-auto space-y-16">
+      
+      {/* Header */}
+      <div className="text-center space-y-4 max-w-3xl mx-auto">
+        <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
+          Agricultural Integrity & Sourcing
+        </span>
+        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+          Farm Sourcing & <span className="gold-gradient-text">Traceability</span>
+        </h2>
+        <p className="text-slate-300 font-light text-base">
+          Complete transparency from Ethiopian highland farms to international buyer distribution centers.
+        </p>
+      </div>
+
+      {/* Pillars Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {TRACEABILITY_PILLARS.map((p, idx) => {
+          const Icon = p.icon;
+          return (
+            <div key={idx} className="luxury-card p-8 border border-gold-500/30 space-y-5">
+              <div className="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center">
+                <Icon className="w-6 h-6" />
+              </div>
+
+              <div>
+                <p className="text-[10px] font-mono font-bold text-gold-400 uppercase tracking-widest">{p.subtitle}</p>
+                <h3 className="font-display text-xl font-bold text-slate-100 mt-1">{p.title}</h3>
+              </div>
+
+              <p className="text-xs text-slate-300 font-light leading-relaxed">{p.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Sourcing Credentials Bar */}
+      <div className="luxury-card p-6 border-l-4 border-l-gold-500 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold text-slate-200">
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Non-GMO Certified Seeds</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Ethical Fair Trade Pricing</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Aflatoxin & Pesticide Free</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Zero Preservative Baking</span>
+        </div>
+      </div>
+
+    </section>
+  );
+}

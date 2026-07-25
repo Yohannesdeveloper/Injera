@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4C430;
+  --color-ochre: #C87D32;
+  --color-bg-dark: #0A0B0E;
+  --color-bg-card: #12141A;
+  --color-ivory: #F5F3EF;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-ivory);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply antialiased overflow-x-hidden relative;
+    background-image:
+      radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 55%),
+      linear-gradient(to bottom, rgba(10, 11, 14, 0.95), rgba(10, 11, 14, 0.98)),
+      url('/images/injera_bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* World-Class Minimalist Luxury Cards */
+.luxury-card {
+  background: rgba(18, 20, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 20px 50px -10px rgba(212, 175, 55, 0.15);
+}
+
+.luxury-card-gold {
+  background: linear-gradient(145deg, rgba(212, 175, 55, 0.12), rgba(18, 20, 26, 0.92));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 16px 40px -10px rgba(212, 175, 55, 0.2);
+}
+
+/* Typography & Accent Styles */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5F3EF 0%, #D4AF37 50%, #C87D32 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-accent-line {
+  background: linear-gradient(90deg, #D4AF37, transparent);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0B0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
