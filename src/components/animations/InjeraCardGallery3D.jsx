@@ -60,7 +60,7 @@ export default function InjeraCardGallery3D() {
           <AnimatePresence mode="wait">
             <BorderGlow
               className="w-full h-full p-0"
-              backgroundColor="#120F17"
+
               borderRadius={16}
               colors={['#D4AF37', '#F4C430', '#C87D32']}
             >
@@ -83,7 +83,7 @@ export default function InjeraCardGallery3D() {
                 {activeStep.tag}
               </div>
 
-              <BorderGlow className="p-4" backgroundColor="#120F17" borderRadius={16} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+              <BorderGlow className="p-4" borderRadius={16} colors={['#D4AF37', '#F4C430', '#C87D32']}>
                 <p className="text-[10px] font-bold text-gold-400 uppercase tracking-wider">{activeStep.subtitle}</p>
                 <p className="text-lg font-bold text-slate-100 mt-0.5">{activeStep.title}</p>
               </BorderGlow>

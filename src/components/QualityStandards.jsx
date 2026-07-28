@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Award, FileCheck, Lock, CheckCircle2 } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const STANDARDS = [
   {
@@ -38,7 +39,8 @@ export default function QualityStandards() {
           Global Food Safety & Hygiene
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          International <span className="gold-gradient-text">Certifications</span>
+          <KineticText text="International" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Certifications" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-base">
           Our Bole Lemi facility operates under strict global food safety management systems.
@@ -49,7 +51,7 @@ export default function QualityStandards() {
         {STANDARDS.map((std, idx) => {
           const Icon = std.icon;
           return (
-            <BorderGlow key={idx} className="p-6 space-y-4" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+            <BorderGlow key={idx} className="p-6 space-y-4" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
               <div className="w-10 h-10 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center">
                 <Icon className="w-5 h-5" />
               </div>
@@ -63,7 +65,7 @@ export default function QualityStandards() {
         })}
       </div>
 
-      <BorderGlow className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-slate-300" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+      <BorderGlow className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-slate-300" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
           <span>Zero Wheat or Gluten Blending</span>

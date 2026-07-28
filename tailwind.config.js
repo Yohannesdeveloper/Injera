@@ -27,9 +27,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans-serif'],
-        display: ['Cinzel', 'serif'],
-        body: ['Outfit', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['Inter', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
       animation: {
         'pulse-glow': 'pulseGlow 3s infinite ease-in-out',

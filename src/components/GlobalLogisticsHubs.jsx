@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plane, Ship, MapPin, ShieldCheck, Thermometer, Clock } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const LOGISTICS_ROUTES = [
   {
@@ -55,7 +56,8 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
           International Trade Network
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          Global Air & Sea <span className="gold-gradient-text">Logistics Hubs</span>
+          <KineticText text="Global Air & Sea" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Logistics Hubs" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-base">
           Cold-chain freight routes from Addis Ababa to airports and seaports worldwide.
@@ -65,7 +67,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       {/* Routes Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {LOGISTICS_ROUTES.map((route, idx) => (
-          <BorderGlow key={idx} className="p-6 space-y-5 flex flex-col justify-between" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+          <BorderGlow key={idx} className="p-6 space-y-5 flex flex-col justify-between" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gold-400 font-mono">
@@ -98,7 +100,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       </div>
 
       {/* Logistics CTA */}
-      <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" backgroundColor="#120F17" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
+      <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         <div>
           <h4 className="font-display text-xl font-bold text-slate-100">Need Custom Destination Freight Rates?</h4>
           <p className="text-xs text-slate-300 font-light mt-1">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, ShieldCheck, ArrowUpRight } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const EXPORT_PRODUCTS = [
   {
@@ -57,7 +58,8 @@ export default function ProductShowcase({ onRequestQuote }) {
           Export Product Portfolio
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          Certified Injera Export <span className="gold-gradient-text">Line</span>
+          <KineticText text="Certified Injera Export" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Line" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-base">
           Tailored packaging for supermarkets, restaurants, and wholesale importers.
@@ -67,7 +69,7 @@ export default function ProductShowcase({ onRequestQuote }) {
       {/* Product Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {EXPORT_PRODUCTS.map((prod) => (
-          <BorderGlow key={prod.id} className="p-6 flex flex-col justify-between space-y-6 group" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+          <BorderGlow key={prod.id} className="p-6 flex flex-col justify-between space-y-6 group" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             
             {/* Card Top: Image & Badge */}
             <div className="space-y-4">

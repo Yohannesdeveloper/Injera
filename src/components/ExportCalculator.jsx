@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calculator, Plane, Ship, ArrowRight, ShieldCheck } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const DESTINATIONS = [
   { id: 'us_east', name: 'North America — Washington IAD / New York JFK', mode: 'Air Cargo', days: '24-48 Hours', temp: '+4°C Chilled' },
@@ -19,14 +20,15 @@ export default function ExportCalculator({ onRequestQuote }) {
 
   return (
     <section id="logistics" className="py-24 px-6 relative z-10 max-w-6xl mx-auto">
-      <BorderGlow className="p-8 md:p-12 space-y-8" backgroundColor="#120F17" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
+      <BorderGlow className="p-8 md:p-12 space-y-8" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
             B2B Logistics Estimator
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-100">
-            Global Cold-Chain <span className="gold-gradient-text">Logistics</span>
+            <KineticText text="Global Cold-Chain" as="span" className="inline flex-wrap" />{' '}
+            <span className="gold-gradient-text"><KineticText text="Logistics" as="span" className="inline flex-wrap" /></span>
           </h2>
           <p className="text-slate-300 font-light text-sm">
             Estimate gross shipping weights and transit timeframes for air freight and ocean reefer container shipments.
@@ -78,7 +80,7 @@ export default function ExportCalculator({ onRequestQuote }) {
 
           {/* Results Box */}
           <div className="lg:col-span-6">
-            <BorderGlow className="p-6 space-y-6" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+            <BorderGlow className="p-6 space-y-6" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
               <h4 className="text-xs font-bold text-gold-400 uppercase tracking-wider flex items-center justify-between">
                 <span>Logistics Freight Summary</span>
                 <ShieldCheck className="w-4 h-4 text-gold-400" />

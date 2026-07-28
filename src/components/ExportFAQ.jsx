@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, HelpCircle, FileText } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const FAQS = [
   {
@@ -37,7 +38,8 @@ export default function ExportFAQ() {
           Buyer Knowledge Base
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          Frequently Asked <span className="gold-gradient-text">Export Questions</span>
+          <KineticText text="Frequently Asked" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Export Questions" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-base">
           Technical, regulatory, and logistics info for international buyers.
@@ -52,7 +54,7 @@ export default function ExportFAQ() {
             <BorderGlow
               key={idx}
               className="overflow-hidden transition-all duration-300"
-              backgroundColor="#120F17"
+
               borderRadius={24}
               colors={['#D4AF37', '#F4C430', '#C87D32']}
             >

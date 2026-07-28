@@ -1,6 +1,7 @@
 import React from 'react';
 import { Building, MapPin, Phone, Mail, Clock, Award } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 export default function CorporateLeadership({ onRequestQuote }) {
   return (
@@ -15,8 +16,8 @@ export default function CorporateLeadership({ onRequestQuote }) {
           </span>
 
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 leading-tight">
-            Ethiopia's Leading Export Facility in <br />
-            <span className="gold-gradient-text">Bole Lemi Industrial Park</span>
+            <KineticText text="Ethiopia's Leading Export Facility in" as="span" className="inline flex-wrap" /> <br />
+            <span className="gold-gradient-text"><KineticText text="Bole Lemi Industrial Park" as="span" className="inline flex-wrap" /></span>
           </h2>
 
           <p className="text-slate-300 font-light text-base leading-relaxed">
@@ -45,7 +46,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
 
         {/* Right Side: Factory Location Card & Contact Box */}
         <div className="lg:col-span-6">
-          <BorderGlow className="p-8 space-y-6" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+          <BorderGlow className="p-8 space-y-6" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             <h3 className="font-display text-xl font-bold text-slate-100">Export Headquarters Contact</h3>
 
             <div className="space-y-4 text-xs text-slate-300">

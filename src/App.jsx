@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import HeroOverlay from './components/HeroOverlay';
 import ScrollJourney from './components/ScrollJourney';
@@ -13,12 +13,47 @@ import CorporateLeadership from './components/CorporateLeadership';
 import RequestQuoteModal from './components/RequestQuoteModal';
 import AudioEngine from './components/AudioEngine';
 import Footer from './components/Footer';
+import { HexagonPattern } from './components/HexagonPattern';
 
 export default function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  const [cursor, setCursor] = useState({ x: -9999, y: -9999 });
+
+  const handleMouseMove = useCallback((e) => {
+    setCursor({ x: e.clientX, y: e.clientY });
+  }, []);
 
   return (
-    <div className="min-h-screen relative text-slate-100 font-sans selection:bg-gold-500 selection:text-black">
+    <div
+      className="min-h-screen relative text-slate-100 font-sans selection:bg-gold-500 selection:text-black"
+      onMouseMove={handleMouseMove}
+    >
+
+      {/* Hexagon pattern with cursor glow on edges */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <HexagonPattern
+          radius={50}
+          gap={6}
+          className="fill-gold-500/10 stroke-gold-500/15"
+          strokeDasharray="0"
+          direction="vertical"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            maskImage: `radial-gradient(200px circle at ${cursor.x}px ${cursor.y}px, black 0%, transparent 100%)`,
+            WebkitMaskImage: `radial-gradient(200px circle at ${cursor.x}px ${cursor.y}px, black 0%, transparent 100%)`,
+          }}
+        >
+          <HexagonPattern
+            radius={50}
+            gap={6}
+            className="fill-gold-500/40 stroke-gold-500/60"
+            strokeDasharray="0"
+            direction="vertical"
+          />
+        </div>
+      </div>
 
       {/* 1. Corporate Header */}
       <Navbar onRequestQuote={() => setIsQuoteModalOpen(true)} />

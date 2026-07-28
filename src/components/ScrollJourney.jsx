@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle2, Camera, Compass, Eye, Sparkles, Layers } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const CHAPTERS = [
   {
@@ -72,8 +73,8 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
           <span>Cinematic 360° Scroll Camera View</span>
         </div>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          The Story of Authentic Injera <br />
-          <span className="gold-gradient-text">In 360° Camera View</span>
+          <KineticText text="The Story of Authentic Injera" as="span" className="inline flex-wrap" /> <br />
+          <span className="gold-gradient-text"><KineticText text="In 360° Camera View" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-sm">
           Orbit through each production stage with a 360° cinematic view.
@@ -105,7 +106,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                 </div>
 
                 <div>
-                  <h3 className="font-display text-2xl sm:text-4xl font-extrabold text-slate-100">{ch.title}</h3>
+                  <h3 className="font-display text-2xl sm:text-4xl font-extrabold text-slate-100"><KineticText text={ch.title} as="span" className="inline flex-wrap" /></h3>
                   <p className="text-xs font-mono text-gold-400 uppercase tracking-widest mt-1">{ch.subtitle}</p>
                 </div>
 
@@ -125,7 +126,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
               <div className={`lg:col-span-6 ${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
                 <BorderGlow
                   className="p-2 group"
-                  backgroundColor="#120F17"
+
                   borderRadius={24}
                   colors={['#D4AF37', '#F4C430', '#C87D32']}
                   style={{

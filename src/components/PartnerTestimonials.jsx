@@ -1,6 +1,7 @@
 import React from 'react';
 import { Quote, Star, Building2, MapPin } from 'lucide-react';
 import BorderGlow from './BorderGlow';
+import { KineticText } from './KineticText';
 
 const TESTIMONIALS = [
   {
@@ -39,7 +40,8 @@ export default function PartnerTestimonials() {
           Client Endorsements
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          Trusted by Global Importers & <span className="gold-gradient-text">Restaurant Groups</span>
+          <KineticText text="Trusted by Global Importers &" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Restaurant Groups" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-light text-base">
           Feedback from international retail buyers and restaurant executives.
@@ -49,7 +51,7 @@ export default function PartnerTestimonials() {
       {/* Testimonials Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {TESTIMONIALS.map((t, idx) => (
-          <BorderGlow key={idx} className="p-8 flex flex-col justify-between space-y-6" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+          <BorderGlow key={idx} className="p-8 flex flex-col justify-between space-y-6" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             <div className="space-y-4">
               <div className="flex items-center gap-1 text-gold-400">
                 {[...Array(t.rating)].map((_, i) => (
