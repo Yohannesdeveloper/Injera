@@ -4,24 +4,24 @@ import BorderGlow from './BorderGlow';
 
 const FAQS = [
   {
-    q: 'How is a 30-day fresh shelf life achieved without chemical preservatives?',
-    a: 'Our 30-day ambient shelf life is achieved through Modified Atmosphere Packaging (MAP). Immediately after baking on our sterile lines, fresh Injera is cooled in ISO Class 7 HEPA-filtered cleanrooms and vacuum-sealed in multi-layer food-grade barrier films, locking out oxygen and mold spores naturally.'
+    q: 'How is 30-day shelf life achieved without preservatives?',
+    a: 'Modified Atmosphere Packaging in HEPA-filtered cleanrooms locks out oxygen and mold spores naturally.'
   },
   {
-    q: 'What is your Minimum Order Quantity (MOQ) for international shipments?',
-    a: 'For express air cargo freight (Addis Ababa Bole International Airport), our MOQ is 500 vacuum packs (2,500 Injera discs). For ocean maritime reefer shipments, our MOQ is 1 x 20ft reefer container (approx. 14,000 packs).'
+    q: 'What is the MOQ for international shipments?',
+    a: '500 vacuum packs for air freight, or 1 x 20ft reefer container (14,000 packs) for ocean freight.'
   },
   {
-    q: 'What export certificates and documentation accompany each order?',
-    a: 'Every export shipment includes an Official Phytosanitary Certificate from the Ministry of Agriculture, FDA Prior Notice Notice Confirmation, ISO 22000 & HACCP Certificates, Bill of Lading / Air Waybill, and a batch-specific lab Certificate of Analysis (CoA).'
+    q: 'What certificates accompany each order?',
+    a: 'Phytosanitary Certificate, FDA Notice, ISO 22000 & HACCP, Bill of Lading, and batch CoA.'
   },
   {
-    q: 'Do you offer private-label (OEM) packaging for supermarket chains?',
-    a: 'Yes. We manufacture custom co-branded and private-label vacuum packages for international retail chains and regional distributors. Minimum order quantity for custom branded film rolls is 5,000 units.'
+    q: 'Do you offer private-label packaging?',
+    a: 'Yes, with custom co-branded vacuum packages at a 5,000-unit MOQ.'
   },
   {
-    q: 'What Incoterms 2020 trade terms do you support?',
-    a: 'We routinely execute contracts under EXW (Addis Ababa Factory), FOB (Port of Djibouti / Bole Airport), CIF (Destination Airport/Seaport), and DDP (Delivered Duty Paid to client distribution center).'
+    q: 'What Incoterms do you support?',
+    a: 'EXW, FOB, CIF, and DDP to client distribution centers.'
   }
 ];
 
@@ -40,7 +40,7 @@ export default function ExportFAQ() {
           Frequently Asked <span className="gold-gradient-text">Export Questions</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Essential technical, regulatory, and logistics information for international buyers and procurement teams.
+          Technical, regulatory, and logistics info for international buyers.
         </p>
       </div>
 

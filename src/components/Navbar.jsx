@@ -15,9 +15,7 @@ export default function Navbar({ onRequestQuote }) {
             <span className="font-display text-sm font-bold tracking-widest text-slate-100 uppercase">
               Zedagm ዘ፟-ዳግም Export
             </span>
-            <span className="block text-[9px] text-slate-400 font-mono tracking-widest uppercase">
-              Addis Ababa, Ethiopia
-            </span>
+
           </div>
         </a>
 

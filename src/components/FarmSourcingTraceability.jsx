@@ -7,19 +7,19 @@ const TRACEABILITY_PILLARS = [
     icon: Leaf,
     title: 'Direct Farmer Partnerships',
     subtitle: 'Debre Zeit, Ada & East Shewa Cooperative',
-    desc: 'We contract directly with over 1,200 smallholder farming families across the high plateaus of East Shewa, providing fair trade premiums, agronomist support, and certified organic seeds.'
+    desc: 'Direct contracts with 1,200+ smallholder families across East Shewa high plateaus.'
   },
   {
     icon: Award,
     title: 'ECX Grade A Verification',
     subtitle: 'Zero Wheat or Adulteration Guarantee',
-    desc: 'Every batch of raw Teff grain is inspected and certified by the Ethiopian Commodity Exchange (ECX). Tested for moisture content (<11%), zero gluten cross-contamination, and 99.9% grain purity.'
+    desc: 'ECX-certified with <11% moisture, zero gluten, and 99.9% grain purity.'
   },
   {
     icon: QrCode,
     title: 'Farm-to-Table QR Barcode Traceability',
     subtitle: 'Batch CoA & Harvest Location Tracking',
-    desc: 'Every vacuum export carton features a unique QR code allowing buyers and health inspectors to trace the exact harvest farm location, fermentation log date, and lab Certificate of Analysis (CoA).'
+    desc: 'QR code on every carton traces harvest farm, fermentation date, and CoA.'
   }
 ];
 
@@ -36,7 +36,7 @@ export default function FarmSourcingTraceability() {
           Farm Sourcing & <span className="gold-gradient-text">Traceability</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Complete transparency from Ethiopian highland farms to international buyer distribution centers.
+          Full transparency from Ethiopian farms to international distribution centers.
         </p>
       </div>
 

@@ -20,7 +20,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
           </h2>
 
           <p className="text-slate-300 font-light text-base leading-relaxed">
-            Headquartered in Addis Ababa, Ethiopia, Zedagm ዘ፟-ዳግም Injera Export PLC operates a 4,500 m² state-of-the-art baking, vacuum packaging, and cold-chain warehousing facility within Bole Lemi Industrial Park Phase II.
+            A 4,500 m² baking, packaging, and cold-chain facility in Bole Lemi Industrial Park, Addis Ababa.
           </p>
 
           <div className="grid grid-cols-2 gap-4 text-xs font-semibold text-slate-200 pt-2">
@@ -49,14 +49,6 @@ export default function CorporateLeadership({ onRequestQuote }) {
             <h3 className="font-display text-xl font-bold text-slate-100">Export Headquarters Contact</h3>
 
             <div className="space-y-4 text-xs text-slate-300">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-slate-100">Factory & Administration</p>
-                  <p className="text-slate-400 mt-0.5">Bole Lemi Industrial Park Phase II, Building 14, Addis Ababa, Ethiopia</p>
-                </div>
-              </div>
-
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gold-400 shrink-0" />
                 <div>
@@ -72,21 +64,13 @@ export default function CorporateLeadership({ onRequestQuote }) {
                   <p className="text-slate-400 mt-0.5">export@habeshagoldinjera.com</p>
                 </div>
               </div>
-
-              <div className="flex items-center gap-3">
-                <Clock className="w-4 h-4 text-gold-400 shrink-0" />
-                <div>
-                  <p className="font-bold text-slate-100">Business Hours (EAT)</p>
-                  <p className="text-slate-400 mt-0.5">Monday – Saturday: 8:00 AM – 6:00 PM (UTC+3)</p>
-                </div>
-              </div>
             </div>
 
             <button
               onClick={onRequestQuote}
               className="w-full py-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-dark-950 font-bold text-xs uppercase tracking-wider transition-colors shadow-lg"
             >
-              Schedule Virtual Plant Inspection / Sample Order
+              Request Sample & Pricing
             </button>
           </BorderGlow>
         </div>

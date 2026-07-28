@@ -9,7 +9,7 @@ const EXPORT_PRODUCTS = [
     category: 'Retail & Supermarket',
     image: '/images/vacuum_pack.png',
     badge: 'Retail Best Seller',
-    description: 'Freshly baked 100% Teff Injera vacuum-sealed under modified atmosphere (MAP). Specially formatted to maintain softness and authentic aroma for up to 30 days without refrigeration.',
+    description: '100% Teff Injera vacuum-sealed under MAP for 30-day ambient freshness.',
     specs: {
       pack: '5 Rolled Discs (52 cm / 20.5 in)',
       weight: '1.2 kg per Pack',
@@ -23,7 +23,7 @@ const EXPORT_PRODUCTS = [
     category: 'Restaurant & Catering',
     image: '/images/injera_texture.png',
     badge: 'Chef Favorite',
-    description: 'Classic ivory-colored Injera made from premium Nech (White) Teff grown in East Shewa. Delivered fresh daily via express air cargo directly to restaurant kitchens in D.C., Frankfurt, and London.',
+    description: 'Classic ivory Injera from premium White Teff, delivered fresh daily via air cargo.',
     specs: {
       pack: '10 Unrolled Discs per Case',
       weight: '2.5 kg per Case',
@@ -37,7 +37,7 @@ const EXPORT_PRODUCTS = [
     category: 'Wholesale Importers',
     image: '/images/warehouse.png',
     badge: '12-Month Stability',
-    description: 'Flash-frozen using IQF technology immediately after cooling. Designed for maritime reefer container shipments to global importers seeking maximum shelf stability and bulk cost savings.',
+    description: 'IQF flash-frozen for maritime reefer shipments with 12-month shelf stability.',
     specs: {
       pack: '100 Discs (20 Packs x 5)',
       weight: '24 kg Master Carton',
@@ -60,7 +60,7 @@ export default function ProductShowcase({ onRequestQuote }) {
           Certified Injera Export <span className="gold-gradient-text">Line</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Tailored packaging options for international supermarkets, restaurant chains, and bulk wholesale importers.
+          Tailored packaging for supermarkets, restaurants, and wholesale importers.
         </p>
       </div>
 

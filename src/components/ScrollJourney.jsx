@@ -9,14 +9,12 @@ const CHAPTERS = [
     degree: '0° – 90° CAM ANGLE',
     title: 'Golden Teff Harvest',
     subtitle: 'Highland Volcanic Soil • Debre Zeit & East Shewa',
-    description: 'Our camera glides above ancient volcanic high plateaus where golden Teff has grown for over 3,000 years. Harvested by hand at peak maturity, each grain undergoes multi-stage mechanical destoning and air-cleaning before artisan milling.',
+    description: 'Hand-harvested Teff from ancient volcanic high plateaus, multi-stage cleaned before artisan milling.',
     image: '/images/teff_field.png',
     camPreset: 'PANORAMIC SUNRISE 360°',
     highlights: [
       '100% Pure Ethiopian Teff',
-      'Naturally Gluten-Free & Iron-Rich',
-      'Volcanic Mineral Soil Harvest',
-      'Sustainable Direct Sourcing'
+      'Naturally Gluten-Free & Iron-Rich'
     ]
   },
   {
@@ -25,14 +23,12 @@ const CHAPTERS = [
     degree: '90° – 180° CAM ANGLE',
     title: '72-Hr Fermentation & Baking',
     subtitle: 'Natural Ersho Culture • 10,000+ Spongy Pores',
-    description: 'The camera zooms 360° around the ceramic griddle (*Mitad*). Poured in spiral motions, steam rises as 10,000+ spongy micro-pores ("eyeballs" or *ayen*) pop across the surface, giving Injera its signature sour tang and soft texture.',
+    description: 'Batter spirals on a ceramic griddle, creating thousands of spongy micro-pores for the signature sour tang.',
     image: '/images/injera_texture.png',
     camPreset: 'MACRO ROTATIONAL 360°',
     highlights: [
       '72-Hour Natural Ersho Starter Culture',
-      'Target pH 3.6 – 3.8 Stability',
-      '10,000+ Spongy Ayen Pores',
-      'Zero Artificial Preservatives'
+      '10,000+ Spongy Ayen Pores'
     ]
   },
   {
@@ -41,14 +37,12 @@ const CHAPTERS = [
     degree: '180° – 270° CAM ANGLE',
     title: 'Hygienic Vacuum Packaging',
     subtitle: '30-Day Freshness • Modified Atmosphere (MAP)',
-    description: 'The lens tracks fresh Injera onto HEPA-filtered cooling racks. Uniformity inspectors examine softness and elasticity before automated packaging machines vacuum seal each pack to lock in natural moisture and aroma.',
+    description: 'Fresh Injera is HEPA-cooled then vacuum-sealed to lock in natural moisture and aroma.',
     image: '/images/vacuum_pack.png',
     camPreset: 'TRACKING LENS 360°',
     highlights: [
       'Modified Atmosphere Vacuum Film',
-      '30-Day Ambient / 60-Day Chilled Freshness',
-      'FDA & ISO 22000 Cleanroom Certified',
-      'Farm-to-Table Barcode Tracking'
+      '30-Day Ambient / 60-Day Chilled Freshness'
     ]
   },
   {
@@ -57,13 +51,11 @@ const CHAPTERS = [
     degree: '270° – 360° CAM ANGLE',
     title: 'Global Export & Dining',
     subtitle: 'Air Cargo Express & Ocean Reefer Containers',
-    description: 'The camera orbits an export box travelling from Addis Ababa Bole Cargo Hub to Washington D.C., Frankfurt, London, Dubai, and Toronto, culminating on dining tables at top international Ethiopian restaurants.',
+    description: 'Export boxes travel from Addis Ababa to dining tables across the US, Europe, and Middle East.',
     image: '/images/global_dish.png',
     camPreset: 'GLOBAL ORBIT 360°',
     highlights: [
       '24-48 HR Express Air Freight',
-      'Sea Reefer Container (-18°C Frozen)',
-      'Addis Ababa, Frankfurt & Dubai Hubs',
       'Served in 40+ Nations Worldwide'
     ]
   }
@@ -84,7 +76,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
           <span className="gold-gradient-text">In 360° Camera View</span>
         </h2>
         <p className="text-slate-300 font-light text-sm">
-          Scroll down to orbit through each stage of production with our cinematic camera lens view.
+          Orbit through each production stage with a 360° cinematic view.
         </p>
       </div>
 
@@ -131,8 +123,11 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
 
               {/* 360° Orbiting Viewfinder Camera Frame */}
               <div className={`lg:col-span-6 ${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
-                <div
-                  className="relative rounded-3xl overflow-hidden group border-2 border-gold-500/40 p-2 shadow-2xl transition-transform duration-300 ease-out"
+                <BorderGlow
+                  className="p-2 group"
+                  backgroundColor="#120F17"
+                  borderRadius={24}
+                  colors={['#D4AF37', '#F4C430', '#C87D32']}
                   style={{
                     transform: `perspective(1000px) rotateY(${rotateYDeg}deg) rotateX(${rotateXDeg}deg)`
                   }}
@@ -148,11 +143,6 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
 
                     {/* Viewfinder Crosshair Overlay */}
                     <div className="absolute inset-0 pointer-events-none p-6 flex flex-col justify-between">
-                      <div className="flex justify-between items-start text-[10px] font-mono text-gold-400 bg-dark-950/70 backdrop-blur-md px-3 py-1.5 rounded-lg border border-gold-500/30">
-                        <span>LENS MODE: {ch.camPreset}</span>
-                        <span className="text-slate-200">ANGLE: {Math.abs(Math.round(scrollDegree)) % 360}°</span>
-                      </div>
-
                       {/* Center Focus Target */}
                       <div className="self-center w-16 h-16 border border-gold-400/60 rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-gold-400 rounded-full animate-ping"></div>
@@ -164,7 +154,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </BorderGlow>
               </div>
 
             </div>

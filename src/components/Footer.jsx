@@ -20,7 +20,7 @@ export default function Footer({ onRequestQuote }) {
             </div>
           </div>
           <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
-            Ethiopia's premier certified Injera manufacturer and global exporter. Delivering authentic, freshly baked 100% Teff Injera with modern food safety standards to international markets worldwide.
+            Ethiopia's premier certified Injera manufacturer exporting globally.
           </p>
           <div className="flex items-center gap-2 text-gold-400 font-semibold text-[11px]">
             <ShieldCheck className="w-4 h-4" />
@@ -32,10 +32,6 @@ export default function Footer({ onRequestQuote }) {
         <div className="space-y-3">
           <h4 className="font-display text-xs font-bold text-slate-100 uppercase tracking-widest">Addis Ababa HQ</h4>
           <ul className="space-y-2 text-[11px] text-slate-300">
-            <li className="flex items-start gap-2">
-              <MapPin className="w-3.5 h-3.5 text-gold-400 shrink-0 mt-0.5" />
-              <span>Bole Lemi Industrial Park Phase II, Addis Ababa, Ethiopia</span>
-            </li>
             <li className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-gold-400 shrink-0" />
               <span>+251 (11) 662-8800</span>

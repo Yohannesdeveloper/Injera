@@ -4,7 +4,7 @@ import BorderGlow from './BorderGlow';
 
 const TESTIMONIALS = [
   {
-    quote: "Zedagm ዘ፟-ዳግም transformed our supermarket ethnic food category. Their vacuum 5-packs consistently maintain a 30-day fresh shelf life without refrigeration, allowing us to stock 45 retail stores across Germany with zero spoilage.",
+    quote: "Transformed our ethnic food category with 30-day shelf life and zero spoilage across 45 stores.",
     author: "Marcus Weber",
     title: "Senior Procurement Director",
     company: "Euro-Ethnic Food Retail Group (Frankfurt)",
@@ -12,7 +12,7 @@ const TESTIMONIALS = [
     rating: 5
   },
   {
-    quote: "As a restaurant chain owner serving over 1,500 meals daily in D.C., supply consistency and authentic Ersho sour tang are everything. Their daily air cargo shipments arrive directly at Dulles with incredible elasticity and softness.",
+    quote: "Daily air cargo shipments from Addis arrive at Dulles with incredible freshness and authenticity.",
     author: "Tigist Bekele",
     title: "Founder & Culinary Executive",
     company: "Queen Sheba Ethiopian Dining Group (Washington D.C.)",
@@ -20,7 +20,7 @@ const TESTIMONIALS = [
     rating: 5
   },
   {
-    quote: "We import frozen bulk pallets via sea reefer containers into Dubai Cargo Village. The quality control, HACCP compliance certificates, and phytosanitary paperwork are flawless every single month.",
+    quote: "Frozen sea reefer imports into Dubai with flawless QC and phytosanitary paperwork every month.",
     author: "Tariq Al-Mansoor",
     title: "Managing Partner",
     company: "Gulf Wholesale Food Distribution (Dubai)",
@@ -42,7 +42,7 @@ export default function PartnerTestimonials() {
           Trusted by Global Importers & <span className="gold-gradient-text">Restaurant Groups</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Read feedback from international retail buyers, supermarket procurement directors, and restaurant executives.
+          Feedback from international retail buyers and restaurant executives.
         </p>
       </div>
 

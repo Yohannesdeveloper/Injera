@@ -10,7 +10,7 @@ const STEPS = [
     subtitle: 'Debre Zeit & East Shewa Farms',
     image: '/images/teff_field.png',
     tag: 'RAW MATERIAL SELECTION',
-    desc: '100% Ethiopian Teff harvested from verified farm cooperatives. Multi-stage air destoning and seed cleaning ensure 99.9% grain purity before milling.'
+    desc: '100% Ethiopian Teff from verified farms, destoned and cleaned to 99.9% purity.'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const STEPS = [
     subtitle: 'Traditional Ersho Sourdough Culture',
     image: '/images/injera_texture.png',
     tag: 'STAINLESS FERMENTATION VATS',
-    desc: 'Fermented naturally in temperature-monitored stainless steel vessels. Achieves target pH 3.6 - 3.8 for authentic sour flavor and spongy ayen pores.'
+    desc: 'Naturally fermented in stainless steel to pH 3.6-3.8 for authentic sour flavor.'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const STEPS = [
     subtitle: 'Precision Thermal Ceramic Baking',
     image: '/images/injera_texture.png',
     tag: 'STERILE BAKING LINE',
-    desc: 'Batter poured in circular motions on electric ceramic griddles. High heat creates thousands of uniform micro-pores for maximum sauce absorption.'
+    desc: 'Batter poured on ceramic griddles creates thousands of uniform micro-pores.'
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const STEPS = [
     subtitle: 'HEPA Cleanroom Cooling & Sealing',
     image: '/images/vacuum_pack.png',
     tag: '30-DAY AMBIENT SHELF LIFE',
-    desc: 'Cooled in HEPA-filtered ISO Class 7 rooms. Automated food-grade vacuum sealing locks in moisture without chemical preservatives.'
+    desc: 'HEPA-cooled and vacuum-sealed without chemical preservatives.'
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const STEPS = [
     subtitle: 'Bole Airport & Djibouti Reefer Port',
     image: '/images/global_dish.png',
     tag: 'EXPRESS GLOBAL DISPATCH',
-    desc: 'Daily air cargo flights to Washington D.C., Frankfurt, London, and Dubai. Sea reefer containers for bulk ocean freight.'
+    desc: 'Daily air cargo and sea reefer containers to global destinations.'
   }
 ];
 
@@ -58,6 +58,12 @@ export default function InjeraCardGallery3D() {
         {/* Image Display */}
         <div className="lg:col-span-7 relative h-[400px]">
           <AnimatePresence mode="wait">
+            <BorderGlow
+              className="w-full h-full p-0"
+              backgroundColor="#120F17"
+              borderRadius={16}
+              colors={['#D4AF37', '#F4C430', '#C87D32']}
+            >
             <motion.div
               key={activeStep.id}
               initial={{ opacity: 0, x: 20 }}
@@ -82,6 +88,7 @@ export default function InjeraCardGallery3D() {
                 <p className="text-lg font-bold text-slate-100 mt-0.5">{activeStep.title}</p>
               </BorderGlow>
             </motion.div>
+            </BorderGlow>
           </AnimatePresence>
         </div>
 

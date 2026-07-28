@@ -58,7 +58,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
           Global Air & Sea <span className="gold-gradient-text">Logistics Hubs</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Direct cold-chain freight routes connecting our Addis Ababa Bole Lemi facility to international airports and seaports worldwide.
+          Cold-chain freight routes from Addis Ababa to airports and seaports worldwide.
         </p>
       </div>
 
@@ -102,7 +102,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
         <div>
           <h4 className="font-display text-xl font-bold text-slate-100">Need Custom Destination Freight Rates?</h4>
           <p className="text-xs text-slate-300 font-light mt-1">
-            We handle full phytosanitary export documentation, FDA prior notice, customs clearance, and door-to-door cargo insurance.
+            Full phytosanitary docs, FDA notice, customs, and door-to-door insurance.
           </p>
         </div>
         <button

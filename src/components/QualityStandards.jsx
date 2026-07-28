@@ -7,25 +7,25 @@ const STANDARDS = [
     icon: ShieldCheck,
     title: 'ISO 22000:2018 Certified',
     code: 'FSMS-ETH-2024',
-    desc: 'International benchmark covering harvest, 72-hr fermentation, thermal griddle baking, and cold-chain distribution.'
+    desc: 'International benchmark for harvest, fermentation, baking, and distribution.'
   },
   {
     icon: Award,
     title: 'HACCP Certified Facility',
     code: 'HACCP-QC-9901',
-    desc: 'Hazard Analysis Critical Control Point standard with continuous microbiological testing and digital thermal tracking.'
+    desc: 'HACCP with continuous microbiological testing and digital thermal tracking.'
   },
   {
     icon: FileCheck,
     title: 'FDA Registered Export Facility',
     code: 'FDA Reg: 18492049182',
-    desc: 'Full compliance with United States FDA food facility registration, FSMA preventive controls, and nutrition labeling.'
+    desc: 'US FDA registered with FSMA preventive controls and nutrition labeling.'
   },
   {
     icon: Lock,
     title: 'ECX 100% Teff Guarantee',
     code: 'ECX-TEFF-PREMIUM',
-    desc: '100% pure authentic Ethiopian Teff verified by Ethiopian Commodity Exchange with zero wheat or gluten blending.'
+    desc: '100% pure Ethiopian Teff verified by ECX with zero wheat blending.'
   }
 ];
 
@@ -41,7 +41,7 @@ export default function QualityStandards() {
           International <span className="gold-gradient-text">Certifications</span>
         </h2>
         <p className="text-slate-300 font-light text-base">
-          Built for international distributor confidence. Our production facility in Bole Lemi Industrial Park operates under strict global food safety management systems.
+          Our Bole Lemi facility operates under strict global food safety management systems.
         </p>
       </div>
 
