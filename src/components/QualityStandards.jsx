@@ -1,0 +1,86 @@
+import React from 'react';
+import { ShieldCheck, Award, FileCheck, Lock, CheckCircle2 } from 'lucide-react';
+
+const STANDARDS = [
+  {
+    icon: ShieldCheck,
+    title: 'ISO 22000:2018 Certified',
+    code: 'FSMS-ETH-2024',
+    desc: 'International benchmark covering harvest, 72-hr fermentation, thermal griddle baking, and cold-chain distribution.'
+  },
+  {
+    icon: Award,
+    title: 'HACCP Certified Facility',
+    code: 'HACCP-QC-9901',
+    desc: 'Hazard Analysis Critical Control Point standard with continuous microbiological testing and digital thermal tracking.'
+  },
+  {
+    icon: FileCheck,
+    title: 'FDA Registered Export Facility',
+    code: 'FDA Reg: 18492049182',
+    desc: 'Full compliance with United States FDA food facility registration, FSMA preventive controls, and nutrition labeling.'
+  },
+  {
+    icon: Lock,
+    title: 'ECX 100% Teff Guarantee',
+    code: 'ECX-TEFF-PREMIUM',
+    desc: '100% pure authentic Ethiopian Teff verified by Ethiopian Commodity Exchange with zero wheat or gluten blending.'
+  }
+];
+
+export default function QualityStandards() {
+  return (
+    <section id="standards" className="py-24 px-6 relative z-10 max-w-6xl mx-auto space-y-16">
+      
+      <div className="text-center space-y-4 max-w-3xl mx-auto">
+        <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
+          Global Food Safety & Hygiene
+        </span>
+        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+          International <span className="gold-gradient-text">Certifications</span>
+        </h2>
+        <p className="text-slate-300 font-light text-base">
+          Built for international distributor confidence. Our production facility in Bole Lemi Industrial Park operates under strict global food safety management systems.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {STANDARDS.map((std, idx) => {
+          const Icon = std.icon;
+          return (
+            <div key={idx} className="luxury-card p-6 border-l-2 border-l-gold-500 space-y-4">
+              <div className="w-10 h-10 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center">
+                <Icon className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-[9px] font-mono font-bold text-gold-400 uppercase tracking-widest">{std.code}</p>
+                <h3 className="font-display text-base font-bold text-slate-100 mt-1">{std.title}</h3>
+              </div>
+              <p className="text-xs text-slate-300 font-light leading-relaxed">{std.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="luxury-card p-6 border border-gold-500/30 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-slate-300">
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Zero Wheat or Gluten Blending</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>HEPA Cleanroom Environment</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Phytosanitary Export Permits</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+          <span>Batch Certificate of Analysis</span>
+        </div>
+      </div>
+
+    </section>
+  );
+}
