@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Leaf, QrCode, Award, CheckCircle2 } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 const TRACEABILITY_PILLARS = [
   {
@@ -44,7 +45,7 @@ export default function FarmSourcingTraceability() {
         {TRACEABILITY_PILLARS.map((p, idx) => {
           const Icon = p.icon;
           return (
-            <div key={idx} className="luxury-card p-8 border border-gold-500/30 space-y-5">
+            <BorderGlow key={idx} className="p-8 space-y-5" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
               <div className="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center">
                 <Icon className="w-6 h-6" />
               </div>
@@ -55,13 +56,13 @@ export default function FarmSourcingTraceability() {
               </div>
 
               <p className="text-xs text-slate-300 font-light leading-relaxed">{p.desc}</p>
-            </div>
+            </BorderGlow>
           );
         })}
       </div>
 
       {/* Sourcing Credentials Bar */}
-      <div className="luxury-card p-6 border-l-4 border-l-gold-500 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold text-slate-200">
+      <BorderGlow className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-semibold text-slate-200" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
           <span>Non-GMO Certified Seeds</span>
@@ -78,7 +79,7 @@ export default function FarmSourcingTraceability() {
           <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
           <span>Zero Preservative Baking</span>
         </div>
-      </div>
+      </BorderGlow>
 
     </section>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Building, MapPin, Phone, Mail, Clock, Award } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 export default function CorporateLeadership({ onRequestQuote }) {
   return (
@@ -44,7 +45,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
 
         {/* Right Side: Factory Location Card & Contact Box */}
         <div className="lg:col-span-6">
-          <div className="luxury-card p-8 border border-gold-500/40 space-y-6">
+          <BorderGlow className="p-8 space-y-6" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             <h3 className="font-display text-xl font-bold text-slate-100">Export Headquarters Contact</h3>
 
             <div className="space-y-4 text-xs text-slate-300">
@@ -87,7 +88,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
             >
               Schedule Virtual Plant Inspection / Sample Order
             </button>
-          </div>
+          </BorderGlow>
         </div>
 
       </div>

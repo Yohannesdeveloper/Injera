@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, HelpCircle, FileText } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 const FAQS = [
   {
@@ -48,9 +49,12 @@ export default function ExportFAQ() {
         {FAQS.map((faq, idx) => {
           const isOpen = openIdx === idx;
           return (
-            <div
+            <BorderGlow
               key={idx}
-              className="luxury-card border border-gold-500/30 overflow-hidden transition-all duration-300"
+              className="overflow-hidden transition-all duration-300"
+              backgroundColor="#120F17"
+              borderRadius={24}
+              colors={['#D4AF37', '#F4C430', '#C87D32']}
             >
               <button
                 onClick={() => setOpenIdx(isOpen ? -1 : idx)}
@@ -68,7 +72,7 @@ export default function ExportFAQ() {
                   {faq.a}
                 </div>
               )}
-            </div>
+            </BorderGlow>
           );
         })}
       </div>

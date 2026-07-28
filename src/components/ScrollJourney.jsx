@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Camera, Compass, Eye, Sparkles, Layers } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 const CHAPTERS = [
   {
@@ -131,7 +132,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
               {/* 360° Orbiting Viewfinder Camera Frame */}
               <div className={`lg:col-span-6 ${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
                 <div
-                  className="relative rounded-3xl overflow-hidden luxury-card group border-2 border-gold-500/40 p-2 shadow-2xl transition-transform duration-300 ease-out"
+                  className="relative rounded-3xl overflow-hidden group border-2 border-gold-500/40 p-2 shadow-2xl transition-transform duration-300 ease-out"
                   style={{
                     transform: `perspective(1000px) rotateY(${rotateYDeg}deg) rotateX(${rotateXDeg}deg)`
                   }}

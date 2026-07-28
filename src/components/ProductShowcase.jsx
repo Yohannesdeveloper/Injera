@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 const EXPORT_PRODUCTS = [
   {
@@ -66,7 +67,7 @@ export default function ProductShowcase({ onRequestQuote }) {
       {/* Product Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {EXPORT_PRODUCTS.map((prod) => (
-          <div key={prod.id} className="luxury-card p-6 flex flex-col justify-between space-y-6 group">
+          <BorderGlow key={prod.id} className="p-6 flex flex-col justify-between space-y-6 group" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             
             {/* Card Top: Image & Badge */}
             <div className="space-y-4">
@@ -120,7 +121,7 @@ export default function ProductShowcase({ onRequestQuote }) {
               </button>
             </div>
 
-          </div>
+          </BorderGlow>
         ))}
       </div>
 

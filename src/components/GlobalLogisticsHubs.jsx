@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plane, Ship, MapPin, ShieldCheck, Thermometer, Clock } from 'lucide-react';
+import BorderGlow from './BorderGlow';
 
 const LOGISTICS_ROUTES = [
   {
@@ -64,7 +65,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       {/* Routes Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {LOGISTICS_ROUTES.map((route, idx) => (
-          <div key={idx} className="luxury-card p-6 border-l-2 border-l-gold-500 space-y-5 flex flex-col justify-between">
+          <BorderGlow key={idx} className="p-6 space-y-5 flex flex-col justify-between" backgroundColor="#120F17" borderRadius={24} colors={['#D4AF37', '#F4C430', '#C87D32']}>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gold-400 font-mono">
@@ -92,12 +93,12 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
                 <p className="font-bold text-slate-200 mt-0.5">{route.temp}</p>
               </div>
             </div>
-          </div>
+          </BorderGlow>
         ))}
       </div>
 
       {/* Logistics CTA */}
-      <div className="luxury-card-gold p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" backgroundColor="#120F17" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         <div>
           <h4 className="font-display text-xl font-bold text-slate-100">Need Custom Destination Freight Rates?</h4>
           <p className="text-xs text-slate-300 font-light mt-1">
@@ -110,7 +111,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
         >
           Check Destination Freight Rates
         </button>
-      </div>
+      </BorderGlow>
 
     </section>
   );

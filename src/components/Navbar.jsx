@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Navbar({ onRequestQuote }) {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-dark-950/90 backdrop-blur-md border-b border-gold-500/20">
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/5">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
 
         {/* Corporate Logo */}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react';
+import BorderGlow from '../BorderGlow';
 
 const STEPS = [
   {
@@ -63,7 +64,7 @@ export default function InjeraCardGallery3D() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.4 }}
-              className="w-full h-full relative rounded-2xl overflow-hidden luxury-card border border-gold-500/30 shadow-xl"
+              className="w-full h-full relative rounded-2xl overflow-hidden shadow-xl"
             >
               <img
                 src={activeStep.image}
@@ -76,10 +77,10 @@ export default function InjeraCardGallery3D() {
                 {activeStep.tag}
               </div>
 
-              <div className="absolute bottom-6 left-6 right-6 p-4 luxury-card border-gold-500/30">
+              <BorderGlow className="p-4" backgroundColor="#120F17" borderRadius={16} colors={['#D4AF37', '#F4C430', '#C87D32']}>
                 <p className="text-[10px] font-bold text-gold-400 uppercase tracking-wider">{activeStep.subtitle}</p>
                 <p className="text-lg font-bold text-slate-100 mt-0.5">{activeStep.title}</p>
-              </div>
+              </BorderGlow>
             </motion.div>
           </AnimatePresence>
         </div>
