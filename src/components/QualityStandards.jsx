@@ -42,7 +42,7 @@ export default function QualityStandards() {
           <KineticText text="International" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Certifications" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-base">
+        <p className="text-slate-300 font-medium text-base">
           Our Bole Lemi facility operates under strict global food safety management systems.
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function QualityStandards() {
                 <p className="text-[9px] font-mono font-bold text-gold-400 uppercase tracking-widest">{std.code}</p>
                 <h3 className="font-display text-base font-bold text-slate-100 mt-1">{std.title}</h3>
               </div>
-              <p className="text-xs text-slate-300 font-light leading-relaxed">{std.desc}</p>
+              <p className="text-sm text-slate-300 font-medium leading-relaxed">{std.desc}</p>
             </BorderGlow>
           );
         })}

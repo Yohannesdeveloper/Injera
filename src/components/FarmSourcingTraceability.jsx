@@ -37,7 +37,7 @@ export default function FarmSourcingTraceability() {
           <KineticText text="Farm Sourcing &" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Traceability" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-base">
+        <p className="text-slate-300 font-medium text-base">
           Full transparency from Ethiopian farms to international distribution centers.
         </p>
       </div>
@@ -57,7 +57,7 @@ export default function FarmSourcingTraceability() {
                 <h3 className="font-display text-xl font-bold text-slate-100 mt-1">{p.title}</h3>
               </div>
 
-              <p className="text-xs text-slate-300 font-light leading-relaxed">{p.desc}</p>
+              <p className="text-sm text-slate-300 font-medium leading-relaxed">{p.desc}</p>
             </BorderGlow>
           );
         })}

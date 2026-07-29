@@ -20,7 +20,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
             <span className="gold-gradient-text"><KineticText text="Bole Lemi Industrial Park" as="span" className="inline flex-wrap" /></span>
           </h2>
 
-          <p className="text-slate-300 font-light text-base leading-relaxed">
+          <p className="text-slate-300 font-medium text-lg leading-relaxed">
             A 4,500 m² baking, packaging, and cold-chain facility in Bole Lemi Industrial Park, Addis Ababa.
           </p>
 

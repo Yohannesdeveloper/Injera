@@ -59,7 +59,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
           <KineticText text="Global Air & Sea" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Logistics Hubs" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-base">
+        <p className="text-slate-300 font-medium text-base">
           Cold-chain freight routes from Addis Ababa to airports and seaports worldwide.
         </p>
       </div>
@@ -103,7 +103,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         <div>
           <h4 className="font-display text-xl font-bold text-slate-100">Need Custom Destination Freight Rates?</h4>
-          <p className="text-xs text-slate-300 font-light mt-1">
+          <p className="text-sm text-slate-300 font-medium mt-1">
             Full phytosanitary docs, FDA notice, customs, and door-to-door insurance.
           </p>
         </div>

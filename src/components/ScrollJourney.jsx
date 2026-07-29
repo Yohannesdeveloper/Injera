@@ -10,7 +10,7 @@ const CHAPTERS = [
     degree: '0° – 90° CAM ANGLE',
     title: 'Golden Teff Harvest',
     subtitle: 'Highland Volcanic Soil • Debre Zeit & East Shewa',
-    description: 'Hand-harvested Teff from ancient volcanic high plateaus, multi-stage cleaned before artisan milling.',
+    description: 'Hand-harvested Teff from volcanic highlands, multi-stage cleaned for purity.',
     image: '/images/teff_field.png',
     camPreset: 'PANORAMIC SUNRISE 360°',
     highlights: [
@@ -24,7 +24,7 @@ const CHAPTERS = [
     degree: '90° – 180° CAM ANGLE',
     title: '72-Hr Fermentation & Baking',
     subtitle: 'Natural Ersho Culture • 10,000+ Spongy Pores',
-    description: 'Batter spirals on a ceramic griddle, creating thousands of spongy micro-pores for the signature sour tang.',
+    description: 'Batter spirals on ceramic griddles, creating thousands of spongy micro-pores.',
     image: '/images/injera_texture.png',
     camPreset: 'MACRO ROTATIONAL 360°',
     highlights: [
@@ -38,7 +38,7 @@ const CHAPTERS = [
     degree: '180° – 270° CAM ANGLE',
     title: 'Hygienic Vacuum Packaging',
     subtitle: '30-Day Freshness • Modified Atmosphere (MAP)',
-    description: 'Fresh Injera is HEPA-cooled then vacuum-sealed to lock in natural moisture and aroma.',
+    description: 'HEPA-cooled and vacuum-sealed to lock in natural moisture and aroma.',
     image: '/images/vacuum_pack.png',
     camPreset: 'TRACKING LENS 360°',
     highlights: [
@@ -52,7 +52,7 @@ const CHAPTERS = [
     degree: '270° – 360° CAM ANGLE',
     title: 'Global Export & Dining',
     subtitle: 'Air Cargo Express & Ocean Reefer Containers',
-    description: 'Export boxes travel from Addis Ababa to dining tables across the US, Europe, and Middle East.',
+    description: 'From Addis Ababa to dining tables across the US, Europe, and Middle East.',
     image: '/images/global_dish.png',
     camPreset: 'GLOBAL ORBIT 360°',
     highlights: [
@@ -76,7 +76,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
           <KineticText text="The Story of Authentic Injera" as="span" className="inline flex-wrap" /> <br />
           <span className="gold-gradient-text"><KineticText text="In 360° Camera View" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-sm">
+        <p className="text-slate-300 font-medium text-base">
           Orbit through each production stage with a 360° cinematic view.
         </p>
       </div>
@@ -110,7 +110,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                   <p className="text-xs font-mono text-gold-400 uppercase tracking-widest mt-1">{ch.subtitle}</p>
                 </div>
 
-                <p className="text-slate-300 font-light text-base leading-relaxed">{ch.description}</p>
+                <p className="text-slate-300 font-medium text-base leading-relaxed">{ch.description}</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   {ch.highlights.map((h, i) => (

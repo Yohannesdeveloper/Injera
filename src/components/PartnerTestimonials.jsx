@@ -43,7 +43,7 @@ export default function PartnerTestimonials() {
           <KineticText text="Trusted by Global Importers &" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Restaurant Groups" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-base">
+        <p className="text-slate-300 font-medium text-base">
           Feedback from international retail buyers and restaurant executives.
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function PartnerTestimonials() {
                   <Star key={i} className="w-4 h-4 fill-gold-400" />
                 ))}
               </div>
-              <p className="text-xs text-slate-300 font-light leading-relaxed italic">
+              <p className="text-sm text-slate-300 font-medium leading-relaxed italic">
                 "{t.quote}"
               </p>
             </div>

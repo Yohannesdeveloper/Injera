@@ -102,7 +102,7 @@ export default function InjeraCardGallery3D() {
             {activeStep.title}
           </h3>
 
-          <p className="text-slate-300 font-light text-sm leading-relaxed">
+          <p className="text-slate-300 font-medium text-sm leading-relaxed">
             {activeStep.desc}
           </p>
 

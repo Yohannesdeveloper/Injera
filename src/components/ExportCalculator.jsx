@@ -30,7 +30,7 @@ export default function ExportCalculator({ onRequestQuote }) {
             <KineticText text="Global Cold-Chain" as="span" className="inline flex-wrap" />{' '}
             <span className="gold-gradient-text"><KineticText text="Logistics" as="span" className="inline flex-wrap" /></span>
           </h2>
-          <p className="text-slate-300 font-light text-sm">
+          <p className="text-slate-300 font-medium text-base">
             Estimate gross shipping weights and transit timeframes for air freight and ocean reefer container shipments.
           </p>
         </div>

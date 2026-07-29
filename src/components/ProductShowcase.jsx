@@ -24,7 +24,7 @@ const EXPORT_PRODUCTS = [
     category: 'Restaurant & Catering',
     image: '/images/injera_texture.png',
     badge: 'Chef Favorite',
-    description: 'Classic ivory Injera from premium White Teff, delivered fresh daily via air cargo.',
+    description: 'Classic ivory Injera from premium White Teff, fresh via daily air cargo.',
     specs: {
       pack: '10 Unrolled Discs per Case',
       weight: '2.5 kg per Case',
@@ -38,7 +38,7 @@ const EXPORT_PRODUCTS = [
     category: 'Wholesale Importers',
     image: '/images/warehouse.png',
     badge: '12-Month Stability',
-    description: 'IQF flash-frozen for maritime reefer shipments with 12-month shelf stability.',
+    description: 'IQF flash-frozen for maritime shipment with 12-month shelf stability.',
     specs: {
       pack: '100 Discs (20 Packs x 5)',
       weight: '24 kg Master Carton',
@@ -61,7 +61,7 @@ export default function ProductShowcase({ onRequestQuote }) {
           <KineticText text="Certified Injera Export" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Line" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-light text-base">
+        <p className="text-slate-300 font-medium text-base">
           Tailored packaging for supermarkets, restaurants, and wholesale importers.
         </p>
       </div>
@@ -89,7 +89,7 @@ export default function ProductShowcase({ onRequestQuote }) {
                 <h3 className="font-display text-xl font-bold text-slate-100 mt-0.5">{prod.name}</h3>
               </div>
 
-              <p className="text-xs text-slate-300 font-light leading-relaxed">{prod.description}</p>
+              <p className="text-sm text-slate-300 font-medium leading-relaxed">{prod.description}</p>
             </div>
 
             {/* Card Middle: Specs Table */}
