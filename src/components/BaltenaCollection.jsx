@@ -7,15 +7,15 @@ const BALTENA_PRODUCTS = [
     id: 'berbere',
     name: 'Berbere (በርበሬ)',
     emoji: '🌶️',
-    image: '/images/Berbere.png',
+    image: '/images/Berbere.jpg',
     description: 'A bold and aromatic spice blend, essential to Ethiopian cuisine, crafted from chili peppers, garlic, ginger, and a symphony of traditional herbs.'
   },
   {
-    id: 'shiro',
-    name: 'Shiro Powder (ሽሮ)',
+    id: 'white-shiro',
+    name: 'White Shiro (ነጭ ሽሮ)',
     emoji: '🌾',
-    image: '/images/Shiro.png',
-    description: 'Finely ground chickpea or broad bean flour blended with spices, perfect for hearty stews and quick, nutritious meals.'
+    image: '/images/white shiro.jpg',
+    description: 'Smooth and flavorful white shiro powder made from finely ground chickpeas and blended with traditional spices for a rich, hearty stew.'
   },
   {
     id: 'mitmita',
@@ -32,6 +32,13 @@ const BALTENA_PRODUCTS = [
     description: 'Curated mixes of Ethiopia\'s finest spices, from turmeric and cumin to fenugreek and korarima, for authentic everyday cooking.'
   },
   {
+    id: 'mitn-shiro',
+    name: 'Mitn Shiro (ምጥን ሽሮ)',
+    emoji: '🫘',
+    image: '/images/mitn shiro.jpg',
+    description: 'A flavorful blend of ground legumes and spices, simmered to perfection for a comforting and nutritious traditional meal.'
+  },
+  {
     id: 'beso',
     name: 'Beso (በሶ)',
     emoji: '🥣',
@@ -39,10 +46,11 @@ const BALTENA_PRODUCTS = [
     description: 'Traditional roasted barley flour, finely milled and naturally nutritious — enjoyed as a porridge, snack, or energy mix.'
   },
   {
-    id: 'special-foods',
-    name: 'Special Ethiopian Food Preparations',
-    emoji: '🍲',
-    description: 'Ready-to-prepare traditional Ethiopian dishes and specialty food items, prepared with authentic recipes and premium ingredients.'
+    id: 'kolo',
+    name: 'Kolo (ቆሎ)',
+    emoji: '🌰',
+    image: '/images/Kolo.jpg',
+    description: 'Roasted barley or wheat kernels, lightly seasoned for a crunchy, wholesome snack enjoyed across Ethiopia.'
   }
 ];
 
