@@ -21,6 +21,7 @@ const BALTENA_PRODUCTS = [
     id: 'mitmita',
     name: 'Mitmita (ሚጥሚጣ)',
     emoji: '🔥',
+    image: '/images/mitimita.png',
     description: 'An intense, fiery spice blend made from bird\'s eye chili, cardamom, and cloves — a must-have for those who crave heat.'
   },
   {
