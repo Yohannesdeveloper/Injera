@@ -5,6 +5,7 @@ import HeroOverlay from './components/HeroOverlay';
 import ScrollJourney from './components/ScrollJourney';
 import FarmSourcingTraceability from './components/FarmSourcingTraceability';
 import ProductShowcase from './components/ProductShowcase';
+import BaltenaCollection from './components/BaltenaCollection';
 import ExportCalculator from './components/ExportCalculator';
 import GlobalLogisticsHubs from './components/GlobalLogisticsHubs';
 import QualityStandards from './components/QualityStandards';
@@ -74,31 +75,34 @@ function AppContent() {
       {/* 5. Our Products */}
       <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 6. Final CTA */}
+      {/* 6. Baltena Collection */}
+      <BaltenaCollection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+
+      {/* 7. Final CTA */}
       <ExportCalculator onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 7. Global Reach */}
+      {/* 8. Global Reach */}
       <GlobalLogisticsHubs onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 8. Who We Serve */}
+      {/* 9. Who We Serve */}
       <QualityStandards />
 
-      {/* 9. Testimonials */}
+      {/* 10. Testimonials */}
       <PartnerTestimonials />
 
-      {/* 10. FAQ */}
+      {/* 11. FAQ */}
       <ExportFAQ />
 
-      {/* 11. Contact Us */}
+      {/* 12. Contact Us */}
       <ContactSection onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 12. Who We Are + Our Commitment */}
+      {/* 13. Who We Are + Our Commitment */}
       <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
       {/* GradualBlur footer fade */}
       <GradualBlur preset="page-footer" strength={2} opacity={0.6} />
 
-      {/* 13. Corporate Footer */}
+      {/* 14. Corporate Footer */}
       <Footer />
 
       {/* Ambient Audio Engine */}
