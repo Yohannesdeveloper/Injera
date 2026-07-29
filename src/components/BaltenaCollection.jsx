@@ -7,12 +7,14 @@ const BALTENA_PRODUCTS = [
     id: 'berbere',
     name: 'Berbere (በርበሬ)',
     emoji: '🌶️',
+    image: '/images/Berbere.png',
     description: 'A bold and aromatic spice blend, essential to Ethiopian cuisine, crafted from chili peppers, garlic, ginger, and a symphony of traditional herbs.'
   },
   {
     id: 'shiro',
     name: 'Shiro Powder (ሽሮ)',
     emoji: '🌾',
+    image: '/images/Shiro.png',
     description: 'Finely ground chickpea or broad bean flour blended with spices, perfect for hearty stews and quick, nutritious meals.'
   },
   {
