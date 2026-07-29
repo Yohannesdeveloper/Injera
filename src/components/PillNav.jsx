@@ -6,6 +6,7 @@ const PillNav = ({
   logo,
   logoAlt = 'Logo',
   logoTitles,
+  hideLogo,
   items,
   activeHref,
   className = '',
@@ -189,6 +190,7 @@ const PillNav = ({
   return (
     <div className="pill-nav-container">
       <nav className={`pill-nav ${className}`} aria-label="Primary" style={cssVars}>
+        {!hideLogo && (
         <a
           className="pill-logo"
           href="#"
@@ -204,6 +206,7 @@ const PillNav = ({
             </span>
           )}
         </a>
+        )}
 
         <div className="pill-nav-items desktop-only" ref={navItemsRef}>
           <ul className="pill-list" role="menubar">
