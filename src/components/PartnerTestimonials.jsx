@@ -1,31 +1,28 @@
 import React from 'react';
-import { Quote, Star, Building2, MapPin } from 'lucide-react';
+import { Star, Building2 } from 'lucide-react';
 import BorderGlow from './BorderGlow';
 import { KineticText } from './KineticText';
 
 const TESTIMONIALS = [
   {
-    quote: "Transformed our ethnic food category with 30-day shelf life and zero spoilage across 45 stores.",
-    author: "Marcus Weber",
-    title: "Senior Procurement Director",
-    company: "Euro-Ethnic Food Retail Group (Frankfurt)",
-    country: "Germany",
+    quote: "Consistent quality, excellent service, and dependable deliveries every time.",
+    author: "Food Distributor",
+    title: "International Partner",
+    company: "Europe",
     rating: 5
   },
   {
-    quote: "Daily air cargo shipments from Addis arrive at Dulles with incredible freshness and authenticity.",
-    author: "Tigist Bekele",
-    title: "Founder & Culinary Executive",
-    company: "Queen Sheba Ethiopian Dining Group (Washington D.C.)",
-    country: "United States",
+    quote: "Our customers love the authentic taste and freshness.",
+    author: "Restaurant Owner",
+    title: "Hospitality Partner",
+    company: "North America",
     rating: 5
   },
   {
-    quote: "Frozen sea reefer imports into Dubai with flawless QC and phytosanitary paperwork every month.",
-    author: "Tariq Al-Mansoor",
-    title: "Managing Partner",
-    company: "Gulf Wholesale Food Distribution (Dubai)",
-    country: "United Arab Emirates",
+    quote: "A reliable supplier for our growing business.",
+    author: "Wholesale Partner",
+    title: "Distribution Partner",
+    company: "Middle East",
     rating: 5
   }
 ];
@@ -37,15 +34,12 @@ export default function PartnerTestimonials() {
       {/* Header */}
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
-          Client Endorsements
+          Testimonials
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          <KineticText text="Trusted by Global Importers &" as="span" className="inline flex-wrap" />{' '}
-          <span className="gold-gradient-text"><KineticText text="Restaurant Groups" as="span" className="inline flex-wrap" /></span>
+          <KineticText text="Trusted by" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="International Partners" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-bold text-xl">
-          Feedback from international retail buyers and restaurant executives.
-        </p>
       </div>
 
       {/* Testimonials Grid */}

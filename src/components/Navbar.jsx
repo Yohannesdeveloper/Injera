@@ -24,11 +24,11 @@ export default function Navbar({ onRequestQuote }) {
 
         {/* Professional Navigation Links */}
         <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-slate-300">
-          <a href="#story" className="hover:text-gold-400 transition-colors">Process</a>
-          <a href="#sourcing" className="hover:text-gold-400 transition-colors">Sourcing</a>
           <a href="#products" className="hover:text-gold-400 transition-colors">Products</a>
-          <a href="#network" className="hover:text-gold-400 transition-colors">Global Freight</a>
-          <a href="#standards" className="hover:text-gold-400 transition-colors">Certifications</a>
+          <a href="#about" className="hover:text-gold-400 transition-colors">About</a>
+          <a href="#process" className="hover:text-gold-400 transition-colors">Process</a>
+          <a href="#quality" className="hover:text-gold-400 transition-colors">Quality</a>
+          <a href="#contact" className="hover:text-gold-400 transition-colors">Contact</a>
         </nav>
 
         {/* Theme Toggle + Action CTA */}
@@ -44,7 +44,7 @@ export default function Navbar({ onRequestQuote }) {
             onClick={onRequestQuote}
             className="py-1.5 px-4 shadow-md"
           >
-            Request Pricing
+            Request a Quote
           </InteractiveHoverButton>
         </div>
       </div>

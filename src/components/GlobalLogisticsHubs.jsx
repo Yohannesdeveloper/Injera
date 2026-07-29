@@ -54,14 +54,14 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       {/* Header */}
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
-          International Trade Network
+          Global Reach
         </span>
         <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-          <KineticText text="Global Air & Sea" as="span" className="inline flex-wrap" />{' '}
-          <span className="gold-gradient-text"><KineticText text="Logistics Hubs" as="span" className="inline flex-wrap" /></span>
+          <KineticText text="Delivering Across" as="span" className="inline flex-wrap" />{' '}
+          <span className="gold-gradient-text"><KineticText text="Continents" as="span" className="inline flex-wrap" /></span>
         </h2>
         <p className="text-slate-300 font-bold text-xl">
-          Cold-chain freight routes from Addis Ababa to airports and seaports worldwide.
+          Our export network serves customers throughout North America, Europe, the Middle East, Africa, and beyond. Whether you need regular wholesale deliveries or customized export solutions, we're ready to support your business.
         </p>
       </div>
 
@@ -103,16 +103,16 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       {/* Logistics CTA */}
       <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         <div>
-          <h4 className="font-display text-xl font-bold text-slate-100">Need Custom Destination Freight Rates?</h4>
+          <h4 className="font-display text-xl font-bold text-slate-100">Ready to Start Shipping?</h4>
           <p className="text-base text-slate-300 font-bold mt-1">
-            Full phytosanitary docs, FDA notice, customs, and door-to-door insurance.
+            Contact our export team for pricing and delivery options.
           </p>
         </div>
         <InteractiveHoverButton
           onClick={onRequestQuote}
           className="shrink-0"
         >
-          Check Destination Freight Rates
+          Contact Our Export Team
         </InteractiveHoverButton>
       </BorderGlow>
 

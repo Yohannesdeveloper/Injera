@@ -62,31 +62,31 @@ function AppContent() {
       {/* 2. Hero Commercial Showcase */}
       <HeroOverlay onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 3. Factory Production Process */}
-      <ScrollJourney onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      {/* 3. Our Process */}
+      <ScrollJourney />
 
-      {/* 4. Farm Sourcing Integrity & ECX Traceability */}
+      {/* 4. Why Choose Us */}
       <FarmSourcingTraceability />
 
-      {/* 5. Export Product Portfolio Catalog */}
+      {/* 5. Our Products */}
       <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 6. B2B Freight Logistics Estimator */}
+      {/* 6. Final CTA */}
       <ExportCalculator onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 7. Global Air & Ocean Logistics Hubs */}
+      {/* 7. Global Reach */}
       <GlobalLogisticsHubs onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 8. Food Safety & Compliance Standards */}
+      {/* 8. Who We Serve */}
       <QualityStandards />
 
-      {/* 9. International Client Endorsements */}
+      {/* 9. Testimonials */}
       <PartnerTestimonials />
 
-      {/* 10. Buyer Knowledge Base & FAQ */}
+      {/* 10. FAQ */}
       <ExportFAQ />
 
-      {/* 11. Corporate Overview & Addis Ababa HQ */}
+      {/* 11. Who We Are + Our Commitment */}
       <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
       {/* 12. Corporate Footer */}
