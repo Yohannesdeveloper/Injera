@@ -14,7 +14,7 @@ const EXPORT_PRODUCTS = [
     id: 'brown',
     name: 'Brown Teff Injera',
     category: 'Traditional',
-    image: '/images/vacuum_pack.png',
+    image: '/images/injera.jpg',
     description: 'Traditional flavor with rich texture and authentic character.'
   },
   {
