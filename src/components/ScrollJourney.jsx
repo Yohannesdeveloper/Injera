@@ -33,7 +33,7 @@ const CHAPTERS = [
     title: 'Fresh Daily Baking',
     subtitle: 'Precision baking process',
     description: 'Each injera is baked with precision to ensure consistent quality.',
-    image: '/images/teff_field.png',
+    image: '/images/Baking.jpg',
     highlights: [
       'Fresh Daily Baking',
       'Consistent Quality'
