@@ -21,7 +21,7 @@ const EXPORT_PRODUCTS = [
     id: 'mixed',
     name: 'Mixed Teff Injera',
     category: 'Everyday',
-    image: '/images/injera 2.jpg',
+    image: '/images/teff_field.png',
     description: 'A balanced blend designed for everyday dining and commercial kitchens.'
   },
   {
