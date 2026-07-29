@@ -117,6 +117,22 @@
   border-color: rgba(0,0,0,0.1);
 }
 
+/* Hero text stays white in light mode (on dark video overlay) */
+:root:not(.dark) .hero-text-light {
+  color: #fff !important;
+}
+:root:not(.dark) .hero-text-light.text-gold-400,
+:root:not(.dark) .hero-text-light.text-gold-500 {
+  color: #fff !important;
+}
+:root:not(.dark) .hero-text-light.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37, #F4C430, #C87D32) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
 /* Glass panel utilities */
 .glass-panel {
   background: var(--bg-card);

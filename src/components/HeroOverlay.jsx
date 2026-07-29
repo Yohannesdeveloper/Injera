@@ -18,12 +18,12 @@ export default function HeroOverlay({ onRequestQuote }) {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto space-y-8">
-        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-100 leading-tight">
+        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold hero-text-light leading-tight">
           <KineticText text="Authentic Ethiopian Injera." as="span" className="inline flex-wrap" /> <br />
-          <span className="gold-gradient-text"><KineticText text="Exported Worldwide." as="span" className="inline flex-wrap" /></span>
+          <span className="gold-gradient-text hero-text-light"><KineticText text="Exported Worldwide." as="span" className="inline flex-wrap" /></span>
         </h1>
 
-        <p className="text-slate-300 font-bold text-xl leading-relaxed max-w-3xl mx-auto">
+        <p className="hero-text-light font-bold text-xl leading-relaxed max-w-3xl mx-auto">
           Delivering the authentic taste of Ethiopia to international supermarkets, restaurants, wholesalers, and food distributors with premium quality, reliable supply, and export-ready packaging.
         </p>
 
@@ -33,7 +33,7 @@ export default function HeroOverlay({ onRequestQuote }) {
           </InteractiveHoverButton>
           <a
             href="#products"
-            className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gold-500/50 text-gold-400 font-bold text-xs uppercase tracking-wider hover:bg-gold-500/10 transition-colors"
+            className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gold-500/50 hero-text-light font-bold text-xs uppercase tracking-wider hover:bg-gold-500/10 transition-colors"
           >
             View Products
           </a>
