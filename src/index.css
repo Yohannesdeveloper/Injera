@@ -56,15 +56,13 @@
     background-position: center;
   }
 
-  /* Dark body */
+  /* Dark body: solid black with honeycomb overlay from HexagonPattern component */
   .dark body,
   body.dark {
     color: rgb(var(--slate-300));
-    background-color: #0A0B0E;
+    background-color: #000;
     background-image:
-      radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 55%),
-      linear-gradient(to bottom, rgba(10, 11, 14, 0.85), rgba(10, 11, 14, 0.9)),
-      url('/images/injera_bg.png');
+      radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 55%);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -140,7 +138,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0B0E;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
