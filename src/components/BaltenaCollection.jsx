@@ -45,8 +45,13 @@ export default function BaltenaCollection({ onRequestQuote }) {
   return (
     <section id="baltena" className="py-24 px-6 relative z-10 max-w-6xl mx-auto space-y-16">
 
-      <div className="text-center space-y-4 max-w-3xl mx-auto">
-        <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
+      <div className="text-center space-y-6 max-w-3xl mx-auto">
+        <img
+          src="/images/Logo (2).jpg"
+          alt="Ethiopian Baltena Collection"
+          className="w-48 h-auto mx-auto rounded-lg shadow-lg"
+        />
+        <span className="text-xs font-bold uppercase tracking-widest text-gold-400 block">
           Ethiopian Baltena Collection
         </span>
         <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
