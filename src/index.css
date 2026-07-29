@@ -38,7 +38,7 @@
   --bg-card: rgba(0, 0, 0, 0.1);
 }
 
-body { font-family: 'Inter', sans-serif; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
 /* Light body */
 :root body {
