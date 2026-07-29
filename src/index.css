@@ -23,14 +23,14 @@
 }
 
 .dark {
-  /* Dark mode: texts are light, surfaces are dark */
-  --slate-100: 241 245 249;
-  --slate-200: 226 232 240;
-  --slate-300: 203 213 225;
-  --slate-400: 148 163 184;
-  --slate-500: 100 116 139;
-  --slate-600: 71 85 105;
-  --slate-700: 51 65 85;
+  /* Dark mode: all texts are pure white */
+  --slate-100: 255 255 255;
+  --slate-200: 255 255 255;
+  --slate-300: 255 255 255;
+  --slate-400: 255 255 255;
+  --slate-500: 255 255 255;
+  --slate-600: 255 255 255;
+  --slate-700: 255 255 255;
   --slate-800: 30 41 59;
   --slate-900: 15 23 42;
   --color-surface: 7 8 11;
@@ -104,17 +104,17 @@
   background: linear-gradient(90deg, #D4AF37, transparent);
 }
 
-/* Light mode overrides for gold text → black */
-:root .text-gold-400,
-:root .text-gold-500 {
+/* Light mode: gold text → black */
+:root:not(.dark) .text-gold-400,
+:root:not(.dark) .text-gold-500 {
   color: #000 !important;
 }
-:root .gold-gradient-text {
+:root:not(.dark) .gold-gradient-text {
   background: none !important;
   -webkit-text-fill-color: #000 !important;
   color: #000 !important;
 }
-:root .luxury-card-gold {
+:root:not(.dark) .luxury-card-gold {
   background: var(--bg-card);
   border-color: rgba(0,0,0,0.1);
 }
