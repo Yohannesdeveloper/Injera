@@ -59,6 +59,10 @@
   border-radius: 50%;
 }
 
+html.dark .pill-logo img {
+  filter: invert(1);
+}
+
 .pill-list {
   list-style: none;
   display: flex;
