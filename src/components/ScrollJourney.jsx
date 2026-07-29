@@ -21,7 +21,7 @@ const CHAPTERS = [
     title: 'Traditional Fermentation',
     subtitle: 'Natural authentic taste',
     description: 'Natural fermentation develops the authentic taste injera is known for.',
-    image: '/images/injera_texture.png',
+    image: '/images/Fermentation.jpg',
     highlights: [
       'Natural Fermentation',
       'Authentic Injera Taste'
