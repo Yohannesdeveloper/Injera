@@ -7,16 +7,16 @@
   --color-gold-light: #F4C430;
   --color-ochre: #C87D32;
 
-  /* Light mode: texts are dark, surfaces are light */
-  --slate-100: 30 41 59;
-  --slate-200: 51 65 85;
-  --slate-300: 71 85 105;
-  --slate-400: 100 116 139;
-  --slate-500: 148 163 184;
-  --slate-600: 71 85 105;
-  --slate-700: 51 65 85;
-  --slate-800: 30 41 59;
-  --slate-900: 15 23 42;
+  /* Light mode: all texts are black */
+  --slate-100: 0 0 0;
+  --slate-200: 0 0 0;
+  --slate-300: 0 0 0;
+  --slate-400: 30 30 30;
+  --slate-500: 60 60 60;
+  --slate-600: 90 90 90;
+  --slate-700: 120 120 120;
+  --slate-800: 200 200 200;
+  --slate-900: 220 220 220;
   --color-surface: 255 255 255;
   --color-elevated: 241 245 249;
   --bg-card: rgba(255, 255, 255, 0.5);
