@@ -35,6 +35,7 @@ const BALTENA_PRODUCTS = [
     id: 'beso',
     name: 'Beso (በሶ)',
     emoji: '🥣',
+    image: '/images/Beso.png',
     description: 'Traditional roasted barley flour, finely milled and naturally nutritious — enjoyed as a porridge, snack, or energy mix.'
   },
   {
