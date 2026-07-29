@@ -5,6 +5,21 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-gold-500/20 bg-black/20 pt-20 pb-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         
+        {/* Brand */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/Logo (2).jpg"
+              alt="Zedagm"
+              className="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h4 className="font-display text-xl font-black text-gold-400">Zedagm</h4>
+              <p className="text-sm text-slate-400">ዘ፟-ዳግም</p>
+            </div>
+          </div>
+        </div>
+
         {/* Navigation Links */}
         <div className="space-y-4">
           <h4 className="font-display text-lg font-black text-gold-400 uppercase tracking-widest">Quick Links</h4>
