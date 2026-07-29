@@ -45,7 +45,7 @@ const CHAPTERS = [
     title: 'Quality Inspection',
     subtitle: 'Careful batch review',
     description: 'Every batch is carefully checked before packaging.',
-    image: '/images/vacuum_pack.png',
+    image: '/images/Quality inspection.jpg',
     highlights: [
       'Quality Inspection',
       'Batch Review Process'
