@@ -18,9 +18,9 @@ export default function HeroOverlay({ onRequestQuote }) {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto space-y-8">
-        <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold hero-text-light leading-tight">
-          <KineticText text="Authentic Ethiopian Injera." as="span" className="inline flex-wrap" /> <br />
-          <span className="gold-gradient-text hero-text-light"><KineticText text="Exported Worldwide." as="span" className="inline flex-wrap" /></span>
+        <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-black hero-text-light leading-tight">
+          <KineticText text="Authentic Ethiopian" as="span" className="inline flex-wrap" /> <br />
+          <span className="gold-gradient-text hero-text-light"><KineticText text="Injera. Worldwide." as="span" className="inline flex-wrap" /></span>
         </h1>
 
         <p className="hero-text-light font-bold text-xl leading-relaxed max-w-3xl mx-auto">

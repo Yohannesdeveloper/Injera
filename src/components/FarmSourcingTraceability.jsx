@@ -35,7 +35,7 @@ export default function FarmSourcingTraceability() {
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
           Why Choose Us
         </span>
-        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+        <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
           <KineticText text="A Trusted Export" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Partner" as="span" className="inline flex-wrap" /></span>
         </h2>
@@ -52,7 +52,7 @@ export default function FarmSourcingTraceability() {
               </div>
 
               <div>
-                <h3 className="font-display text-xl font-bold text-slate-100">{p.title}</h3>
+                <h3 className="font-display text-xl font-black text-slate-100">{p.title}</h3>
               </div>
 
               <p className="text-base text-slate-300 font-bold leading-relaxed">{p.desc}</p>

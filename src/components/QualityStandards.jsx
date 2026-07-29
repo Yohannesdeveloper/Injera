@@ -22,7 +22,7 @@ export default function QualityStandards() {
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
           Who We Serve
         </span>
-        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+        <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
           <KineticText text="Built for" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Global Businesses" as="span" className="inline flex-wrap" /></span>
         </h2>
@@ -39,7 +39,7 @@ export default function QualityStandards() {
               <div className="w-12 h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
                 <Icon className="w-6 h-6" />
               </div>
-              <p className="font-display text-base font-bold text-slate-100">{c.name}</p>
+              <p className="font-display text-base font-black text-slate-100">{c.name}</p>
             </BorderGlow>
           );
         })}

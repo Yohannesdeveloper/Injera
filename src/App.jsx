@@ -10,6 +10,7 @@ import GlobalLogisticsHubs from './components/GlobalLogisticsHubs';
 import QualityStandards from './components/QualityStandards';
 import PartnerTestimonials from './components/PartnerTestimonials';
 import ExportFAQ from './components/ExportFAQ';
+import ContactSection from './components/ContactSection';
 import CorporateLeadership from './components/CorporateLeadership';
 import RequestQuoteModal from './components/RequestQuoteModal';
 import AudioEngine from './components/AudioEngine';
@@ -86,11 +87,14 @@ function AppContent() {
       {/* 10. FAQ */}
       <ExportFAQ />
 
-      {/* 11. Who We Are + Our Commitment */}
+      {/* 11. Contact Us */}
+      <ContactSection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+
+      {/* 12. Who We Are + Our Commitment */}
       <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 12. Corporate Footer */}
-      <Footer onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      {/* 13. Corporate Footer */}
+      <Footer />
 
       {/* Ambient Audio Engine */}
       <AudioEngine />

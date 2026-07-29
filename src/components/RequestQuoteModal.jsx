@@ -46,7 +46,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
             <div className="w-16 h-16 rounded-full bg-gold-500/20 text-gold-400 border border-gold-500/40 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="font-display text-2xl font-bold text-slate-100">
+            <h3 className="font-display text-2xl font-black text-slate-100">
               Export Quotation Request Submitted!
             </h3>
             <p className="text-slate-300 text-sm max-w-md mx-auto">

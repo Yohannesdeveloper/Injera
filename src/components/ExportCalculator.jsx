@@ -10,9 +10,9 @@ export default function ExportCalculator({ onRequestQuote }) {
       <BorderGlow className="p-8 md:p-16 text-center space-y-8" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         
         <div className="max-w-3xl mx-auto space-y-6">
-          <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
-            <KineticText text="Let's Bring Authentic Ethiopian Injera" as="span" className="inline flex-wrap" /> <br />
-            <span className="gold-gradient-text"><KineticText text="to Your Market" as="span" className="inline flex-wrap" /></span>
+          <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
+            <KineticText text="Bring Authentic Injera" as="span" className="inline flex-wrap" /> <br />
+            <span className="gold-gradient-text"><KineticText text="to Your Market." as="span" className="inline flex-wrap" /></span>
           </h2>
 
           <p className="text-slate-300 font-bold text-xl leading-relaxed max-w-2xl mx-auto">

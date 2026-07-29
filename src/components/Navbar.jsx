@@ -11,11 +11,11 @@ export default function Navbar({ onRequestQuote }) {
 
         {/* Corporate Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gold-500 flex items-center justify-center font-display font-extrabold text-black dark:text-white text-sm">
+          <div className="w-8 h-8 rounded-lg bg-gold-500 flex items-center justify-center font-display font-black text-black dark:text-white text-sm">
             HG
           </div>
           <div>
-            <span className="font-display text-sm font-bold tracking-widest text-slate-100 uppercase">
+            <span className="font-display text-sm font-black tracking-widest text-slate-100 uppercase">
               Zedagm ዘ፟-ዳግም Export
             </span>
 
@@ -35,7 +35,7 @@ export default function Navbar({ onRequestQuote }) {
         <div className="flex items-center gap-3">
           <button
             onClick={toggleTheme}
-            className="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+            className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
             aria-label="Toggle theme"
           >
             {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}

@@ -42,7 +42,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Inter', 'sans-serif'],
+        display: ['Clash Display', 'Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       animation: {

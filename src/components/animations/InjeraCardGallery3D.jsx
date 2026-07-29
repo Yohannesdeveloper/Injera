@@ -98,7 +98,7 @@ export default function InjeraCardGallery3D() {
             <span>STEP 0{activeIdx + 1} OF 0{STEPS.length}</span>
           </div>
 
-          <h3 className="font-display text-2xl font-bold text-slate-100">
+          <h3 className="font-display text-2xl font-black text-slate-100">
             {activeStep.title}
           </h3>
 

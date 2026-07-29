@@ -15,7 +15,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
             Who We Are
           </span>
 
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 leading-tight">
+          <h2 className="font-display text-4xl sm:text-5xl font-black text-slate-100 leading-tight">
             <KineticText text="Bringing Ethiopia's Finest Injera" as="span" className="inline flex-wrap" /> <br />
             <span className="gold-gradient-text"><KineticText text="to Global Markets" as="span" className="inline flex-wrap" /></span>
           </h2>
@@ -36,7 +36,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
               Our Commitment
             </span>
 
-            <h3 className="font-display text-2xl font-extrabold text-slate-100">
+            <h3 className="font-display text-3xl font-black text-slate-100">
               <KineticText text="More Than an Exporter" as="span" className="inline flex-wrap" />
             </h3>
 

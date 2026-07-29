@@ -36,7 +36,7 @@ export default function PartnerTestimonials() {
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
           Testimonials
         </span>
-        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+        <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
           <KineticText text="Trusted by" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="International Partners" as="span" className="inline flex-wrap" /></span>
         </h2>

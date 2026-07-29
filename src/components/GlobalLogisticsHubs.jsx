@@ -56,7 +56,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
         <span className="text-xs font-bold uppercase tracking-widest text-gold-400">
           Global Reach
         </span>
-        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-100">
+        <h2 className="font-display text-4xl sm:text-6xl font-black text-slate-100">
           <KineticText text="Delivering Across" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Continents" as="span" className="inline flex-wrap" /></span>
         </h2>
@@ -79,7 +79,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
                 </span>
               </div>
 
-              <h3 className="font-display text-lg font-bold text-slate-100">{route.destination}</h3>
+              <h3 className="font-display text-lg font-black text-slate-100">{route.destination}</h3>
               <p className="text-xs text-slate-400 flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-gold-400 shrink-0" />
                 <span>{route.hubs}</span>
@@ -103,7 +103,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
       {/* Logistics CTA */}
       <BorderGlow className="p-8 flex flex-col md:flex-row items-center justify-between gap-6" borderRadius={28} colors={['#D4AF37', '#F4C430', '#C87D32']} glowColor="43 80 80">
         <div>
-          <h4 className="font-display text-xl font-bold text-slate-100">Ready to Start Shipping?</h4>
+          <h4 className="font-display text-xl font-black text-slate-100">Ready to Start Shipping?</h4>
           <p className="text-base text-slate-300 font-bold mt-1">
             Contact our export team for pricing and delivery options.
           </p>
