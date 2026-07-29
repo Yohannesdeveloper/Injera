@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Calculator, Plane, Ship, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Calculator, Plane, Ship, ShieldCheck } from 'lucide-react';
 import BorderGlow from './BorderGlow';
 import { KineticText } from './KineticText';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 const DESTINATIONS = [
   { id: 'us_east', name: 'North America — Washington IAD / New York JFK', mode: 'Air Cargo', days: '24-48 Hours', temp: '+4°C Chilled' },
@@ -105,13 +106,12 @@ export default function ExportCalculator({ onRequestQuote }) {
                 </div>
               </div>
 
-              <button
+              <InteractiveHoverButton
                 onClick={onRequestQuote}
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-black dark:text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
+                className="w-full py-3.5 shadow-lg"
               >
-                <span>Request Quotation for this Order</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+                Request Quotation for this Order
+              </InteractiveHoverButton>
             </BorderGlow>
           </div>
 

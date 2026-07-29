@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowUpRight, Sun, Moon } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 export default function Navbar({ onRequestQuote }) {
   const { dark, toggleTheme } = useTheme();
@@ -39,13 +40,12 @@ export default function Navbar({ onRequestQuote }) {
           >
             {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
-          <button
+          <InteractiveHoverButton
             onClick={onRequestQuote}
-            className="px-4 py-2 rounded-lg bg-gold-500 hover:bg-gold-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-1.5 shadow-md"
+            className="py-1.5 px-4 shadow-md"
           >
-            <span>Request Pricing</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
+            Request Pricing
+          </InteractiveHoverButton>
         </div>
       </div>
     </header>

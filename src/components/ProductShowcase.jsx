@@ -1,7 +1,8 @@
 import React from 'react';
-import { Check, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { Check, ShieldCheck } from 'lucide-react';
 import BorderGlow from './BorderGlow';
 import { KineticText } from './KineticText';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 const EXPORT_PRODUCTS = [
   {
@@ -114,13 +115,12 @@ export default function ProductShowcase({ onRequestQuote }) {
               </div>
 
               {/* Action */}
-              <button
+              <InteractiveHoverButton
                 onClick={onRequestQuote}
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md"
+                className="w-full py-3 shadow-md"
               >
-                <span>Request Sample & Pricing</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </button>
+                Request Sample & Pricing
+              </InteractiveHoverButton>
             </div>
 
           </BorderGlow>

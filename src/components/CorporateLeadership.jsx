@@ -1,7 +1,8 @@
 import React from 'react';
-import { Building, MapPin, Phone, Mail, Clock, Award } from 'lucide-react';
+import { Building, MapPin, Phone, Mail } from 'lucide-react';
 import BorderGlow from './BorderGlow';
 import { KineticText } from './KineticText';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 export default function CorporateLeadership({ onRequestQuote }) {
   return (
@@ -67,12 +68,12 @@ export default function CorporateLeadership({ onRequestQuote }) {
               </div>
             </div>
 
-            <button
+            <InteractiveHoverButton
               onClick={onRequestQuote}
-              className="w-full py-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-lg"
+              className="w-full py-3.5 shadow-lg"
             >
               Request Sample & Pricing
-            </button>
+            </InteractiveHoverButton>
           </BorderGlow>
         </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Send, CheckCircle2, Building, Mail, Phone, Globe, Package, Sparkles } from 'lucide-react';
+import { X, CheckCircle2, Building, Mail, Phone, Globe, Package, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 export default function RequestQuoteModal({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false);
@@ -51,12 +52,11 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
             <p className="text-slate-300 text-sm max-w-md mx-auto">
               Thank you for contacting Zedagm ዘ፟-ዳግም Injera Export. Your request reference is <strong className="text-gold-400 font-mono">#RFQ-ETH-88492</strong>. Our international export team will contact you within 12 hours with wholesale pricing, sample shipping details, and freight quotes.
             </p>
-            <button
+            <InteractiveHoverButton
               onClick={() => { setSubmitted(false); onClose(); }}
-              className="px-6 py-3 rounded-xl bg-gold-500 text-black dark:text-white font-bold text-xs uppercase tracking-wider hover:bg-gold-400 transition-colors"
             >
               Done / Return to Site
-            </button>
+            </InteractiveHoverButton>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -165,13 +165,12 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
               />
             </div>
 
-            <button
+            <InteractiveHoverButton
               type="submit"
-              className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-ochre-500 text-black dark:text-white font-bold text-xs uppercase tracking-wider shadow-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2"
+              className="w-full py-3.5 shadow-lg"
             >
-              <Send className="w-4 h-4" />
-              <span>Submit Export Quotation Request</span>
-            </button>
+              Submit Export Quotation Request
+            </InteractiveHoverButton>
           </form>
         )}
       </div>
