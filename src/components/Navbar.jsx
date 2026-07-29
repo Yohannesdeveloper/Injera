@@ -3,7 +3,7 @@ import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import PillNav from './PillNav';
 
-const LOGO_SVG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%23D4AF37'/%3E%3Ctext x='18' y='23' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='18' fill='%23000'%3EHG%3C/text%3E%3C/svg%3E";
+const LOGO_SRC = "/images/Logo (2).jpg";
 
 const NAV_ITEMS = [
   { label: 'Products', href: '#products' },
@@ -20,7 +20,7 @@ export default function Navbar({ onRequestQuote }) {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-surface/20 backdrop-blur-xl border-b border-slate-800/20 shadow-lg shadow-black/5">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <PillNav
-          logo={LOGO_SVG}
+          logo={LOGO_SRC}
           logoAlt="Zedagm Export"
           items={NAV_ITEMS}
           baseColor={dark ? '#000000' : '#ffffff'}
