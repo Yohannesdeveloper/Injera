@@ -28,7 +28,7 @@ const EXPORT_PRODUCTS = [
     id: 'custom',
     name: 'Custom Wholesale Orders',
     category: 'Wholesale',
-    image: '/images/warehouse.png',
+    image: '/images/delivery.jpg',
     description: 'Private labeling and custom packaging solutions for distributors and retail partners.'
   }
 ];
