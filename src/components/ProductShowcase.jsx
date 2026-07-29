@@ -116,7 +116,7 @@ export default function ProductShowcase({ onRequestQuote }) {
               {/* Action */}
               <button
                 onClick={onRequestQuote}
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-dark-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md"
               >
                 <span>Request Sample & Pricing</span>
                 <ArrowUpRight className="w-4 h-4" />

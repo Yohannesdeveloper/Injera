@@ -115,7 +115,7 @@ export default function InjeraCardGallery3D() {
             </button>
             <button
               onClick={() => setActiveIdx((prev) => (prev + 1) % STEPS.length)}
-              className="w-10 h-10 rounded-xl bg-gold-500 text-dark-950 hover:bg-gold-400 flex items-center justify-center transition-colors font-bold"
+              className="w-10 h-10 rounded-xl bg-gold-500 text-black dark:text-white hover:bg-gold-400 flex items-center justify-center transition-colors font-bold"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

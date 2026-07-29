@@ -10,7 +10,7 @@ export default function Navbar({ onRequestQuote }) {
 
         {/* Corporate Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gold-500 flex items-center justify-center font-display font-extrabold text-dark-950 text-sm">
+          <div className="w-8 h-8 rounded-lg bg-gold-500 flex items-center justify-center font-display font-extrabold text-black dark:text-white text-sm">
             HG
           </div>
           <div>
@@ -41,7 +41,7 @@ export default function Navbar({ onRequestQuote }) {
           </button>
           <button
             onClick={onRequestQuote}
-            className="px-4 py-2 rounded-lg bg-gold-500 hover:bg-gold-400 text-dark-950 font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-1.5 shadow-md"
+            className="px-4 py-2 rounded-lg bg-gold-500 hover:bg-gold-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center gap-1.5 shadow-md"
           >
             <span>Request Pricing</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

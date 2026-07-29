@@ -107,7 +107,7 @@ export default function ExportCalculator({ onRequestQuote }) {
 
               <button
                 onClick={onRequestQuote}
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-dark-950 font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
+                className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-ochre-500 hover:from-gold-400 hover:to-ochre-400 text-black dark:text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-lg"
               >
                 <span>Request Quotation for this Order</span>
                 <ArrowRight className="w-4 h-4" />

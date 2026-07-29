@@ -69,7 +69,7 @@ export default function CorporateLeadership({ onRequestQuote }) {
 
             <button
               onClick={onRequestQuote}
-              className="w-full py-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-dark-950 font-bold text-xs uppercase tracking-wider transition-colors shadow-lg"
+              className="w-full py-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-lg"
             >
               Request Sample & Pricing
             </button>

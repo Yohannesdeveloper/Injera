@@ -53,7 +53,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
             </p>
             <button
               onClick={() => { setSubmitted(false); onClose(); }}
-              className="px-6 py-3 rounded-xl bg-gold-500 text-dark-950 font-bold text-xs uppercase tracking-wider hover:bg-gold-400 transition-colors"
+              className="px-6 py-3 rounded-xl bg-gold-500 text-black dark:text-white font-bold text-xs uppercase tracking-wider hover:bg-gold-400 transition-colors"
             >
               Done / Return to Site
             </button>
@@ -167,7 +167,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
 
             <button
               type="submit"
-              className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-ochre-500 text-dark-950 font-bold text-xs uppercase tracking-wider shadow-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2"
+              className="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-ochre-500 text-black dark:text-white font-bold text-xs uppercase tracking-wider shadow-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2"
             >
               <Send className="w-4 h-4" />
               <span>Submit Export Quotation Request</span>

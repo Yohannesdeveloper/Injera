@@ -109,7 +109,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
         </div>
         <button
           onClick={onRequestQuote}
-          className="px-6 py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-dark-950 font-bold text-xs uppercase tracking-wider transition-colors shrink-0"
+          className="px-6 py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-black dark:text-white font-bold text-xs uppercase tracking-wider transition-colors shrink-0"
         >
           Check Destination Freight Rates
         </button>
