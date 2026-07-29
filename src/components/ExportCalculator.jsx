@@ -46,7 +46,7 @@ export default function ExportCalculator({ onRequestQuote }) {
               <select
                 value={dest.id}
                 onChange={(e) => setDest(DESTINATIONS.find(d => d.id === e.target.value))}
-                className="w-full px-4 py-3.5 rounded-xl bg-dark-950 border border-gold-500/30 text-slate-100 text-xs font-semibold focus:border-gold-500 focus:outline-none"
+                className="w-full px-4 py-3.5 rounded-xl bg-surface border border-gold-500/30 text-slate-100 text-xs font-semibold focus:border-gold-500 focus:outline-none"
               >
                 {DESTINATIONS.map((d) => (
                   <option key={d.id} value={d.id}>{d.name}</option>
@@ -87,19 +87,19 @@ export default function ExportCalculator({ onRequestQuote }) {
               </h4>
 
               <div className="grid grid-cols-2 gap-3 text-left">
-                <div className="p-3.5 rounded-xl bg-dark-950/80 border border-slate-800">
+                <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800">
                   <p className="text-[9px] text-slate-400 uppercase font-semibold">Total Injera Discs</p>
                   <p className="text-lg font-bold text-slate-100 mt-0.5">{injeraPieces} Pieces</p>
                 </div>
-                <div className="p-3.5 rounded-xl bg-dark-950/80 border border-slate-800">
+                <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800">
                   <p className="text-[9px] text-slate-400 uppercase font-semibold">Est. Gross Weight</p>
                   <p className="text-lg font-bold text-gold-400 mt-0.5">{grossWeight} kg</p>
                 </div>
-                <div className="p-3.5 rounded-xl bg-dark-950/80 border border-slate-800">
+                <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800">
                   <p className="text-[9px] text-slate-400 uppercase font-semibold">Cold-Chain Temp</p>
                   <p className="text-lg font-bold text-slate-200 mt-0.5">{dest.temp}</p>
                 </div>
-                <div className="p-3.5 rounded-xl bg-dark-950/80 border border-slate-800">
+                <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800">
                   <p className="text-[9px] text-slate-400 uppercase font-semibold">Est. Transit Time</p>
                   <p className="text-lg font-bold text-gold-400 mt-0.5">{dest.days}</p>
                 </div>

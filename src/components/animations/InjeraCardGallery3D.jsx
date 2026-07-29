@@ -77,9 +77,9 @@ export default function InjeraCardGallery3D() {
                 alt={activeStep.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
 
-              <div className="absolute top-4 left-4 bg-dark-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/30 text-[10px] font-bold text-gold-400 uppercase tracking-wider">
+              <div className="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/30 text-[10px] font-bold text-gold-400 uppercase tracking-wider">
                 {activeStep.tag}
               </div>
 
@@ -109,7 +109,7 @@ export default function InjeraCardGallery3D() {
           <div className="flex items-center gap-4 pt-2">
             <button
               onClick={() => setActiveIdx((prev) => (prev - 1 + STEPS.length) % STEPS.length)}
-              className="w-10 h-10 rounded-xl bg-dark-900 border border-slate-800 text-slate-300 hover:text-white hover:border-gold-500/40 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-xl bg-elevated border border-slate-800 text-slate-300 hover:text-black dark:hover:text-white hover:border-gold-500/40 flex items-center justify-center transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>

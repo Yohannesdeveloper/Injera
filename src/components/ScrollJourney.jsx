@@ -140,7 +140,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                       alt={ch.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-75"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-75"></div>
 
                     {/* Viewfinder Crosshair Overlay */}
                     <div className="absolute inset-0 pointer-events-none p-6 flex flex-col justify-between">
@@ -149,7 +149,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                         <div className="w-2 h-2 bg-gold-400 rounded-full animate-ping"></div>
                       </div>
 
-                      <div className="flex justify-between items-end text-[10px] font-mono text-slate-300 bg-dark-950/70 backdrop-blur-md px-3 py-1.5 rounded-lg border border-gold-500/30">
+                      <div className="flex justify-between items-end text-[10px] font-mono text-slate-300 bg-surface/70 backdrop-blur-md px-3 py-1.5 rounded-lg border border-gold-500/30">
                         <span>SCENE {idx + 1} OF 4</span>
                         <span className="text-gold-400 font-bold">ETHIOPIA HERITAGE</span>
                       </div>

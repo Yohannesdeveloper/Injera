@@ -70,7 +70,7 @@ export default function CinematicCameraHud({ scrollDegree = 0, currentScene = 1 
         {/* 360° Orbit Slider Dial */}
         <div className="hidden lg:flex items-center gap-3 glass-panel px-6 py-2 rounded-xl border-gold-500/30 text-slate-300">
           <span>0° TEFF</span>
-          <div className="w-32 bg-dark-950 h-1.5 rounded-full overflow-hidden border border-gold-500/30">
+          <div className="w-32 bg-surface h-1.5 rounded-full overflow-hidden border border-gold-500/30">
             <div
               className="bg-gradient-to-r from-gold-500 to-ochre-500 h-full transition-all duration-150"
               style={{ width: `${(scrollDegree / 360) * 100}%` }}

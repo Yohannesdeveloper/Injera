@@ -3,14 +3,14 @@ import { Mail, Phone, MapPin, ShieldCheck, Globe } from 'lucide-react';
 
 export default function Footer({ onRequestQuote }) {
   return (
-    <footer className="relative z-10 border-t border-gold-500/20 bg-dark-950/95 pt-16 pb-12 px-6 text-slate-400 text-xs">
+    <footer className="relative z-10 border-t border-gold-500/20 bg-surface/95 pt-16 pb-12 px-6 text-slate-400 text-xs">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         
         {/* Brand */}
         <div className="md:col-span-2 space-y-4">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-gold-600 to-gold-400 p-[1px]">
-              <div className="w-full h-full bg-dark-950 rounded-full flex items-center justify-center">
+              <div className="w-full h-full bg-surface rounded-full flex items-center justify-center">
                 <span className="text-gold-400 font-display text-xs font-bold">H</span>
               </div>
             </div>

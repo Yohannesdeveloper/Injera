@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +8,17 @@ export default {
   theme: {
     extend: {
       colors: {
+        slate: {
+          100: 'rgb(var(--slate-100) / <alpha-value>)',
+          200: 'rgb(var(--slate-200) / <alpha-value>)',
+          300: 'rgb(var(--slate-300) / <alpha-value>)',
+          400: 'rgb(var(--slate-400) / <alpha-value>)',
+          500: 'rgb(var(--slate-500) / <alpha-value>)',
+          600: 'rgb(var(--slate-600) / <alpha-value>)',
+          700: 'rgb(var(--slate-700) / <alpha-value>)',
+          800: 'rgb(var(--slate-800) / <alpha-value>)',
+          900: 'rgb(var(--slate-900) / <alpha-value>)',
+        },
         gold: {
           400: '#F4C430',
           500: '#D4AF37',
@@ -17,9 +29,11 @@ export default {
           500: '#C87D32',
           600: '#A65E1E',
         },
-        emerald: {
-          900: '#0B291E',
-          950: '#051811',
+        surface: {
+          DEFAULT: 'rgb(var(--color-surface) / <alpha-value>)',
+        },
+        elevated: {
+          DEFAULT: 'rgb(var(--color-elevated) / <alpha-value>)',
         },
         dark: {
           900: '#0B0D11',

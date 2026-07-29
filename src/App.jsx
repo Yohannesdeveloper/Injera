@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import HeroOverlay from './components/HeroOverlay';
 import ScrollJourney from './components/ScrollJourney';
@@ -15,7 +16,7 @@ import AudioEngine from './components/AudioEngine';
 import Footer from './components/Footer';
 import { HexagonPattern } from './components/HexagonPattern';
 
-export default function App() {
+function AppContent() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [cursor, setCursor] = useState({ x: -9999, y: -9999 });
 
@@ -25,7 +26,7 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen relative text-slate-100 font-sans selection:bg-gold-500 selection:text-black"
+      className="min-h-screen relative font-sans selection:bg-gold-500 selection:text-black"
       onMouseMove={handleMouseMove}
     >
 
@@ -100,5 +101,13 @@ export default function App() {
         onClose={() => setIsQuoteModalOpen(false)}
       />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }

@@ -79,7 +79,7 @@ export default function ProductShowcase({ onRequestQuote }) {
                   alt={prod.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-dark-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/30 text-[10px] font-bold uppercase text-gold-400">
+                <div className="absolute top-3 left-3 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/30 text-[10px] font-bold uppercase text-gold-400">
                   {prod.badge}
                 </div>
               </div>
@@ -94,20 +94,20 @@ export default function ProductShowcase({ onRequestQuote }) {
 
             {/* Card Middle: Specs Table */}
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-2 text-left pt-2 border-t border-slate-800">
-                <div className="p-2.5 rounded-xl bg-dark-950/60 border border-slate-800/80">
+                <div className="grid grid-cols-2 gap-2 text-left pt-2 border-t border-slate-800">
+                <div className="p-2.5 rounded-xl bg-elevated/60 border border-slate-800/80">
                   <p className="text-[9px] font-bold uppercase text-slate-400">Packaging</p>
                   <p className="text-[11px] font-semibold text-slate-200 mt-0.5">{prod.specs.pack}</p>
                 </div>
-                <div className="p-2.5 rounded-xl bg-dark-950/60 border border-slate-800/80">
+                <div className="p-2.5 rounded-xl bg-elevated/60 border border-slate-800/80">
                   <p className="text-[9px] font-bold uppercase text-slate-400">Net Weight</p>
                   <p className="text-[11px] font-semibold text-slate-200 mt-0.5">{prod.specs.weight}</p>
                 </div>
-                <div className="p-2.5 rounded-xl bg-dark-950/60 border border-slate-800/80">
+                <div className="p-2.5 rounded-xl bg-elevated/60 border border-slate-800/80">
                   <p className="text-[9px] font-bold uppercase text-slate-400">Shelf Life</p>
                   <p className="text-[11px] font-semibold text-gold-400 mt-0.5">{prod.specs.shelfLife}</p>
                 </div>
-                <div className="p-2.5 rounded-xl bg-dark-950/60 border border-slate-800/80">
+                <div className="p-2.5 rounded-xl bg-elevated/60 border border-slate-800/80">
                   <p className="text-[9px] font-bold uppercase text-slate-400">Minimum Order</p>
                   <p className="text-[11px] font-semibold text-slate-200 mt-0.5">{prod.specs.moq}</p>
                 </div>

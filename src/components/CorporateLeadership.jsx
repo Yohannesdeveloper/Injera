@@ -25,19 +25,19 @@ export default function CorporateLeadership({ onRequestQuote }) {
           </p>
 
           <div className="grid grid-cols-2 gap-4 text-xs font-semibold text-slate-200 pt-2">
-            <div className="p-3.5 rounded-xl bg-dark-900/80 border border-slate-800 space-y-1">
+            <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800 space-y-1">
               <p className="text-[10px] text-slate-400 uppercase font-semibold">Facility Area</p>
               <p className="font-bold text-gold-400 text-sm">4,500 m² Sterile Plant</p>
             </div>
-            <div className="p-3.5 rounded-xl bg-dark-900/80 border border-slate-800 space-y-1">
+            <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800 space-y-1">
               <p className="text-[10px] text-slate-400 uppercase font-semibold">Daily Production</p>
               <p className="font-bold text-slate-100 text-sm">50,000 Injera Discs</p>
             </div>
-            <div className="p-3.5 rounded-xl bg-dark-900/80 border border-slate-800 space-y-1">
+            <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800 space-y-1">
               <p className="text-[10px] text-slate-400 uppercase font-semibold">Export Compliance</p>
               <p className="font-bold text-slate-100 text-sm">FDA, ISO 22000 & HACCP</p>
             </div>
-            <div className="p-3.5 rounded-xl bg-dark-900/80 border border-slate-800 space-y-1">
+            <div className="p-3.5 rounded-xl bg-elevated/80 border border-slate-800 space-y-1">
               <p className="text-[10px] text-slate-400 uppercase font-semibold">Air Freight Hub</p>
               <p className="font-bold text-gold-400 text-sm">Addis Ababa Bole Cargo</p>
             </div>

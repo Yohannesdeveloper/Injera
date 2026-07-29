@@ -29,13 +29,13 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-950/80 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface/80 backdrop-blur-md animate-fade-in">
       <div className="relative w-full max-w-2xl glass-panel-gold rounded-3xl border border-gold-500/40 p-6 md:p-8 shadow-2xl overflow-y-auto max-h-[90vh]">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full hover:bg-dark-900 transition-colors"
+          className="absolute top-5 right-5 text-slate-400 hover:text-black dark:hover:text-white p-2 rounded-full hover:bg-elevated transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -82,7 +82,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                   placeholder="e.g. Habesha Trade LLC"
                   value={formData.companyName}
                   onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 />
               </div>
 
@@ -94,7 +94,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                   placeholder="e.g. Michael Abera"
                   value={formData.contactName}
                   onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 />
               </div>
 
@@ -106,7 +106,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                   placeholder="import@habeshatrade.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 />
               </div>
 
@@ -117,7 +117,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                   placeholder="+1 (555) 019-2831"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 />
               </div>
 
@@ -126,7 +126,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                 <select
                   value={formData.country}
                   onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 >
                   <option value="United States">United States</option>
                   <option value="Canada">Canada</option>
@@ -144,7 +144,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                 <select
                   value={formData.businessType}
                   onChange={(e) => setFormData({ ...formData, businessType: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none"
                 >
                   <option value="Supermarket Chain / Retailer">Supermarket Chain / Retailer</option>
                   <option value="Food Distributor / Importer">Food Distributor / Importer</option>
@@ -161,7 +161,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                 placeholder="Specify preferred delivery airport/port, sample requests, or custom labeling needs..."
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl bg-dark-900 border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-elevated border border-slate-800 text-slate-100 text-xs focus:border-gold-500 focus:outline-none resize-none"
               />
             </div>
 

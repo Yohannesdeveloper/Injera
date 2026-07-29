@@ -73,7 +73,7 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gold-400 font-mono">
                   {route.mode}
                 </span>
-                <span className="px-2.5 py-0.5 rounded-full bg-dark-950 text-[10px] font-bold text-slate-300 border border-slate-800">
+                <span className="px-2.5 py-0.5 rounded-full bg-surface text-[10px] font-bold text-slate-300 border border-slate-800">
                   {route.frequency}
                 </span>
               </div>
@@ -86,11 +86,11 @@ export default function GlobalLogisticsHubs({ onRequestQuote }) {
             </div>
 
             <div className="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs">
-              <div className="p-2 rounded-lg bg-dark-950/60 border border-slate-800">
+              <div className="p-2 rounded-lg bg-elevated/60 border border-slate-800">
                 <p className="text-[9px] text-slate-400 uppercase font-semibold">Transit Time</p>
                 <p className="font-bold text-gold-400 mt-0.5">{route.transit}</p>
               </div>
-              <div className="p-2 rounded-lg bg-dark-950/60 border border-slate-800">
+              <div className="p-2 rounded-lg bg-elevated/60 border border-slate-800">
                 <p className="text-[9px] text-slate-400 uppercase font-semibold">Temp Regime</p>
                 <p className="font-bold text-slate-200 mt-0.5">{route.temp}</p>
               </div>
