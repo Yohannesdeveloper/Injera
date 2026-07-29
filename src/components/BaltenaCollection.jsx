@@ -25,6 +25,7 @@ const BALTENA_PRODUCTS = [
     id: 'spice-blends',
     name: 'Traditional Spice Blends',
     emoji: '🌿',
+    image: '/images/images 3.jpg',
     description: 'Curated mixes of Ethiopia\'s finest spices, from turmeric and cumin to fenugreek and korarima, for authentic everyday cooking.'
   },
   {
@@ -67,9 +68,13 @@ export default function BaltenaCollection({ onRequestQuote }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {BALTENA_PRODUCTS.map((prod) => (
           <div key={prod.id} className="glass-panel rounded-[25px] p-8 space-y-5 text-center flex flex-col items-center">
-            <span className="text-5xl" role="img" aria-label={prod.name}>
-              {prod.emoji}
-            </span>
+            {prod.image ? (
+              <img src={prod.image} alt={prod.name} className="w-full h-48 object-cover rounded-[25px]" />
+            ) : (
+              <span className="text-5xl" role="img" aria-label={prod.name}>
+                {prod.emoji}
+              </span>
+            )}
             <h3 className="font-display text-xl font-black text-slate-100">{prod.name}</h3>
             <p className="text-sm text-slate-300 font-bold leading-relaxed flex-1">{prod.description}</p>
           </div>
