@@ -39,16 +39,16 @@
 }
 
 .pill-logo {
-  width: var(--nav-h);
-  height: var(--nav-h);
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: var(--base, #000);
-  padding: 6px;
+  padding: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 .pill-logo img {
