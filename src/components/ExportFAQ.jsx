@@ -41,7 +41,7 @@ export default function ExportFAQ() {
           <KineticText text="Frequently Asked" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Export Questions" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-medium text-base">
+        <p className="text-slate-300 font-bold text-xl">
           Technical, regulatory, and logistics info for international buyers.
         </p>
       </div>
@@ -70,7 +70,7 @@ export default function ExportFAQ() {
                 />
               </button>
               {isOpen && (
-                <div className="px-6 pb-6 text-sm text-slate-300 font-medium leading-relaxed border-t border-slate-800/80 pt-4">
+                <div className="px-6 pb-6 text-base text-slate-300 font-bold leading-relaxed border-t border-slate-800/80 pt-4">
                   {faq.a}
                 </div>
               )}

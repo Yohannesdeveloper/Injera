@@ -76,7 +76,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
           <KineticText text="The Story of Authentic Injera" as="span" className="inline flex-wrap" /> <br />
           <span className="gold-gradient-text"><KineticText text="In 360° Camera View" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-medium text-base">
+        <p className="text-slate-300 font-bold text-lg">
           Orbit through each production stage with a 360° cinematic view.
         </p>
       </div>
@@ -110,7 +110,7 @@ export default function ScrollJourney({ scrollDegree = 0, onRequestQuote }) {
                   <p className="text-xs font-mono text-gold-400 uppercase tracking-widest mt-1">{ch.subtitle}</p>
                 </div>
 
-                <p className="text-slate-300 font-medium text-base leading-relaxed">{ch.description}</p>
+                <p className="text-slate-300 font-bold text-lg leading-relaxed">{ch.description}</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   {ch.highlights.map((h, i) => (

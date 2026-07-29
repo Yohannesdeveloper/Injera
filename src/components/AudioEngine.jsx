@@ -57,7 +57,7 @@ export default function AudioEngine({ activeScene = 0 }) {
       ) : (
         <>
           <VolumeX className="w-5 h-5" />
-          <span className="text-xs font-medium uppercase tracking-wider">Audio Ambient</span>
+          <span className="text-xs font-bold uppercase tracking-wider">Audio Ambient</span>
         </>
       )}
     </button>

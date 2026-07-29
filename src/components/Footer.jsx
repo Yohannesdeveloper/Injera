@@ -19,7 +19,7 @@ export default function Footer({ onRequestQuote }) {
               <p className="text-[9px] text-gold-400 font-semibold uppercase tracking-widest">Injera Export PLC</p>
             </div>
           </div>
-          <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
+          <p className="text-slate-300 text-sm leading-relaxed max-w-sm">
             Ethiopia's premier certified Injera manufacturer exporting globally.
           </p>
           <div className="flex items-center gap-2 text-gold-400 font-semibold text-[11px]">

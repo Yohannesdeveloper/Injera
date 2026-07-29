@@ -62,7 +62,7 @@ export default function ProductShowcase({ onRequestQuote }) {
           <KineticText text="Certified Injera Export" as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text="Line" as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-medium text-base">
+        <p className="text-slate-300 font-bold text-xl">
           Tailored packaging for supermarkets, restaurants, and wholesale importers.
         </p>
       </div>
@@ -90,7 +90,7 @@ export default function ProductShowcase({ onRequestQuote }) {
                 <h3 className="font-display text-xl font-bold text-slate-100 mt-0.5">{prod.name}</h3>
               </div>
 
-              <p className="text-sm text-slate-300 font-medium leading-relaxed">{prod.description}</p>
+              <p className="text-base text-slate-300 font-bold leading-relaxed">{prod.description}</p>
             </div>
 
             {/* Card Middle: Specs Table */}
