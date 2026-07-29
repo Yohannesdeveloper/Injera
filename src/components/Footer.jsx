@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <img
-              src="/images/Logo (2).jpg"
+              src="/images/Logo.png"
               alt="Zedagm"
               className="w-14 h-14 rounded-full object-cover"
             />

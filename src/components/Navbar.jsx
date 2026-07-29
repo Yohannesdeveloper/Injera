@@ -3,7 +3,7 @@ import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import PillNav from './PillNav';
 
-const LOGO_SRC = "/images/Logo (2).jpg";
+const LOGO_SRC = "/images/Logo.png";
 
 const NAV_ITEMS = [
   { label: 'Products', href: '#products' },
