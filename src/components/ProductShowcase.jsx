@@ -7,7 +7,7 @@ const EXPORT_PRODUCTS = [
     id: 'white',
     name: 'White Teff Injera',
     category: 'Premium',
-    image: '/images/injera_texture.png',
+    image: '/images/white teff injera.jpg',
     description: 'Light, soft, and crafted from premium white teff.'
   },
   {
