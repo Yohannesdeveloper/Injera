@@ -22,6 +22,7 @@ export default function Navbar({ onRequestQuote }) {
         <PillNav
           logo={LOGO_SRC}
           logoAlt="Zedagm Export"
+          logoTitles={{ main: 'Zedagm', sub: 'ዘ፟-ዳግም' }}
           items={NAV_ITEMS}
           baseColor={dark ? '#000000' : '#ffffff'}
           pillColor={dark ? '#1a1a1a' : '#f0f0f0'}

@@ -5,6 +5,7 @@ import './PillNav.css';
 const PillNav = ({
   logo,
   logoAlt = 'Logo',
+  logoTitles,
   items,
   activeHref,
   className = '',
@@ -196,6 +197,12 @@ const PillNav = ({
           ref={el => { logoRef.current = el; }}
         >
           <img src={logo} alt={logoAlt} ref={logoImgRef} />
+          {logoTitles && (
+            <span className="logo-titles">
+              <span className="logo-title-main">{logoTitles.main}</span>
+              <span className="logo-title-sub">{logoTitles.sub}</span>
+            </span>
+          )}
         </a>
 
         <div className="pill-nav-items desktop-only" ref={navItemsRef}>
