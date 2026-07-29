@@ -163,7 +163,7 @@ export default function ScrollJourney({ scrollDegree = 0 }) {
                         <div className="w-2 h-2 bg-gold-400 rounded-full animate-ping"></div>
                       </div>
 
-                      <div className="flex justify-between items-end text-[10px] font-mono text-slate-300 bg-surface/70 backdrop-blur-md px-3 py-1.5 rounded-lg border border-gold-500/30">
+                      <div className="flex justify-between items-end text-[10px] font-mono text-slate-300 bg-black/20 backdrop-blur-md px-3 py-1.5 rounded-lg border border-gold-500/30">
                         <span>SCENE {idx + 1} OF 6</span>
                         <span className="text-gold-400 font-bold">ETHIOPIA HERITAGE</span>
                       </div>

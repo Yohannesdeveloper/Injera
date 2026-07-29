@@ -30,7 +30,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface/80 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-md animate-fade-in">
       <div className="relative w-full max-w-2xl glass-panel-gold rounded-3xl border border-gold-500/40 p-6 md:p-8 shadow-2xl overflow-y-auto max-h-[90vh]">
         
         {/* Close Button */}

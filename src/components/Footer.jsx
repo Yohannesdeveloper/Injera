@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative z-10 border-t border-gold-500/20 bg-surface/95 pt-16 pb-12 px-6 text-slate-400 text-xs">
+    <footer id="contact" className="relative z-10 border-t border-gold-500/20 bg-black/20 pt-16 pb-12 px-6 text-slate-400 text-xs">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         
         {/* Navigation Links */}

@@ -45,7 +45,7 @@ export default function AudioEngine({ activeScene = 0 }) {
       className={`fixed bottom-6 right-6 z-50 px-4 py-3 rounded-full border backdrop-blur-xl transition-all duration-300 flex items-center gap-2.5 shadow-2xl ${
         isPlaying
           ? 'bg-gold-500/20 border-gold-400 text-gold-300 gold-border-glow'
-          : 'bg-elevated/80 border-slate-800 text-slate-400 hover:text-black dark:hover:text-white'
+          : 'bg-black/20 border-slate-800 text-slate-400 hover:text-black dark:hover:text-white'
       }`}
     >
       {isPlaying ? (

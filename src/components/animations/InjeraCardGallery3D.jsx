@@ -79,7 +79,7 @@ export default function InjeraCardGallery3D() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
 
-              <div className="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/30 text-[10px] font-bold text-gold-400 uppercase tracking-wider">
+              <div className="absolute top-4 left-4 bg-black/30 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/30 text-[10px] font-bold text-gold-400 uppercase tracking-wider">
                 {activeStep.tag}
               </div>
 

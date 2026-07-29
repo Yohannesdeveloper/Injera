@@ -69,7 +69,7 @@ function InteractiveProductModel({ productType }) {
 export default function ProductViewer3D({ productType = 'vacuum' }) {
   return (
     <div className="w-full h-80 relative rounded-2xl overflow-hidden glass-panel border border-gold-500/20">
-      <div className="absolute top-4 left-4 z-10 bg-elevated/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-500/30 text-xs font-semibold text-gold-400 flex items-center gap-1.5">
+      <div className="absolute top-4 left-4 z-10 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-500/30 text-xs font-semibold text-gold-400 flex items-center gap-1.5">
         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         360° Interactive 3D Model — Drag to Rotate
       </div>

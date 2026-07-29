@@ -67,7 +67,7 @@ export default function ProductShowcase({ onRequestQuote }) {
                   alt={prod.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/30 text-[10px] font-bold uppercase text-gold-400">
+                <div className="absolute top-3 left-3 bg-black/30 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/30 text-[10px] font-bold uppercase text-gold-400">
                   {prod.badge}
                 </div>
               </div>

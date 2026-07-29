@@ -6,7 +6,7 @@ import { InteractiveHoverButton } from './InteractiveHoverButton';
 export default function Navbar({ onRequestQuote }) {
   const { dark, toggleTheme } = useTheme();
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-surface/80 backdrop-blur-xl border-b border-slate-800/20 shadow-lg shadow-black/5">
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-surface/20 backdrop-blur-xl border-b border-slate-800/20 shadow-lg shadow-black/5">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
 
         {/* Corporate Logo */}
