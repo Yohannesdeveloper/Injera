@@ -209,7 +209,7 @@ html.dark .logo-title-sub {
   width: var(--nav-h);
   height: var(--nav-h);
   border-radius: 50%;
-  background: var(--base, #000);
+  background: var(--pill-bg, #000);
   border: none;
   display: none;
   flex-direction: column;
@@ -230,7 +230,7 @@ html.dark .logo-title-sub {
 .hamburger-line {
   width: 16px;
   height: 2px;
-  background: var(--pill-bg, #fff);
+  background: var(--pill-text, #000);
   border-radius: 1px;
   transition: all 0.01s ease;
   transform-origin: center;
