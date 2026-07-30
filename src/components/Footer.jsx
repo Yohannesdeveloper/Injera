@@ -4,8 +4,8 @@ import { useLanguage } from '../context/LanguageContext';
 export default function Footer() {
   const { t } = useLanguage();
   return (
-    <footer className="relative z-10 border-t border-gold-500/20 bg-black/20 pt-20 pb-16 lg:px-6">
-      <div className="max-w-6xl mx-auto px-3 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+    <footer className="relative z-10 border-t border-gold-500/20 bg-black/20 pt-20 pb-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         
         {/* Brand */}
         <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function Footer() {
 
       </div>
 
-      <div className="max-w-6xl mx-auto px-3 lg:px-0 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div className="max-w-6xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <p>{t('site.copyright')}</p>
       </div>
     </footer>
