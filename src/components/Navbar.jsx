@@ -31,7 +31,7 @@ export default function Navbar({ onRequestQuote }) {
         </a>
 
         {/* Center: Nav items */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex lg:justify-center">
           <PillNav
             hideLogo
             items={NAV_ITEMS}
