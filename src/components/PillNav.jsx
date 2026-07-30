@@ -267,7 +267,6 @@ const PillNav = ({
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           ref={hamburgerRef}
-          style={{ order: 3 }}
         >
           <span className="hamburger-line" />
           <span className="hamburger-line" />

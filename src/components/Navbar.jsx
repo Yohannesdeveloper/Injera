@@ -46,26 +46,25 @@ export default function Navbar({ onRequestQuote }) {
           </div>
           
           {/* Mobile: Language + Toggle + Hamburger */}
-          <div className="flex lg:hidden items-center justify-center gap-2 xs:gap-3 w-full">
+          <div className="flex lg:hidden items-center justify-center gap-2 xs:gap-3">
             <button
               onClick={toggleLanguage}
-              className="order-1 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[9px] xs:text-[10px] font-bold uppercase tracking-wider"
+              className="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[9px] xs:text-[10px] font-bold uppercase tracking-wider"
               aria-label={t('nav.switchLang')}
               title={language === 'en' ? 'አማርኛ' : 'English'}
             >
               {language === 'en' ? 'AM' : 'EN'}
             </button>
 
-            {/* Mobile: Hamburger */}
             <button
               onClick={toggleTheme}
-              className="order-2 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+              className="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
               aria-label={t('nav.toggleTheme')}
             >
               {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
             </button>
 
-            <div className="order-3">
+            <div>
               <PillNav
                 hideLogo
                 items={NAV_ITEMS}
