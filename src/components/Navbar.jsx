@@ -57,7 +57,15 @@ export default function Navbar({ onRequestQuote }) {
             </button>
 
             {/* Mobile: Hamburger */}
-            <div className="order-2">
+            <button
+              onClick={toggleTheme}
+              className="order-2 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+              aria-label={t('nav.toggleTheme')}
+            >
+              {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
+            </button>
+
+            <div className="order-3">
               <PillNav
                 hideLogo
                 items={NAV_ITEMS}
@@ -68,15 +76,7 @@ export default function Navbar({ onRequestQuote }) {
                 ease="power2.easeOut"
               />
             </div>
-
-            <button
-              onClick={toggleTheme}
-              className="order-3 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
-              aria-label={t('nav.toggleTheme')}
-            >
-              {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
-            </button>
-        </div>
+          </div>
 
         {/* Right: Desktop Language & Theme toggles */}
         <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
