@@ -96,7 +96,7 @@ const translations = {
       heading: 'Built for',
       headingGold: 'Global Businesses',
       intro: 'We proudly partner with:',
-      types: ['Supermarket Chains', 'Restaurants', 'Hotels', 'Food Importers', 'Wholesale Distributors', 'African Grocery Stores', 'Catering Companies', 'International Retailers']
+      types: ['Supermarket Chains', 'Restaurants', 'Hotels', 'Food Importers', 'Wholesale Distributors', 'African Grocery Stores', 'Catering Companies']
     },
     testimonials: {
       badge: 'Testimonials',

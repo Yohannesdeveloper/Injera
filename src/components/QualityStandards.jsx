@@ -1,6 +1,5 @@
 import React from 'react';
 import { Store, UtensilsCrossed, Building2, Globe, Package, ShoppingBag, ChefHat, Truck } from 'lucide-react';
-import BorderGlow from './BorderGlow';
 import { KineticText } from './KineticText';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -29,12 +28,12 @@ export default function QualityStandards() {
         {types.map((name, idx) => {
           const Icon = CUSTOMER_ICONS[idx] || Store;
           return (
-            <BorderGlow key={idx} className="p-3 sm:p-4 4xl:p-6 text-center space-y-2 sm:space-y-3" borderRadius={12} colors={['#D4AF37', '#F4C430', '#C87D32']}>
+            <div key={idx} className="p-3 sm:p-4 4xl:p-6 text-center space-y-2 sm:space-y-3 bg-black/10 backdrop-blur-sm rounded-xl border border-slate-800/40">
               <div className="w-8 h-8 sm:w-9 sm:h-9 4xl:w-12 4xl:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
                 <Icon className="w-4 h-4 sm:w-4.5 sm:h-4.5 4xl:w-6 4xl:h-6" />
               </div>
               <p className="font-display text-xs sm:text-sm 4xl:text-base font-black text-slate-100">{name}</p>
-            </BorderGlow>
+            </div>
           );
         })}
       </div>
