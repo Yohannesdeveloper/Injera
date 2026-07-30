@@ -26,23 +26,30 @@ export default function QRCodeSection() {
         </p>
 
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-gold-500/30 via-gold-500/10 to-gold-500/30 rounded-3xl blur-xl" />
-          <div className="relative p-1 rounded-3xl bg-gradient-to-br from-gold-500/40 via-gold-500/10 to-gold-500/40">
-            <div className="rounded-[22px] bg-white dark:bg-slate-900 p-5 shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-gold-500/30 via-gold-500/10 to-amber-600/30 rounded-3xl blur-2xl" />
+          <div className="relative p-[2px] rounded-3xl bg-gradient-to-br from-gold-500 via-gold-400 to-amber-600 shadow-2xl shadow-gold-500/20">
+            <div className="rounded-[22px] bg-white p-6 shadow-inner">
               <QRCodeSVG
                 value={SITE_URL}
-                size={200}
+                size={220}
                 bgColor="#ffffff"
-                fgColor="#000000"
-                level="M"
+                fgColor="#D4AF37"
+                level="H"
+                imageSettings={{
+                  src: "/images/Logo.png",
+                  height: 48,
+                  width: 48,
+                  excavate: true,
+                }}
               />
             </div>
           </div>
         </div>
 
-        <div className="mt-6 flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/40 border border-slate-700/40 text-xs text-slate-400">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          {SITE_URL}
+        <div className="mt-6 flex items-center gap-2 px-4 py-2 rounded-full bg-black/10 dark:bg-white/5 border border-gold-500/20 text-xs text-slate-500 dark:text-slate-400">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-lg shadow-green-500/50 animate-pulse" />
+          <span>{SITE_URL}</span>
+          <span className="text-gold-500 font-semibold">Scan me</span>
         </div>
 
       </div>
