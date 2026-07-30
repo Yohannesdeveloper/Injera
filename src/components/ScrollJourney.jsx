@@ -9,7 +9,7 @@ const CHAPTERS = [
   { id: 'baking', step: '03', image: '/images/Baking.jpg' },
   { id: 'inspection', step: '04', image: '/images/Quality inspection.jpg' },
   { id: 'packaging', step: '05', image: '/images/vacuum_pack.png' },
-  { id: 'delivery', step: '06', image: '/images/warehouse.png' }
+  { id: 'delivery', step: '06', image: '/images/delivery.jpg' }
 ];
 
 export default function ScrollJourney() {
