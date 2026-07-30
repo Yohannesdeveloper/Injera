@@ -185,3 +185,8 @@ body.dark {
   will-change: left, top;
   contain: strict;
 }
+
+/* Footer logo invert in dark mode */
+html.dark footer img[alt="Zedagm"] {
+  filter: invert(1);
+}
