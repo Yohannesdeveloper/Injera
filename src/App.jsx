@@ -68,38 +68,38 @@ function AppContent() {
       {/* 2. Hero Commercial Showcase */}
       <HeroOverlay onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 3. Our Process */}
-      <ScrollJourney />
+      {/* 3. About Us */}
+      <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 4. Why Choose Us */}
-      <FarmSourcingTraceability />
-
-      {/* 5. Our Products */}
-      <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
-
-      {/* 6. Baltena Collection */}
+      {/* 4. Baltena Collection */}
       <BaltenaCollection onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 7. Final CTA */}
+      {/* 5. Our Process */}
+      <ScrollJourney />
+
+      {/* 6. Why Choose Us */}
+      <FarmSourcingTraceability />
+
+      {/* 7. Our Products */}
+      <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
+
+      {/* 8. Final CTA */}
       <ExportCalculator onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 8. Global Reach */}
+      {/* 9. Global Reach */}
       <GlobalLogisticsHubs onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
-      {/* 9. Who We Serve */}
+      {/* 10. Who We Serve */}
       <QualityStandards />
 
-      {/* 10. Testimonials */}
+      {/* 11. Testimonials */}
       <PartnerTestimonials />
 
-      {/* 11. FAQ */}
+      {/* 12. FAQ */}
       <ExportFAQ />
 
-      {/* 12. Contact Us */}
+      {/* 13. Contact Us */}
       <ContactSection onRequestQuote={() => setIsQuoteModalOpen(true)} />
-
-      {/* 13. Who We Are + Our Commitment */}
-      <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
       {/* 13.5 QR Code */}
       <QRCodeSection />
