@@ -47,11 +47,11 @@ export default function Navbar({ onRequestQuote }) {
         <div className="flex items-center gap-3 flex-shrink-0">
           <button
             onClick={toggleLanguage}
-            className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+            className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[10px] font-bold uppercase tracking-wider"
             aria-label={t('nav.switchLang')}
-            title={t('nav.langTitle')}
+            title={language === 'en' ? 'አማርኛ' : 'English'}
           >
-            <Languages className="w-4 h-4" />
+            {language === 'en' ? 'AM' : 'EN'}
           </button>
           <button
             onClick={toggleTheme}
