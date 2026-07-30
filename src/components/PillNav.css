@@ -223,6 +223,10 @@ html.dark .logo-title-sub {
   flex-shrink: 0;
 }
 
+.mobile-menu-hidden {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: flex;

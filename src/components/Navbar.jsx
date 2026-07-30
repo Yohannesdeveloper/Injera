@@ -51,6 +51,7 @@ export default function Navbar() {
           <div className="flex-1 flex justify-center">
             <PillNav
               hideLogo
+              hideHamburger
               items={NAV_ITEMS}
               baseColor={dark ? '#000000' : '#ffffff'}
               pillColor={dark ? '#1a1a1a' : '#f0f0f0'}

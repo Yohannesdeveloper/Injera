@@ -16,7 +16,8 @@ const PillNav = forwardRef(({
   hoveredPillTextColor = '#120F17',
   pillTextColor,
   onMobileMenuClick,
-  initialLoadAnimation = false
+  initialLoadAnimation = false,
+  hideHamburger = false
 }, ref) => {
   const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -267,7 +268,7 @@ const PillNav = forwardRef(({
         </div>
 
         <button
-          className="mobile-menu-button mobile-only"
+          className={`mobile-menu-button ${hideHamburger ? 'mobile-menu-hidden' : 'mobile-only'}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           ref={hamburgerRef}
