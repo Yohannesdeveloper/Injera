@@ -21,7 +21,7 @@ const BALTENA_PRODUCTS = [
     id: 'mitmita',
     name: 'Mitmita (ሚጥሚጣ)',
     emoji: '🔥',
-    image: '/images/mitimita.png',
+    image: '/images/mitmita.jpg',
     description: 'An intense, fiery spice blend made from bird\'s eye chili, cardamom, and cloves — a must-have for those who crave heat.'
   },
   {
@@ -42,7 +42,7 @@ const BALTENA_PRODUCTS = [
     id: 'beso',
     name: 'Beso (በሶ)',
     emoji: '🥣',
-    image: '/images/Beso.png',
+    image: '/images/beso.jpg',
     description: 'Traditional roasted barley flour, finely milled and naturally nutritious — enjoyed as a porridge, snack, or energy mix.'
   },
   {
