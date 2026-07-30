@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon, Languages } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import PillNav from './PillNav';
 
@@ -43,6 +43,13 @@ export default function Navbar({ onRequestQuote }) {
 
         {/* Right: Buttons */}
         <div className="flex items-center gap-3 flex-shrink-0">
+          <button
+            className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+            aria-label="Switch language"
+            title="አማርኛ"
+          >
+            <Languages className="w-4 h-4" />
+          </button>
           <button
             onClick={toggleTheme}
             className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
