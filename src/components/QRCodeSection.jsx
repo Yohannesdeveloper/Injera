@@ -8,8 +8,8 @@ export default function QRCodeSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative z-10 py-20 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+    <section className="relative z-10 py-20 lg:px-6">
+      <div className="max-w-6xl mx-auto px-3 lg:px-0 flex flex-col items-center text-center">
 
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gold-500/10 text-gold-400 border border-gold-500/20 mb-6">
           <Smartphone className="w-3.5 h-3.5" />
