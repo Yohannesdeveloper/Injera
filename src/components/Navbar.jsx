@@ -30,39 +30,9 @@ export default function Navbar({ onRequestQuote }) {
           </span>
         </a>
 
-        {/* Desktop nav (centered, hidden on mobile) */}
-        <div className="hidden lg:flex flex-1 justify-center">
-          <PillNav
-            hideLogo
-            items={NAV_ITEMS}
-            baseColor={dark ? '#000000' : '#ffffff'}
-            pillColor={dark ? '#1a1a1a' : '#f0f0f0'}
-            hoveredPillTextColor="#D4AF37"
-            pillTextColor={dark ? '#ffffff' : '#000000'}
-            ease="power2.easeOut"
-          />
-        </div>
-
-        {/* Right side: Lang, Theme, Quote (desktop) / Lang, Theme, Hamburger (mobile) */}
-        <div className="flex items-center gap-1.5 xs:gap-2 lg:gap-3 flex-shrink-0 ml-auto lg:ml-0">
-          <button
-            onClick={toggleLanguage}
-            className="w-7 h-7 xs:w-8 xs:h-8 lg:w-9 lg:h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[9px] xs:text-[10px] font-bold uppercase tracking-wider"
-            aria-label={t('nav.switchLang')}
-            title={language === 'en' ? 'አማርኛ' : 'English'}
-          >
-            {language === 'en' ? 'AM' : 'EN'}
-          </button>
-          <button
-            onClick={toggleTheme}
-            className="w-7 h-7 xs:w-8 xs:h-8 lg:w-9 lg:h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
-            aria-label={t('nav.toggleTheme')}
-          >
-            {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5 lg:w-4 lg:h-4" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5 lg:w-4 lg:h-4" />}
-          </button>
-
-          {/* Mobile hamburger */}
-          <div className="flex lg:hidden">
+        {/* Desktop nav and controls (lg+) */}
+        <div className="hidden lg:flex flex-1 items-center gap-3">
+          <div className="flex-1 flex justify-center">
             <PillNav
               hideLogo
               items={NAV_ITEMS}
@@ -73,20 +43,65 @@ export default function Navbar({ onRequestQuote }) {
               ease="power2.easeOut"
             />
           </div>
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <button
+              onClick={toggleLanguage}
+              className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[10px] font-bold uppercase tracking-wider"
+              aria-label={t('nav.switchLang')}
+              title={language === 'en' ? 'አማርኛ' : 'English'}
+            >
+              {language === 'en' ? 'AM' : 'EN'}
+            </button>
+            <button
+              onClick={toggleTheme}
+              className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+              aria-label={t('nav.toggleTheme')}
+            >
+              {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
+            <button
+              onClick={onRequestQuote}
+              className="inline-flex items-center justify-center h-[42px] px-5 rounded-full border border-gold-500/30 font-semibold text-xs uppercase tracking-wider transition-colors shadow-md"
+              style={{
+                backgroundColor: dark ? '#1a1a1a' : '#f0f0f0',
+                color: dark ? '#ffffff' : '#000000',
+              }}
+              onMouseEnter={(e) => { e.target.style.color = '#D4AF37'; }}
+              onMouseLeave={(e) => { e.target.style.color = dark ? '#ffffff' : '#000000'; }}
+            >
+              {t('nav.requestQuote')}
+            </button>
+          </div>
+        </div>
 
-          {/* Desktop quote button */}
+        {/* Mobile controls (< lg) */}
+        <div className="flex lg:hidden items-center gap-1.5 xs:gap-2 ml-auto">
           <button
-            onClick={onRequestQuote}
-            className="hidden lg:inline-flex items-center justify-center h-[42px] px-5 rounded-full border border-gold-500/30 font-semibold text-xs uppercase tracking-wider transition-colors shadow-md"
-            style={{
-              backgroundColor: dark ? '#1a1a1a' : '#f0f0f0',
-              color: dark ? '#ffffff' : '#000000',
-            }}
-            onMouseEnter={(e) => { e.target.style.color = '#D4AF37'; }}
-            onMouseLeave={(e) => { e.target.style.color = dark ? '#ffffff' : '#000000'; }}
+            onClick={toggleLanguage}
+            className="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[9px] xs:text-[10px] font-bold uppercase tracking-wider"
+            aria-label={t('nav.switchLang')}
+            title={language === 'en' ? 'አማርኛ' : 'English'}
           >
-            {t('nav.requestQuote')}
+            {language === 'en' ? 'AM' : 'EN'}
           </button>
+          <button
+            onClick={toggleTheme}
+            className="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+            aria-label={t('nav.toggleTheme')}
+          >
+            {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
+          </button>
+          <div>
+            <PillNav
+              hideLogo
+              items={NAV_ITEMS}
+              baseColor={dark ? '#000000' : '#ffffff'}
+              pillColor={dark ? '#1a1a1a' : '#f0f0f0'}
+              hoveredPillTextColor="#D4AF37"
+              pillTextColor={dark ? '#ffffff' : '#000000'}
+              ease="power2.easeOut"
+            />
+          </div>
         </div>
       </div>
     </header>
