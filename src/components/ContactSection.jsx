@@ -6,52 +6,52 @@ import { useLanguage } from '../context/LanguageContext';
 export default function ContactSection({ onRequestQuote }) {
   const { t } = useLanguage();
   return (
-    <section id="contact" className="py-12 xs:py-14 sm:py-16 md:py-20 lg:py-24 px-3 xs:px-4 sm:px-5 md:px-6 relative z-10 max-w-4xl mx-auto space-y-10 xs:space-y-12 sm:space-y-14 md:space-y-16">
-      
-      <div className="text-center space-y-2 xs:space-y-3 sm:space-y-4 max-w-3xl mx-auto px-2 xs:px-3 sm:px-4">
-        <span className="text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400">
+    <section id="contact" className="relative z-10 py-12 4xl:py-16 7xl:py-20 px-4 4xl:px-6 max-w-6xl mx-auto">
+
+      <div className="text-center max-w-3xl mx-auto mb-8 4xl:mb-12 7xl:mb-16 px-4">
+        <span className="inline-block text-[9px] sm:text-xs font-bold uppercase tracking-widest text-gold-400 mb-3 sm:mb-4">
           {t('contact.badge')}
         </span>
-        <h2 className="font-display text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-slate-100">
+        <h2 className="font-display text-xl sm:text-3xl 4xl:text-4xl 7xl:text-5xl font-black text-slate-100">
           <KineticText text={t('contact.heading')} as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text={t('contact.headingGold')} as="span" className="inline flex-wrap" /></span>
         </h2>
-        <p className="text-slate-300 font-bold text-sm xs:text-base sm:text-lg md:text-xl">
+        <p className="text-slate-300 font-bold text-sm sm:text-base 4xl:text-lg mt-3 sm:mt-4">
           {t('contact.subtitle')}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-5 sm:gap-6 md:gap-8">
-        <div className="text-center space-y-2 xs:space-y-3 sm:space-y-4 p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 bg-black/10 backdrop-blur-sm rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px] border border-slate-800/50">
-          <div className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:w-10 md:w-12 md:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
-            <Mail className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+      <div className="grid gap-4 sm:gap-5 4xl:gap-6" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        <div className="text-center space-y-2 sm:space-y-3 4xl:space-y-4 p-4 sm:p-6 4xl:p-8 bg-black/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-slate-800/50">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 4xl:w-12 4xl:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
+            <Mail className="w-4 h-4 sm:w-4.5 sm:h-4.5 4xl:w-6 4xl:h-6" />
           </div>
-          <h3 className="font-display text-sm xs:text-base sm:text-lg md:text-xl font-black text-slate-100">{t('contact.email')}</h3>
-          <a href={`mailto:${t('contact.emailVal')}`} className="text-slate-300 font-bold hover:text-gold-400 transition-colors text-xs xs:text-sm sm:text-base">
+          <h3 className="font-display text-sm sm:text-base 4xl:text-xl font-black text-slate-100">{t('contact.email')}</h3>
+          <a href={`mailto:${t('contact.emailVal')}`} className="text-slate-300 font-bold hover:text-gold-400 transition-colors text-xs sm:text-sm 4xl:text-base">
             {t('contact.emailVal')}
           </a>
         </div>
 
-        <div className="text-center space-y-2 xs:space-y-3 sm:space-y-4 p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 bg-black/10 backdrop-blur-sm rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px] border border-slate-800/50">
-          <div className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:w-10 md:w-12 md:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
-            <Phone className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+        <div className="text-center space-y-2 sm:space-y-3 4xl:space-y-4 p-4 sm:p-6 4xl:p-8 bg-black/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-slate-800/50">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 4xl:w-12 4xl:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
+            <Phone className="w-4 h-4 sm:w-4.5 sm:h-4.5 4xl:w-6 4xl:h-6" />
           </div>
-          <h3 className="font-display text-sm xs:text-base sm:text-lg md:text-xl font-black text-slate-100">{t('contact.phone')}</h3>
-          <p className="text-slate-300 font-bold text-xs xs:text-sm sm:text-base">{t('contact.phoneVal')}</p>
+          <h3 className="font-display text-sm sm:text-base 4xl:text-xl font-black text-slate-100">{t('contact.phone')}</h3>
+          <p className="text-slate-300 font-bold text-xs sm:text-sm 4xl:text-base">{t('contact.phoneVal')}</p>
         </div>
 
-        <div className="text-center space-y-2 xs:space-y-3 sm:space-y-4 p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 bg-black/10 backdrop-blur-sm rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px] border border-slate-800/50 sm:col-span-2 md:col-span-1">
-          <div className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:w-10 md:w-12 md:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
-            <MapPin className="w-4 h-4 xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+        <div className="text-center space-y-2 sm:space-y-3 4xl:space-y-4 p-4 sm:p-6 4xl:p-8 bg-black/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-slate-800/50">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 4xl:w-12 4xl:h-12 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 flex items-center justify-center mx-auto">
+            <MapPin className="w-4 h-4 sm:w-4.5 sm:h-4.5 4xl:w-6 4xl:h-6" />
           </div>
-          <h3 className="font-display text-sm xs:text-base sm:text-lg md:text-xl font-black text-slate-100">{t('contact.location')}</h3>
-          <p className="text-slate-300 font-bold text-xs xs:text-sm sm:text-base">{t('contact.locationVal')}</p>
+          <h3 className="font-display text-sm sm:text-base 4xl:text-xl font-black text-slate-100">{t('contact.location')}</h3>
+          <p className="text-slate-300 font-bold text-xs sm:text-sm 4xl:text-base">{t('contact.locationVal')}</p>
         </div>
       </div>
 
-      <div className="space-y-2 xs:space-y-3 sm:space-y-4">
-        <span className="block text-center text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400">{t('contact.visitUs')}</span>
-        <div className="rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px] overflow-hidden border border-slate-800/50 bg-black/10 backdrop-blur-sm h-48 xs:h-56 sm:h-64 md:h-72">
+      <div className="mt-10 4xl:mt-14 7xl:mt-18 space-y-3 sm:space-y-4">
+        <span className="block text-center text-[9px] sm:text-xs font-bold uppercase tracking-widest text-gold-400">{t('contact.visitUs')}</span>
+        <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-slate-800/50 bg-black/10 backdrop-blur-sm h-48 sm:h-56 4xl:h-72">
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=38.6950%2C8.9800%2C38.8950%2C9.0800&amp;layer=mapnik&amp;marker=9.0300%2C38.7950"
             width="100%"
@@ -65,10 +65,10 @@ export default function ContactSection({ onRequestQuote }) {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="text-center mt-10 4xl:mt-14 7xl:mt-18">
         <button
           onClick={onRequestQuote}
-          className="inline-flex items-center gap-1.5 xs:gap-2 px-5 xs:px-6 sm:px-8 md:px-10 py-2 xs:py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-gold-500 to-ochre-500 text-black font-bold text-[9px] xs:text-[10px] sm:text-[11px] md:text-xs uppercase tracking-wider hover:from-gold-400 hover:to-ochre-400 transition-all"
+          className="inline-flex items-center gap-1.5 sm:gap-2 px-5 sm:px-8 4xl:px-10 py-2 sm:py-3 rounded-full bg-gradient-to-r from-gold-500 to-ochre-500 text-black font-bold text-[9px] sm:text-[11px] 4xl:text-xs uppercase tracking-wider hover:from-gold-400 hover:to-ochre-400 transition-all"
         >
           {t('contact.btn')}
         </button>

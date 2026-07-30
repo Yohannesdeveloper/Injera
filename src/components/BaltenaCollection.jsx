@@ -18,40 +18,40 @@ export default function BaltenaCollection({ onRequestQuote }) {
   const items = t('baltena.items');
 
   return (
-    <section id="baltena" className="py-12 xs:py-14 sm:py-16 md:py-20 lg:py-24 px-3 xs:px-4 sm:px-5 md:px-6 relative z-10 max-w-6xl mx-auto space-y-10 xs:space-y-12 sm:space-y-14 md:space-y-16">
+    <section id="baltena" className="relative z-10 py-12 4xl:py-16 7xl:py-20 px-4 4xl:px-6 max-w-6xl mx-auto">
 
-      <div className="text-center space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6 max-w-3xl mx-auto px-2 xs:px-3 sm:px-4">
-        <span className="text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400 block">
+      <div className="text-center max-w-3xl mx-auto mb-8 4xl:mb-12 7xl:mb-16 px-4">
+        <span className="inline-block text-[9px] sm:text-xs font-bold uppercase tracking-widest text-gold-400 mb-3 sm:mb-4">
           {t('baltena.badge')}
         </span>
-        <h2 className="font-display text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-slate-100">
+        <h2 className="font-display text-xl sm:text-3xl 4xl:text-4xl 7xl:text-5xl font-black text-slate-100">
           <KineticText text={t('baltena.heading1')} as="span" className="inline flex-wrap" />{' '}
           <span className="gold-gradient-text"><KineticText text={t('baltena.headingGold')} as="span" className="inline flex-wrap" /></span>
           {' '}<KineticText text={t('baltena.heading2')} as="span" className="inline flex-wrap" />
         </h2>
-        <p className="text-xs xs:text-sm sm:text-base md:text-lg text-slate-300 font-bold leading-relaxed max-w-2xl mx-auto">
+        <p className="text-xs sm:text-sm 4xl:text-base text-slate-300 font-bold leading-relaxed mt-3 sm:mt-4">
           {t('baltena.subtitle')}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-5 sm:gap-6 md:gap-8">
+      <div className="grid gap-4 sm:gap-5 4xl:gap-6" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
         {items.map((prod) => (
-          <div key={prod.id} className="glass-panel rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px] p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6 text-center flex flex-col items-center">
-            <img src={BALTENA_IMAGES[prod.id]} alt={prod.name} className="w-full h-32 xs:h-40 sm:h-48 md:h-56 object-cover rounded-lg xs:rounded-xl sm:rounded-[20px] md:rounded-[25px]" />
-            <h3 className="font-display text-base xs:text-lg sm:text-xl md:text-2xl font-black text-slate-100">{prod.name}</h3>
-            <p className="text-xs xs:text-sm sm:text-base text-slate-300 font-bold leading-relaxed flex-1">{prod.description}</p>
+          <div key={prod.id} className="glass-panel rounded-xl sm:rounded-2xl p-4 sm:p-5 4xl:p-6 text-center flex flex-col items-center space-y-3 sm:space-y-4 4xl:space-y-5">
+            <img src={BALTENA_IMAGES[prod.id]} alt={prod.name} className="w-full h-32 sm:h-40 4xl:h-48 object-cover rounded-xl sm:rounded-2xl" />
+            <h3 className="font-display text-base sm:text-lg 4xl:text-xl font-black text-slate-100">{prod.name}</h3>
+            <p className="text-xs sm:text-sm text-slate-300 font-bold leading-relaxed flex-1">{prod.description}</p>
           </div>
         ))}
       </div>
 
-      <div className="text-center space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6 max-w-2xl mx-auto px-2 xs:px-3 sm:px-4">
-        <span className="text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gold-400">{t('baltena.exportBadge')}</span>
-        <p className="text-xs xs:text-sm sm:text-base text-slate-300 font-bold leading-relaxed">
+      <div className="text-center max-w-2xl mx-auto mt-10 4xl:mt-14 7xl:mt-18 px-4">
+        <span className="block text-[9px] sm:text-xs font-bold uppercase tracking-widest text-gold-400 mb-3 sm:mb-4">{t('baltena.exportBadge')}</span>
+        <p className="text-xs sm:text-sm 4xl:text-base text-slate-300 font-bold leading-relaxed mb-4 sm:mb-6">
           {t('baltena.exportText')}
         </p>
         <InteractiveHoverButton
           onClick={onRequestQuote}
-          className="px-5 xs:px-6 sm:px-8 md:px-10 py-2 xs:py-2.5 sm:py-3 shadow-md"
+          className="px-5 sm:px-8 4xl:px-10 py-2 sm:py-3 shadow-md"
         >
           {t('baltena.cta')}
         </InteractiveHoverButton>
