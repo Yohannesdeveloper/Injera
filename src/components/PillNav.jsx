@@ -91,7 +91,7 @@ const PillNav = ({
 
     const menu = mobileMenuRef.current;
     if (menu) {
-      gsap.set(menu, { visibility: 'hidden', opacity: 0, scaleY: 1 });
+      gsap.set(menu, { visibility: 'hidden', opacity: 0, y: -5, scaleY: 0.98 });
     }
 
     if (initialLoadAnimation) {
@@ -111,6 +111,27 @@ const PillNav = ({
 
     return () => window.removeEventListener('resize', onResize);
   }, [items, ease, initialLoadAnimation]);
+
+  // Handle click outside to close menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target) && hamburgerRef.current && !hamburgerRef.current.contains(event.target)) {
+        const menu = mobileMenuRef.current;
+        gsap.set(menu, { pointerEvents: 'none' });
+        setIsMobileMenuOpen(false);
+        gsap.to(menu, {
+          opacity: 0, y: -5, scaleY: 0.98, duration: 0.25, ease: 'power2.in', transformOrigin: 'top right',
+          onComplete: () => { gsap.set(menu, { visibility: 'hidden' }); }
+        });
+        const lines = hamburgerRef.current.querySelectorAll('.hamburger-line');
+        gsap.to(lines[0], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
+        gsap.to(lines[1], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen]);
 
   const handleEnter = i => {
     const tl = tlRefs.current[i];
@@ -141,35 +162,45 @@ const PillNav = ({
   };
 
   const toggleMobileMenu = () => {
-    const newState = !isMobileMenuOpen;
-    setIsMobileMenuOpen(newState);
-
     const hamburger = hamburgerRef.current;
     const menu = mobileMenuRef.current;
 
     if (hamburger) {
       const lines = hamburger.querySelectorAll('.hamburger-line');
-      if (newState) {
-        gsap.to(lines[0], { rotation: 45, y: 3, duration: 0.3, ease });
-        gsap.to(lines[1], { rotation: -45, y: -3, duration: 0.3, ease });
+      if (!isMobileMenuOpen) {
+        gsap.to(lines[0], { rotation: 45, y: 3, duration: 0.3, ease: 'power2.out' });
+        gsap.to(lines[1], { rotation: -45, y: -3, duration: 0.3, ease: 'power2.out' });
       } else {
-        gsap.to(lines[0], { rotation: 0, y: 0, duration: 0.3, ease });
-        gsap.to(lines[1], { rotation: 0, y: 0, duration: 0.3, ease });
+        gsap.to(lines[0], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
+        gsap.to(lines[1], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
       }
     }
 
     if (menu) {
-      if (newState) {
-        gsap.set(menu, { visibility: 'visible' });
-        gsap.fromTo(menu, { opacity: 0, y: 10, scaleY: 1 }, {
-          opacity: 1, y: 0, scaleY: 1, duration: 0.3, ease, transformOrigin: 'top center'
+      if (!isMobileMenuOpen) {
+        // Opening
+        setIsMobileMenuOpen(true);
+        gsap.set(menu, { 
+          visibility: 'visible',
+          pointerEvents: 'auto'
+        });
+        gsap.fromTo(menu, { opacity: 0, y: -5, scaleY: 0.98 }, {
+          opacity: 1, y: 0, scaleY: 1, duration: 0.3, ease: 'power2.out', transformOrigin: 'top right'
         });
       } else {
+        // Closing
+        gsap.set(menu, { pointerEvents: 'none' });
         gsap.to(menu, {
-          opacity: 0, y: 10, scaleY: 1, duration: 0.2, ease, transformOrigin: 'top center',
-          onComplete: () => { gsap.set(menu, { visibility: 'hidden' }); }
+          opacity: 0, y: -5, scaleY: 0.98, duration: 0.25, ease: 'power2.in', transformOrigin: 'top right',
+          onComplete: () => { 
+            gsap.set(menu, { visibility: 'hidden' });
+            setIsMobileMenuOpen(false);
+          }
         });
       }
+    } else {
+      // If menu ref doesn't exist, just toggle state
+      setIsMobileMenuOpen(!isMobileMenuOpen);
     }
 
     onMobileMenuClick?.();
@@ -236,6 +267,7 @@ const PillNav = ({
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           ref={hamburgerRef}
+          style={{ order: 3 }}
         >
           <span className="hamburger-line" />
           <span className="hamburger-line" />
@@ -249,7 +281,22 @@ const PillNav = ({
               <a
                 href={item.href}
                 className={`mobile-menu-link${activeHref === item.href ? ' is-active' : ''}`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  const menu = mobileMenuRef.current;
+                  if (menu) {
+                    gsap.set(menu, { pointerEvents: 'none' });
+                    setIsMobileMenuOpen(false);
+                    gsap.to(menu, {
+                      opacity: 0, y: -5, scaleY: 0.98, duration: 0.25, ease: 'power2.in', transformOrigin: 'top right',
+                      onComplete: () => { gsap.set(menu, { visibility: 'hidden' }); }
+                    });
+                    const lines = hamburgerRef.current?.querySelectorAll('.hamburger-line');
+                    if (lines) {
+                      gsap.to(lines[0], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
+                      gsap.to(lines[1], { rotation: 0, y: 0, duration: 0.25, ease: 'power2.in' });
+                    }
+                  }
+                }}
               >
                 {item.label}
               </a>

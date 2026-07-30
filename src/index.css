@@ -38,7 +38,14 @@
   --bg-card: rgba(0, 0, 0, 0.1);
 }
 
-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+body { 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
 
 /* Light body */
 :root body {
@@ -58,6 +65,25 @@ body.dark {
   background-image:
     radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 55%);
   background-attachment: fixed;
+}
+
+/* Global responsive fixes */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* World-Class Minimalist Luxury Cards */

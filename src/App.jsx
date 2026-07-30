@@ -31,7 +31,7 @@ function AppContent() {
 
   return (
     <div
-      className="min-h-screen relative font-sans selection:bg-gold-500 selection:text-black"
+      className="min-h-screen relative font-sans selection:bg-gold-500 selection:text-black w-full max-w-full overflow-x-hidden"
       onMouseMove={handleMouseMove}
     >
 

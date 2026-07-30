@@ -22,10 +22,16 @@
 
 @media (max-width: 768px) {
   .pill-nav {
-    width: 100%;
-    justify-content: flex-end;
+    width: auto;
+    justify-content: center;
     padding: 0;
     background: transparent;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  .mobile-menu-button {
+    order: 3;
   }
 }
 
@@ -219,6 +225,7 @@ html.dark .logo-title-sub {
   cursor: pointer;
   padding: 0;
   position: relative;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -232,23 +239,35 @@ html.dark .logo-title-sub {
   height: 2px;
   background: var(--pill-text, #000);
   border-radius: 1px;
-  transition: all 0.01s ease;
+  transition: transform 0.4s ease, opacity 0.3s ease;
   transform-origin: center;
 }
 
 .mobile-menu-popover {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
+  position: fixed;
+  top: calc(100% + 12px);
+  right: 8px;
   width: 300px;
-  max-width: calc(100vw - 24px);
+  max-width: calc(100vw - 16px);
   background: var(--base, #f0f0f0);
   border-radius: 27px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  z-index: 998;
+  z-index: 9999;
   opacity: 0;
-  transform-origin: top center;
+  transform-origin: top right;
   visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 360px) {
+  .mobile-menu-popover {
+    right: 4px;
+    max-width: calc(100vw - 8px);
+  }
+}
+
+.mobile-menu-popover[style*="visibility: visible"] {
+  pointer-events: auto;
 }
 
 .mobile-menu-list {
@@ -262,11 +281,11 @@ html.dark .logo-title-sub {
 
 .mobile-menu-link {
   display: block;
-  padding: 12px 16px;
+  padding: 10px 14px;
   color: var(--pill-text, #fff);
   background-color: var(--pill-bg, #fff);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 50px;
   transition: all 0.2s ease;
@@ -276,4 +295,21 @@ html.dark .logo-title-sub {
   cursor: pointer;
   background-color: var(--base);
   color: var(--hover-text, #fff);
+}
+
+@media (max-width: 360px) {
+  .mobile-menu-popover {
+    width: 280px;
+    max-width: calc(100vw - 16px);
+  }
+  
+  .mobile-menu-list {
+    padding: 2px;
+    gap: 2px;
+  }
+  
+  .mobile-menu-link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }

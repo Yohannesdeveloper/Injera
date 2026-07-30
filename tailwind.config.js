@@ -6,6 +6,28 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '320px',
+      'sm': '360px',
+      'md': '375px',
+      'lg': '390px',
+      'xl': '414px',
+      '2xl': '540px',
+      '3xl': '600px',
+      '4xl': '768px',
+      '5xl': '820px',
+      '6xl': '912px',
+      '7xl': '1024px',
+      '8xl': '1112px',
+      '9xl': '1280px',
+      '10xl': '1366px',
+      '11xl': '1440px',
+      '12xl': '1536px',
+      '13xl': '1600px',
+      '14xl': '1920px',
+      '15xl': '2560px',
+      '16xl': '3840px',
+    },
     extend: {
       colors: {
         slate: {
