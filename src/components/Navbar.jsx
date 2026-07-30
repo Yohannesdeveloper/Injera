@@ -1,14 +1,16 @@
-import React from 'react';
-import { Sun, Moon, Languages } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Sun, Moon, Menu } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import PillNav from './PillNav';
 
 const LOGO_SRC = "/images/Logo.png";
 
-export default function Navbar({ onRequestQuote }) {
+export default function Navbar() {
   const { dark, toggleTheme } = useTheme();
   const { language, toggleLanguage, t } = useLanguage();
+  const [desktopMenuOpen, setDesktopMenuOpen] = useState(false);
+  const desktopMenuRef = useRef(null);
 
   const NAV_ITEMS = [
     { label: t('nav.products'), href: '#products' },
@@ -17,6 +19,20 @@ export default function Navbar({ onRequestQuote }) {
     { label: t('nav.quality'), href: '#quality' },
     { label: t('nav.contact'), href: '#contact' },
   ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (desktopMenuOpen && desktopMenuRef.current && !desktopMenuRef.current.contains(event.target)) {
+        setDesktopMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [desktopMenuOpen]);
+
+  const popoverBg = dark ? '#000000' : '#ffffff';
+  const popoverPillBg = dark ? '#1a1a1a' : '#f0f0f0';
+  const popoverText = dark ? '#ffffff' : '#000000';
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-2 xs:px-3 sm:px-4 md:px-5 lg:px-6 py-2 xs:py-3 lg:py-4 bg-surface/20 backdrop-blur-xl border-b border-slate-800/20 shadow-lg shadow-black/5">
@@ -59,18 +75,46 @@ export default function Navbar({ onRequestQuote }) {
             >
               {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
-            <button
-              onClick={onRequestQuote}
-              className="inline-flex items-center justify-center h-[42px] px-5 rounded-full border border-gold-500/30 font-semibold text-xs uppercase tracking-wider transition-colors shadow-md"
-              style={{
-                backgroundColor: dark ? '#1a1a1a' : '#f0f0f0',
-                color: dark ? '#ffffff' : '#000000',
-              }}
-              onMouseEnter={(e) => { e.target.style.color = '#D4AF37'; }}
-              onMouseLeave={(e) => { e.target.style.color = dark ? '#ffffff' : '#000000'; }}
-            >
-              {t('nav.requestQuote')}
-            </button>
+            <div className="relative">
+              <button
+                onClick={() => setDesktopMenuOpen(!desktopMenuOpen)}
+                className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+                aria-label="Toggle menu"
+              >
+                <Menu className="w-4 h-4" />
+              </button>
+              {desktopMenuOpen && (
+                <div
+                  ref={desktopMenuRef}
+                  className="fixed top-auto right-0 mt-2 w-56 rounded-2xl shadow-lg overflow-hidden z-[9999]"
+                  style={{
+                    backgroundColor: popoverBg,
+                    transform: 'translateY(0)',
+                    border: '1px solid rgba(212, 175, 55, 0.15)',
+                  }}
+                >
+                  <ul className="p-1.5 flex flex-col gap-0.5">
+                    {NAV_ITEMS.map((item) => (
+                      <li key={item.href}>
+                        <a
+                          href={item.href}
+                          onClick={() => setDesktopMenuOpen(false)}
+                          className="block px-4 py-2.5 rounded-xl text-sm font-medium transition-colors"
+                          style={{
+                            color: popoverText,
+                            backgroundColor: 'transparent',
+                          }}
+                          onMouseEnter={(e) => { e.target.style.backgroundColor = popoverPillBg; }}
+                          onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; }}
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 

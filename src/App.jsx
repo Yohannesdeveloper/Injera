@@ -63,7 +63,7 @@ function AppContent() {
 
 
       {/* 1. Corporate Header */}
-      <Navbar onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Navbar />
 
       {/* 2. Hero Commercial Showcase */}
       <HeroOverlay onRequestQuote={() => setIsQuoteModalOpen(true)} />

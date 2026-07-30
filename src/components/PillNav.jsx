@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import './PillNav.css';
 
-const PillNav = ({
+const PillNav = forwardRef(({
   logo,
   logoAlt = 'Logo',
   logoTitles,
@@ -17,7 +17,7 @@ const PillNav = ({
   pillTextColor,
   onMobileMenuClick,
   initialLoadAnimation = false
-}) => {
+}, ref) => {
   const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const circleRefs = useRef([]);
@@ -206,6 +206,10 @@ const PillNav = ({
     onMobileMenuClick?.();
   };
 
+  useImperativeHandle(ref, () => ({
+    toggleMenu: toggleMobileMenu
+  }));
+
   const isExternalLink = href =>
     href.startsWith('http://') || href.startsWith('https://') ||
     href.startsWith('//') || href.startsWith('mailto:') ||
@@ -305,6 +309,6 @@ const PillNav = ({
       </div>
     </div>
   );
-};
+});
 
 export default PillNav;
