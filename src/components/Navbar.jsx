@@ -31,7 +31,7 @@ export default function Navbar({ onRequestQuote }) {
         </a>
 
         {/* Center: Desktop Nav items, Mobile: Language + Toggle + Hamburger */}
-        <div className="flex-1 flex lg:justify-center max-lg:justify-center order-3 lg:order-2 min-w-0">
+        <div className="flex-1 flex lg:justify-center max-lg:justify-center min-w-0">
           {/* Desktop: Nav items */}
           <div className="hidden lg:flex w-full justify-center">
             <PillNav
@@ -55,16 +55,9 @@ export default function Navbar({ onRequestQuote }) {
             >
               {language === 'en' ? 'AM' : 'EN'}
             </button>
-            <button
-              onClick={toggleTheme}
-              className="order-2 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
-              aria-label={t('nav.toggleTheme')}
-            >
-              {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
-            </button>
-            
+
             {/* Mobile: Hamburger */}
-            <div className="order-3">
+            <div className="order-2">
               <PillNav
                 hideLogo
                 items={NAV_ITEMS}
@@ -75,11 +68,18 @@ export default function Navbar({ onRequestQuote }) {
                 ease="power2.easeOut"
               />
             </div>
-          </div>
+
+            <button
+              onClick={toggleTheme}
+              className="order-3 w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
+              aria-label={t('nav.toggleTheme')}
+            >
+              {dark ? <Sun className="w-3 h-3 xs:w-3.5 xs:h-3.5" /> : <Moon className="w-3 h-3 xs:w-3.5 xs:h-3.5" />}
+            </button>
         </div>
 
         {/* Right: Desktop Language & Theme toggles */}
-        <div className="hidden lg:flex items-center gap-3 flex-shrink-0 order-3">
+        <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
           <button
             onClick={toggleLanguage}
             className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[10px] font-bold uppercase tracking-wider"
@@ -95,6 +95,7 @@ export default function Navbar({ onRequestQuote }) {
           >
             {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
+        </div>
         </div>
       </div>
     </header>

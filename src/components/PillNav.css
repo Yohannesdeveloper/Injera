@@ -23,15 +23,10 @@
 @media (max-width: 768px) {
   .pill-nav {
     width: auto;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
     background: transparent;
-    align-items: center;
-    margin-left: 0;
-  }
-  
-  .mobile-menu-button {
-    order: 3;
+    flex-shrink: 0;
   }
 }
 
