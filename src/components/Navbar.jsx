@@ -31,7 +31,7 @@ export default function Navbar({ onRequestQuote }) {
         </a>
 
         {/* Center: Nav items */}
-        <div className="flex-1 flex lg:justify-center">
+        <div className="flex-1 flex lg:justify-center order-3 lg:order-2">
           <PillNav
             hideLogo
             items={NAV_ITEMS}
@@ -44,7 +44,7 @@ export default function Navbar({ onRequestQuote }) {
         </div>
 
         {/* Right: Buttons */}
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex items-center gap-3 flex-shrink-0 order-2 lg:order-3">
           <button
             onClick={toggleLanguage}
             className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors text-[10px] font-bold uppercase tracking-wider"
