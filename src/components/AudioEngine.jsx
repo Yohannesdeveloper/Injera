@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function AudioEngine({ activeScene = 0 }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioCtxRef = useRef(null);
   const gainNodeRef = useRef(null);
   const sizzleNodeRef = useRef(null);
+  const { t } = useLanguage();
 
   const toggleAudio = () => {
     if (!audioCtxRef.current) {
@@ -51,13 +53,13 @@ export default function AudioEngine({ activeScene = 0 }) {
       {isPlaying ? (
         <>
           <Volume2 className="w-5 h-5 text-gold-400 animate-pulse" />
-          <span className="text-xs font-semibold uppercase tracking-wider">Audio On</span>
+          <span className="text-xs font-semibold uppercase tracking-wider">{t('audio.on')}</span>
           <span className="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
         </>
       ) : (
         <>
           <VolumeX className="w-5 h-5" />
-          <span className="text-xs font-bold uppercase tracking-wider">Audio Ambient</span>
+          <span className="text-xs font-bold uppercase tracking-wider">{t('audio.off')}</span>
         </>
       )}
     </button>

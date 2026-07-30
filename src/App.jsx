@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import HeroOverlay from './components/HeroOverlay';
 import ScrollJourney from './components/ScrollJourney';
@@ -120,7 +121,9 @@ function AppContent() {
 export default function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
     </ThemeProvider>
   );
 }

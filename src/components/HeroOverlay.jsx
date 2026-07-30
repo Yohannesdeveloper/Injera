@@ -1,8 +1,10 @@
 import React from 'react';
 import { KineticText } from './KineticText';
 import { InteractiveHoverButton } from './InteractiveHoverButton';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function HeroOverlay({ onRequestQuote }) {
+  const { t } = useLanguage();
   return (
     <section className="min-h-screen relative flex items-center justify-center px-6 pt-32 pb-20 overflow-hidden">
       {/* Full-screen video background */}
@@ -19,23 +21,23 @@ export default function HeroOverlay({ onRequestQuote }) {
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto space-y-8">
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-black hero-text-light leading-tight">
-          <KineticText text="Authentic Ethiopian" as="span" className="inline flex-wrap" /> <br />
-          <span className="gold-gradient-text hero-text-light"><KineticText text="Injera. Worldwide." as="span" className="inline flex-wrap" /></span>
+          <KineticText text={t('hero.title1')} as="span" className="inline flex-wrap" /> <br />
+          <span className="gold-gradient-text hero-text-light"><KineticText text={t('hero.title2')} as="span" className="inline flex-wrap" /></span>
         </h1>
 
         <p className="hero-text-light font-bold text-xl leading-relaxed max-w-3xl mx-auto">
-          Delivering the authentic taste of Ethiopia to international supermarkets, restaurants, wholesalers, and food distributors with premium quality, reliable supply, and export-ready packaging.
+          {t('hero.subtitle')}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <InteractiveHoverButton onClick={onRequestQuote}>
-            Request a Quote
+            {t('hero.requestQuote')}
           </InteractiveHoverButton>
           <a
             href="#products"
             className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gold-500/50 hero-text-light font-bold text-xs uppercase tracking-wider hover:bg-gold-500/10 transition-colors"
           >
-            View Products
+            {t('hero.viewProducts')}
           </a>
         </div>
       </div>

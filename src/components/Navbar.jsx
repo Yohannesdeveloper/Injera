@@ -1,30 +1,32 @@
 import React from 'react';
 import { Sun, Moon, Languages } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 import PillNav from './PillNav';
 
 const LOGO_SRC = "/images/Logo.png";
 
-const NAV_ITEMS = [
-  { label: 'Products', href: '#products' },
-  { label: 'About', href: '#about' },
-  { label: 'Process', href: '#process' },
-  { label: 'Quality', href: '#quality' },
-  { label: 'Contact', href: '#contact' },
-];
-
 export default function Navbar({ onRequestQuote }) {
   const { dark, toggleTheme } = useTheme();
+  const { language, toggleLanguage, t } = useLanguage();
+
+  const NAV_ITEMS = [
+    { label: t('nav.products'), href: '#products' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.process'), href: '#process' },
+    { label: t('nav.quality'), href: '#quality' },
+    { label: t('nav.contact'), href: '#contact' },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-surface/20 backdrop-blur-xl border-b border-slate-800/20 shadow-lg shadow-black/5">
       <div className="max-w-6xl mx-auto flex items-center">
         {/* Left: Logo */}
-        <a href="#" className="pill-logo flex-shrink-0" aria-label="Home">
-          <img src={LOGO_SRC} alt="Zedagm Export" className="w-[52px] h-[52px] rounded-full object-cover" />
+        <a href="#" className="pill-logo flex-shrink-0" aria-label={t('nav.homeAria')}>
+          <img src={LOGO_SRC} alt={t('site.logoAlt')} className="w-[52px] h-[52px] rounded-full object-cover" />
           <span className="logo-titles">
-            <span className="logo-title-main">Zedagm</span>
-            <span className="logo-title-sub">ዘ፟-ዳግም</span>
+            <span className="logo-title-main">{t('site.name')}</span>
+            <span className="logo-title-sub">{t('site.nameAm')}</span>
           </span>
         </a>
 
@@ -44,16 +46,17 @@ export default function Navbar({ onRequestQuote }) {
         {/* Right: Buttons */}
         <div className="flex items-center gap-3 flex-shrink-0">
           <button
+            onClick={toggleLanguage}
             className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
-            aria-label="Switch language"
-            title="አማርኛ"
+            aria-label={t('nav.switchLang')}
+            title={t('nav.langTitle')}
           >
             <Languages className="w-4 h-4" />
           </button>
           <button
             onClick={toggleTheme}
             className="w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:bg-gold-500/20 flex items-center justify-center transition-colors"
-            aria-label="Toggle theme"
+            aria-label={t('nav.toggleTheme')}
           >
             {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
@@ -67,7 +70,7 @@ export default function Navbar({ onRequestQuote }) {
             onMouseEnter={(e) => { e.target.style.color = '#D4AF37'; }}
             onMouseLeave={(e) => { e.target.style.color = dark ? '#ffffff' : '#000000'; }}
           >
-            Request a Quote
+            {t('nav.requestQuote')}
           </button>
         </div>
       </div>
