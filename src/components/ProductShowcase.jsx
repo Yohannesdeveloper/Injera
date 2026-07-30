@@ -6,8 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 const PRODUCT_IMAGES = {
   white: '/images/white teff injera.jpg',
   brown: '/images/injera.jpg',
-  mixed: '/images/Teff masa.jpg',
-  custom: '/images/delivery.jpg'
+  mixed: '/images/Teff masa.jpg'
 };
 
 export default function ProductShowcase({ onRequestQuote }) {

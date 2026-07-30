@@ -42,8 +42,7 @@ const translations = {
       items: [
         { id: 'white', name: 'White Teff Injera', category: 'Premium', description: 'Light, soft, and crafted from premium white teff.' },
         { id: 'brown', name: 'Brown Teff Injera', category: 'Traditional', description: 'Traditional flavor with rich texture and authentic character.' },
-        { id: 'mixed', name: 'Mixed Teff Injera', category: 'Everyday', description: 'A balanced blend designed for everyday dining and commercial kitchens.' },
-        { id: 'custom', name: 'Custom Wholesale Orders', category: 'Wholesale', description: 'Private labeling and custom packaging solutions for distributors and retail partners.' }
+        { id: 'mixed', name: 'Mixed Teff Injera', category: 'Everyday', description: 'A balanced blend designed for everyday dining and commercial kitchens.' }
       ],
       cta: 'Request Sample & Pricing'
     },
@@ -206,8 +205,7 @@ const translations = {
       items: [
         { id: 'white', name: 'ፕሪሚየም ነጭ ጤፍ እንጀራ', category: 'ፕሪሚየም', description: 'ቀልጣፋ፣ ለስላሳ እና ከምርጥ ነጭ ጤፍ የተዘጋጀ።' },
         { id: 'brown', name: 'ባህላዊ ቀይ ጤፍ እንጀራ', category: 'ባህላዊ', description: 'ባህላዊ ጣዕም ያለው፣ በቂ ይዘት እና እውነተኛ ባህሪ ያለው።' },
-        { id: 'mixed', name: 'የዘወትር ቅልቅል ጤፍ እንጀራ', category: 'ዕለታዊ', description: 'ለዘወትር ምግብ እና ለንግድ ማዕድ ቤቶች የተመጣጠነ ቅልቅል።' },
-        { id: 'custom', name: 'የጅምላ እና ልዩ ትዕዛዞች', category: 'ጅምላ', description: 'ለአከፋፋዮች እና ለችርቻሮ አጋሮች ብጁ ማሸግ እና የግል ሌብሊንግ አገልግሎት።' }
+        { id: 'mixed', name: 'የዘወትር ቅልቅል ጤፍ እንጀራ', category: 'ዕለታዊ', description: 'ለዘወትር ምግብ እና ለንግድ ማዕድ ቤቶች የተመጣጠነ ቅልቅል።' }
       ],
       cta: 'ናሙና እና የዋጋ ጥያቄ ይላኩ'
     },
