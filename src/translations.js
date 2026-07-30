@@ -152,6 +152,12 @@ const translations = {
     audio: {
       on: 'Audio On',
       off: 'Audio Ambient'
+    },
+    qr: {
+      badge: 'Scan & Visit',
+      heading1: 'Visit Our',
+      headingGold: 'Site',
+      subtitle: 'Scan the QR code to explore our products and services.'
     }
   },
 
@@ -310,6 +316,12 @@ const translations = {
     audio: {
       on: 'ድምጽ በርቷል',
       off: 'ድምጽ አካባቢ'
+    },
+    qr: {
+      badge: 'እስካን ያድርጉ እና ይጎብኙ',
+      heading1: 'ድረ-ገፃችንን',
+      headingGold: 'ይጎብኙ',
+      subtitle: 'ምርቶቻችንን እና አገልግሎቶቻችንን ለማየት ኪዩአር ኮዱን እስካን ያድርጉ።'
     }
   }
 };

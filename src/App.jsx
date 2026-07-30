@@ -14,6 +14,7 @@ import PartnerTestimonials from './components/PartnerTestimonials';
 import ExportFAQ from './components/ExportFAQ';
 import ContactSection from './components/ContactSection';
 import CorporateLeadership from './components/CorporateLeadership';
+import QRCodeSection from './components/QRCodeSection';
 import RequestQuoteModal from './components/RequestQuoteModal';
 import AudioEngine from './components/AudioEngine';
 import Footer from './components/Footer';
@@ -99,6 +100,9 @@ function AppContent() {
 
       {/* 13. Who We Are + Our Commitment */}
       <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
+
+      {/* 13.5 QR Code */}
+      <QRCodeSection />
 
       {/* GradualBlur footer fade */}
       <GradualBlur preset="page-footer" strength={2} opacity={0.6} />
