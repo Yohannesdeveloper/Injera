@@ -42,7 +42,10 @@ const translations = {
       items: [
         { id: 'white', name: 'White Teff Injera', category: 'Premium', description: 'Light, soft, and crafted from premium white teff.' },
         { id: 'brown', name: 'Brown Teff Injera', category: 'Traditional', description: 'Traditional flavor with rich texture and authentic character.' },
-        { id: 'mixed', name: 'Mixed Teff Injera', category: 'Everyday', description: 'A balanced blend designed for everyday dining and commercial kitchens.' }
+        { id: 'mixed', name: 'Mixed Teff Injera', category: 'Everyday', description: 'A balanced blend designed for everyday dining and commercial kitchens.' },
+        { id: 'global', name: 'Global Dish', category: 'International', description: 'Authentic injera served alongside beloved traditional Ethiopian dishes, ready for global dining.' },
+        { id: 'texture', name: 'Injera Texture', category: 'Signature', description: 'Soft, spongy injera with the perfect balance of bubbles, chewiness, and delicate tenderness.' },
+        { id: 'masa', name: 'Teff Masa', category: 'Traditional', description: 'Freshly fermented teff batter (masa) — the authentic foundation for every traditional injera.' }
       ],
       cta: 'Request Sample & Pricing'
     },
@@ -205,7 +208,10 @@ const translations = {
       items: [
         { id: 'white', name: 'ፕሪሚየም ነጭ ጤፍ እንጀራ', category: 'ፕሪሚየም', description: 'ቀልጣፋ፣ ለስላሳ እና ከምርጥ ነጭ ጤፍ የተዘጋጀ።' },
         { id: 'brown', name: 'ባህላዊ ቀይ ጤፍ እንጀራ', category: 'ባህላዊ', description: 'ባህላዊ ጣዕም ያለው፣ በቂ ይዘት እና እውነተኛ ባህሪ ያለው።' },
-        { id: 'mixed', name: 'የዘወትር ቅልቅል ጤፍ እንጀራ', category: 'ዕለታዊ', description: 'ለዘወትር ምግብ እና ለንግድ ማዕድ ቤቶች የተመጣጠነ ቅልቅል።' }
+        { id: 'mixed', name: 'የዘወትር ቅልቅል ጤፍ እንጀራ', category: 'ዕለታዊ', description: 'ለዘወትር ምግብ እና ለንግድ ማዕድ ቤቶች የተመጣጠነ ቅልቅል።' },
+        { id: 'global', name: 'ዓለም አቀፍ የጤፍ ምግብ', category: 'ኢንተርናሽናል', description: 'ከተወደዱ ባህላዊ የኢትዮጵያ ምግቦች ጋር የቀረበ እውነተኛ እንጀራ፣ ለዓለም ገበያ ዝግጁ።' },
+        { id: 'texture', name: 'የእንጀራ ሸካራነት', category: 'ባህሪ', description: 'ለስላሳ፣ ስፖንጅ የሚመስል እንጀራ በትክክለኛ አረፋ፣ ልስላሴ እና ጣፋጭነት።' },
+        { id: 'masa', name: 'የጤፍ ማሳ', category: 'ባህላዊ', description: 'አዲስ የተቦካ የጤፍ ዱቄት ውሀ (ማሳ) — ለእያንዳንዱ ባህላዊ እንጀራ መሰረት።' }
       ],
       cta: 'ናሙና እና የዋጋ ጥያቄ ይላኩ'
     },

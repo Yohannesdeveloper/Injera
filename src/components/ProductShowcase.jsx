@@ -6,7 +6,10 @@ import { useLanguage } from '../context/LanguageContext';
 const PRODUCT_IMAGES = {
   white: '/images/white teff injera.jpg',
   brown: '/images/injera.jpg',
-  mixed: '/images/Teff masa.jpg'
+  mixed: '/images/Teff masa.jpg',
+  global: '/images/global_dish.png',
+  texture: '/images/injera_texture.png',
+  masa: '/images/Teff masa.jpg'
 };
 
 export default function ProductShowcase({ onRequestQuote }) {
