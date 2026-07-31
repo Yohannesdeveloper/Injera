@@ -21,7 +21,7 @@ export default function QRCodeSection() {
     return () => window.removeEventListener('resize', updateSize);
   }, []);
 
-  const logoSize = Math.round(qrSize * 0.22);
+  const logoSize = Math.round(qrSize * 0.18);
 
   return (
     <section className="relative z-10 py-12 4xl:py-16 7xl:py-20 px-4 4xl:px-6">
@@ -49,7 +49,7 @@ export default function QRCodeSection() {
                 value={SITE_URL}
                 size={qrSize}
                 bgColor="#ffffff"
-                fgColor="#D4AF37"
+                fgColor="#3A2C00"
                 level="H"
                 imageSettings={{
                   src: "/images/Logo.png",
