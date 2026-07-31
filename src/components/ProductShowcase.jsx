@@ -9,7 +9,7 @@ const PRODUCT_IMAGES = {
   mixed: '/images/Teff masa.jpg',
   global: '/images/global_dish.png',
   texture: '/images/injera_texture.png',
-  masa: '/images/Teff masa.jpg'
+  masa: '/images/masa.jpg'
 };
 
 export default function ProductShowcase({ onRequestQuote }) {

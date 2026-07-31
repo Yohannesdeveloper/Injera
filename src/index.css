@@ -140,6 +140,7 @@ html, body {
 :root:not(.dark) .hero-text-light {
   color: #fff !important;
 }
+
 :root:not(.dark) .hero-text-light.text-gold-400,
 :root:not(.dark) .hero-text-light.text-gold-500 {
   color: #fff !important;
@@ -150,6 +151,25 @@ html, body {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   color: transparent !important;
+}
+
+/* Hide native play/pause controls on hero video */
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-moz-media-controls {
+  display: none !important;
+}
+video::backdrop {
+  display: none !important;
 }
 
 /* Glass panel utilities */
