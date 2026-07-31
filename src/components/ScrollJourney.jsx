@@ -68,6 +68,7 @@ export default function ScrollJourney() {
                 <img
                   src={ch.image}
                   alt={s.title}
+                  loading="lazy"
                   className="w-full h-40 sm:h-56 4xl:h-72 7xl:h-96 object-cover rounded-xl sm:rounded-2xl"
                 />
               </div>

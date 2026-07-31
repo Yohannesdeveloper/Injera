@@ -12,6 +12,7 @@ export default function Footer() {
             <img
               src="/images/Logo.png"
               alt={t('site.name')}
+              loading="lazy"
               className="w-10 h-10 sm:w-12 sm:h-12 4xl:w-14 4xl:h-14 rounded-full object-cover"
             />
             <div>

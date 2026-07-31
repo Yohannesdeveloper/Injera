@@ -234,7 +234,7 @@ const PillNav = forwardRef(({
           onMouseEnter={handleLogoEnter}
           ref={el => { logoRef.current = el; }}
         >
-          <img src={logo} alt={logoAlt} ref={logoImgRef} />
+          <img src={logo} alt={logoAlt} loading="lazy" ref={logoImgRef} />
           {logoTitles && (
             <span className="logo-titles">
               <span className="logo-title-main">{logoTitles.main}</span>

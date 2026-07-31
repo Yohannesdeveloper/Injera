@@ -37,7 +37,7 @@ export default function BaltenaCollection({ onRequestQuote }) {
       <div className="grid gap-4 sm:gap-5 4xl:gap-6" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
         {items.map((prod) => (
           <div key={prod.id} className="glass-panel rounded-xl sm:rounded-2xl p-4 sm:p-5 4xl:p-6 text-center flex flex-col items-center space-y-3 sm:space-y-4 4xl:space-y-5">
-            <img src={BALTENA_IMAGES[prod.id]} alt={prod.name} className="w-full h-auto aspect-[4/3] object-contain rounded-xl sm:rounded-2xl bg-black/20" />
+            <img src={BALTENA_IMAGES[prod.id]} alt={prod.name} loading="lazy" className="w-full h-auto aspect-[4/3] object-contain rounded-xl sm:rounded-2xl bg-black/20" />
             <h3 className="font-display text-base sm:text-lg 4xl:text-xl font-black text-slate-100">{prod.name}</h3>
             <p className="text-xs sm:text-sm text-slate-300 font-bold leading-relaxed flex-1">{prod.description}</p>
           </div>

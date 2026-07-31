@@ -1,25 +1,28 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, Suspense, lazy } from 'react';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import HeroOverlay from './components/HeroOverlay';
-import ScrollJourney from './components/ScrollJourney';
-import FarmSourcingTraceability from './components/FarmSourcingTraceability';
-import ProductShowcase from './components/ProductShowcase';
-import BaltenaCollection from './components/BaltenaCollection';
-import ExportCalculator from './components/ExportCalculator';
-import GlobalLogisticsHubs from './components/GlobalLogisticsHubs';
-import QualityStandards from './components/QualityStandards';
-import PartnerTestimonials from './components/PartnerTestimonials';
-import ExportFAQ from './components/ExportFAQ';
-import ContactSection from './components/ContactSection';
-import CorporateLeadership from './components/CorporateLeadership';
-import QRCodeSection from './components/QRCodeSection';
-import RequestQuoteModal from './components/RequestQuoteModal';
-import AudioEngine from './components/AudioEngine';
-import Footer from './components/Footer';
 import GradualBlur from './components/GradualBlur';
 import { HexagonPattern } from './components/HexagonPattern';
+import LoadingFallback from './components/LoadingFallback';
+
+// Lazy load heavy components
+const ScrollJourney = lazy(() => import('./components/ScrollJourney'));
+const FarmSourcingTraceability = lazy(() => import('./components/FarmSourcingTraceability'));
+const ProductShowcase = lazy(() => import('./components/ProductShowcase'));
+const BaltenaCollection = lazy(() => import('./components/BaltenaCollection'));
+const ExportCalculator = lazy(() => import('./components/ExportCalculator'));
+const GlobalLogisticsHubs = lazy(() => import('./components/GlobalLogisticsHubs'));
+const QualityStandards = lazy(() => import('./components/QualityStandards'));
+const PartnerTestimonials = lazy(() => import('./components/PartnerTestimonials'));
+const ExportFAQ = lazy(() => import('./components/ExportFAQ'));
+const ContactSection = lazy(() => import('./components/ContactSection'));
+const CorporateLeadership = lazy(() => import('./components/CorporateLeadership'));
+const QRCodeSection = lazy(() => import('./components/QRCodeSection'));
+const RequestQuoteModal = lazy(() => import('./components/RequestQuoteModal'));
+const AudioEngine = lazy(() => import('./components/AudioEngine'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function AppContent() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
@@ -69,55 +72,85 @@ function AppContent() {
       <HeroOverlay onRequestQuote={() => setIsQuoteModalOpen(true)} />
 
       {/* 3. About Us */}
-      <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading leadership..." />}>
+        <CorporateLeadership onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 4. Baltena Collection */}
-      <BaltenaCollection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading collection..." />}>
+        <BaltenaCollection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 5. Our Process */}
-      <ScrollJourney />
+      <Suspense fallback={<LoadingFallback message="Loading process..." />}>
+        <ScrollJourney />
+      </Suspense>
 
       {/* 6. Why Choose Us */}
-      <FarmSourcingTraceability />
+      <Suspense fallback={<LoadingFallback message="Loading sourcing..." />}>
+        <FarmSourcingTraceability />
+      </Suspense>
 
       {/* 7. Our Products */}
-      <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading products..." />}>
+        <ProductShowcase onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 8. Final CTA */}
-      <ExportCalculator onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading calculator..." />}>
+        <ExportCalculator onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 9. Global Reach */}
-      <GlobalLogisticsHubs onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading logistics..." />}>
+        <GlobalLogisticsHubs onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 10. Who We Serve */}
-      <QualityStandards />
+      <Suspense fallback={<LoadingFallback message="Loading standards..." />}>
+        <QualityStandards />
+      </Suspense>
 
       {/* 11. Testimonials */}
-      <PartnerTestimonials />
+      <Suspense fallback={<LoadingFallback message="Loading testimonials..." />}>
+        <PartnerTestimonials />
+      </Suspense>
 
       {/* 12. FAQ */}
-      <ExportFAQ />
+      <Suspense fallback={<LoadingFallback message="Loading FAQ..." />}>
+        <ExportFAQ />
+      </Suspense>
 
       {/* 13. Contact Us */}
-      <ContactSection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      <Suspense fallback={<LoadingFallback message="Loading contact..." />}>
+        <ContactSection onRequestQuote={() => setIsQuoteModalOpen(true)} />
+      </Suspense>
 
       {/* 13.5 QR Code */}
-      <QRCodeSection />
+      <Suspense fallback={<LoadingFallback message="Loading QR code..." />}>
+        <QRCodeSection />
+      </Suspense>
 
       {/* GradualBlur footer fade */}
       <GradualBlur preset="page-footer" strength={2} opacity={0.6} />
 
       {/* 14. Corporate Footer */}
-      <Footer />
+      <Suspense fallback={<LoadingFallback message="Loading footer..." />}>
+        <Footer />
+      </Suspense>
 
       {/* Ambient Audio Engine */}
-      <AudioEngine />
+      <Suspense fallback={null}>
+        <AudioEngine />
+      </Suspense>
 
       {/* B2B Quotation Modal */}
-      <RequestQuoteModal
-        isOpen={isQuoteModalOpen}
-        onClose={() => setIsQuoteModalOpen(false)}
-      />
+      <Suspense fallback={null}>
+        <RequestQuoteModal
+          isOpen={isQuoteModalOpen}
+          onClose={() => setIsQuoteModalOpen(false)}
+        />
+      </Suspense>
     </div>
   );
 }

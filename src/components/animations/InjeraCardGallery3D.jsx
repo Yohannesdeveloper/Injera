@@ -75,6 +75,7 @@ export default function InjeraCardGallery3D() {
               <img
                 src={activeStep.image}
                 alt={activeStep.title}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>

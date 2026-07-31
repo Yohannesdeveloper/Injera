@@ -35,6 +35,7 @@ export default function ProductShowcase({ onRequestQuote }) {
             <img
               src={PRODUCT_IMAGES[prod.id]}
               alt={prod.name}
+              loading="lazy"
               className="w-full h-48 sm:h-56 4xl:h-64 object-cover rounded-xl sm:rounded-2xl"
             />
             <div className="space-y-2 sm:space-y-2.5 4xl:space-y-3">
