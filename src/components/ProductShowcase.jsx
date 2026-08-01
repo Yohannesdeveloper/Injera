@@ -7,8 +7,8 @@ const PRODUCT_IMAGES = {
   white: '/images/white teff injera.jpg',
   brown: '/images/injera.jpg',
   mixed: '/images/Teff masa.jpg',
-  global: '/images/global_dish.png',
-  texture: '/images/injera_texture.png',
+  global: '/images/global_dish.jpg',
+  texture: '/images/injera_texture.jpg',
   masa: '/images/masa.jpg'
 };
 
@@ -36,6 +36,7 @@ export default function ProductShowcase({ onRequestQuote }) {
               src={PRODUCT_IMAGES[prod.id]}
               alt={prod.name}
               loading="lazy"
+              decoding="async"
               className="w-full h-48 sm:h-56 4xl:h-64 object-cover rounded-xl sm:rounded-2xl"
             />
             <div className="space-y-2 sm:space-y-2.5 4xl:space-y-3">

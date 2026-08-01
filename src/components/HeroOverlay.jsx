@@ -7,7 +7,7 @@ export default function HeroOverlay({ onRequestQuote }) {
   const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 4xl:px-6 pt-24 4xl:pt-28 7xl:pt-32 pb-16 4xl:pb-20 overflow-hidden">
-      <video autoPlay muted playsInline preload="metadata" poster="/images/injera_bg.png" className="absolute inset-0 w-full h-full object-cover z-0" src="/Video_4.mp4" />
+      <video autoPlay muted playsInline preload="metadata" poster="/images/injera_bg.jpg" className="absolute inset-0 w-full h-full object-cover z-0" src="/Video_4.mp4" />
       <div className="absolute inset-0 z-[1] bg-black/60" />
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">

@@ -8,7 +8,7 @@ const STEPS = [
     id: 1,
     title: '1. Teff Harvest & Cleaning',
     subtitle: 'Debre Zeit & East Shewa Farms',
-    image: '/images/teff_field.png',
+    image: '/images/teff_field.jpg',
     tag: 'RAW MATERIAL SELECTION',
     desc: '100% Ethiopian Teff from verified farms, destoned and cleaned to 99.9% purity.'
   },
@@ -16,7 +16,7 @@ const STEPS = [
     id: 2,
     title: '2. 72-Hour Fermentation',
     subtitle: 'Traditional Ersho Sourdough Culture',
-    image: '/images/injera_texture.png',
+    image: '/images/injera_texture.jpg',
     tag: 'STAINLESS FERMENTATION VATS',
     desc: 'Naturally fermented in stainless steel to pH 3.6-3.8 for authentic sour flavor.'
   },
@@ -24,7 +24,7 @@ const STEPS = [
     id: 3,
     title: '3. Mitad Griddle Baking',
     subtitle: 'Precision Thermal Ceramic Baking',
-    image: '/images/injera_texture.png',
+    image: '/images/injera_texture.jpg',
     tag: 'STERILE BAKING LINE',
     desc: 'Batter poured on ceramic griddles creates thousands of uniform micro-pores.'
   },
@@ -32,7 +32,7 @@ const STEPS = [
     id: 4,
     title: '4. Vacuum Packaging (MAP)',
     subtitle: 'HEPA Cleanroom Cooling & Sealing',
-    image: '/images/vacuum_pack.png',
+    image: '/images/vacuum_pack.jpg',
     tag: '30-DAY AMBIENT SHELF LIFE',
     desc: 'HEPA-cooled and vacuum-sealed without chemical preservatives.'
   },
@@ -40,7 +40,7 @@ const STEPS = [
     id: 5,
     title: '5. Daily Air & Sea Logistics',
     subtitle: 'Bole Airport & Djibouti Reefer Port',
-    image: '/images/global_dish.png',
+    image: '/images/global_dish.jpg',
     tag: 'EXPRESS GLOBAL DISPATCH',
     desc: 'Daily air cargo and sea reefer containers to global destinations.'
   }

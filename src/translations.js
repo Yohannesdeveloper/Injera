@@ -182,12 +182,12 @@ const translations = {
       heading: 'ከኢትዮጵያ እርሻዎች',
       headingGold: 'እስከ ደንበኞችዎ',
       steps: [
-        { id: 'selection', step: '01', title: 'ምርጥ የጤፍ መረጣ', subtitle: 'ታማኝ የአርሶ አደር ማህበረሰቦች', description: 'ታማኝ ከሆኑ የአካባቢ አርሶ አደሮች በጥራት የተመረጠ የኢትዮጵያ ጤፍ እንሰበስባለን።', image: '/images/teff_field.png', highlights: ['ጥራት ያለው የኢትዮጵያ ጤፍ', 'ታማኝ የአርሶ አደር ማህበረሰቦች'] },
+        { id: 'selection', step: '01', title: 'ምርጥ የጤፍ መረጣ', subtitle: 'ታማኝ የአርሶ አደር ማህበረሰቦች', description: 'ታማኝ ከሆኑ የአካባቢ አርሶ አደሮች በጥራት የተመረጠ የኢትዮጵያ ጤፍ እንሰበስባለን።', image: '/images/teff_field.jpg', highlights: ['ጥራት ያለው የኢትዮጵያ ጤፍ', 'ታማኝ የአርሶ አደር ማህበረሰቦች'] },
         { id: 'fermentation', step: '02', title: 'ባህላዊ ኩፋይ (ቦካ)', subtitle: 'ተፈጥሯዊ እውነተኛ ጣዕም', description: 'ተፈጥሯዊ ኩፋይ (ሊጥ መቦካት) እንጀራ የሚታወቅበትን እውነተኛ ጣዕም እንዲያገኝ ያደርጋል።', image: '/images/Fermentation.jpg', highlights: ['ተፈጥሯዊ መቦካት', 'እውነተኛ የእንጀራ ጣዕም'] },
         { id: 'baking', step: '03', title: 'በየቀኑ የሚጋገር ትኩስ እንጀራ', subtitle: 'ትክክለኛ የመጋገር ሂደት', description: 'እያንዳንዱ እንጀራ ቋሚ ጥራቱን የጠበቀ እንዲሆን በጥንቃቄ ይጋገራል።', image: '/images/Baking.jpg', highlights: ['በየቀኑ የሚጋገር ትኩስ እንጀራ', 'ቋሚ ጥራት'] },
         { id: 'inspection', step: '04', title: 'የጥራት ቁጥጥር', subtitle: 'ጥንቃቄ የተሞላበት የባች ምርመራ', description: 'እያንዳንዱ ባች ከታሸገ በፊት በጥንቃቄ ይመረመራል።', image: '/images/Quality inspection.jpg', highlights: ['የጥራት ቁጥጥር', 'የባች ምርመራ ሂደት'] },
-        { id: 'packaging', step: '05', title: 'ለወጪ ንግድ የተዘጋጀ ማሸግ', subtitle: 'አየር በማይስብ መልኩ የታሸገ ትኩስነት', description: 'አየር በሌለው (Vacuum-sealed) መንገድ ታሽጎ ለአለም አቀፍ ትራንስፖርት ይዘጋጃል።', image: '/images/vacuum_pack.png', highlights: ['አየር በማይስብ መልኩ የታሸገ', 'ለወጪ ንግድ የተዘጋጀ ማሸግ'] },
-        { id: 'delivery', step: '06', title: 'አለም አቀፍ ስርጭት', subtitle: 'የአለም ገበያ ጭነት', description: 'በአለም ዙሪያ ላሉ ደንበኞች በሰላም እና በጥንቃቄ ይደርሳል።', image: '/images/warehouse.png', highlights: ['አለም አቀፍ ጭነት', 'ደህንነቱ የተጠበቀ እና አስተማማኝ አቅርቦት'] }
+        { id: 'packaging', step: '05', title: 'ለወጪ ንግድ የተዘጋጀ ማሸግ', subtitle: 'አየር በማይስብ መልኩ የታሸገ ትኩስነት', description: 'አየር በሌለው (Vacuum-sealed) መንገድ ታሽጎ ለአለም አቀፍ ትራንስፖርት ይዘጋጃል።', image: '/images/vacuum_pack.jpg', highlights: ['አየር በማይስብ መልኩ የታሸገ', 'ለወጪ ንግድ የተዘጋጀ ማሸግ'] },
+        { id: 'delivery', step: '06', title: 'አለም አቀፍ ስርጭት', subtitle: 'የአለም ገበያ ጭነት', description: 'በአለም ዙሪያ ላሉ ደንበኞች በሰላም እና በጥንቃቄ ይደርሳል።', image: '/images/warehouse.jpg', highlights: ['አለም አቀፍ ጭነት', 'ደህንነቱ የተጠበቀ እና አስተማማኝ አቅርቦት'] }
       ]
     },
     whyChooseUs: {

@@ -88,7 +88,7 @@ function FermentationRoom({ active }) {
 // 3D Photorealistic Injera & Modern Mitad Griddle with Texture
 function InjeraBakingScene({ active }) {
   const injeraRef = useRef();
-  const injeraTexture = useTexture('/images/injera_texture.png');
+  const injeraTexture = useTexture('/images/injera_texture.jpg');
 
   useFrame(({ clock }) => {
     if (injeraRef.current) {

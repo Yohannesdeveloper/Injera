@@ -4,11 +4,11 @@ import { KineticText } from './KineticText';
 import { useLanguage } from '../context/LanguageContext';
 
 const CHAPTERS = [
-  { id: 'selection', step: '01', image: '/images/teff_field.png' },
+  { id: 'selection', step: '01', image: '/images/teff_field.jpg' },
   { id: 'fermentation', step: '02', image: '/images/Fermentation.jpg' },
   { id: 'baking', step: '03', image: '/images/Baking.jpg' },
   { id: 'inspection', step: '04', image: '/images/Quality inspection.jpg' },
-  { id: 'packaging', step: '05', image: '/images/vacuum_pack.png' },
+  { id: 'packaging', step: '05', image: '/images/vacuum_pack.jpg' },
   { id: 'delivery', step: '06', image: '/images/delivery.jpg' }
 ];
 
@@ -69,6 +69,7 @@ export default function ScrollJourney() {
                   src={ch.image}
                   alt={s.title}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-40 sm:h-56 4xl:h-72 7xl:h-96 object-cover rounded-xl sm:rounded-2xl"
                 />
               </div>
